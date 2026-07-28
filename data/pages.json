@@ -628,5 +628,65 @@
     "sections": "<section class=\"hero-actions\"><a class=\"btn btn-primary\" href=\"/app.html\">Create My Chart</a><a class=\"btn btn-secondary\" href=\"/calculators.html\">Browse Calculators</a></section>",
     "group": "System",
     "index": false
+  },
+  {
+    "slug": "core-numbers",
+    "h1": "Core Numerology Numbers",
+    "title": "Core Numerology Numbers | Calculators and Guides",
+    "description": "Core numerology numbers explained with calculators and guides for Life Path, Birthday, Attitude, Expression, Soul Urge and Personality numbers.",
+    "answer": "Core numerology numbers describe different parts of a traditional chart rather than repeating one idea. Life Path uses the birth date, Birthday uses the day, Attitude uses month and day, while Expression, Soul Urge and Personality use the birth name. Explore each calculation and compare its role clearly.",
+    "group": "Categories",
+    "index": true,
+    "sections": "<section><h2>Which core numerology number should I calculate first?</h2><p>Begin with Life Path for a date-based overview, then add Birthday and Attitude for supporting date themes. Name-based numbers add a different layer: Expression uses all letters, Soul Urge uses vowels and Personality uses consonants.</p><div class=\"grid cards\"><article><h3><a href=\"life-path-calculator.html\">Life Path Calculator</a></h3><p>Calculate the full birth-date total and inspect every reduction step.</p></article><article><h3><a href=\"birthday-number-calculator.html\">Birthday Number Calculator</a></h3><p>Explore the influence attached specifically to the day of birth.</p></article><article><h3><a href=\"attitude-number-calculator.html\">Attitude Number Calculator</a></h3><p>Combine birth month and day to examine the traditional first-impression theme.</p></article><article><h3><a href=\"expression-number-calculator.html\">Expression Number Calculator</a></h3><p>Use every letter in the full birth name to calculate the Expression number.</p></article><article><h3><a href=\"soul-urge-calculator.html\">Soul Urge Calculator</a></h3><p>Use the vowels in the birth name to explore inner motivation themes.</p></article><article><h3><a href=\"personality-number-calculator.html\">Personality Number Calculator</a></h3><p>Use consonants to explore the outward style traditionally linked with the name.</p></article></div></section>"
+  },
+  {
+    "slug": "timing-cycles",
+    "h1": "Numerology Timing and Personal Cycles",
+    "title": "Numerology Timing and Personal Cycles | Calculators",
+    "description": "Numerology timing calculators and guides for Personal Year, Personal Month and Personal Day cycles with transparent date-based working.",
+    "answer": "Numerology timing cycles organise a calendar date into Personal Year, Personal Month and Personal Day numbers. Each cycle uses a different time scale, so the result should not be copied from one period to another. Use the calculators together to compare the broad yearly theme with shorter monthly and daily themes.",
+    "group": "Categories",
+    "index": true,
+    "sections": "<section><h2>How do the personal timing cycles fit together?</h2><p>The Personal Year provides the broadest annual frame. The Personal Month narrows that frame to one calendar month, while the Personal Day supplies the shortest daily layer. Each page shows its own formula and reduction sequence.</p><div class=\"grid cards\"><article><h3><a href=\"personal-year-calculator.html\">Personal Year Calculator</a></h3><p>Calculate the current annual cycle from birth month, birth day and calendar year.</p></article><article><h3><a href=\"personal-month-calculator.html\">Personal Month Calculator</a></h3><p>Combine the Personal Year with the selected calendar month.</p></article><article><h3><a href=\"personal-day-calculator.html\">Personal Day Calculator</a></h3><p>Combine the Personal Month with the selected calendar day.</p></article><article><h3><a href=\"personal-year-guide.html\">Personal Year Guide</a></h3><p>Understand how an annual cycle differs from a permanent core number.</p></article><article><h3><a href=\"pinnacles-vs-personal-year.html\">Pinnacles vs Personal Years</a></h3><p>Compare long life phases with shorter calendar-based cycles.</p></article></div></section>"
+  },
+  {
+    "slug": "pinnacles-challenges",
+    "h1": "Pinnacles and Challenge Numbers",
+    "title": "Pinnacles and Challenge Numbers | Calculators and Guides",
+    "description": "Pinnacles and Challenge Numbers calculators, age ranges and guides showing four long-term phases and their paired challenge themes.",
+    "answer": "Pinnacles and Challenge Numbers are paired long-term chart cycles calculated from the birth date. Pinnacles describe four traditional developmental themes, while Challenges describe four contrasting lessons or tensions. Use the combined chart to see the phase order, age ranges and calculation working instead of reading either sequence without context.",
+    "group": "Categories",
+    "index": true,
+    "sections": "<section><h2>Where should I begin with Pinnacles and Challenges?</h2><p>Start with the combined calculators to see all four phases, then use the guides to understand the age ranges and the difference between a Pinnacle theme and a Challenge theme.</p><div class=\"grid cards\"><article><h3><a href=\"pinnacles-calculator.html\">Pinnacles Calculator</a></h3><p>Calculate four Pinnacle numbers and their traditional life-stage ranges.</p></article><article><h3><a href=\"challenge-numbers-calculator.html\">Challenge Numbers Calculator</a></h3><p>Calculate four Challenge numbers from differences between reduced birth-date parts.</p></article><article><h3><a href=\"pinnacle-numbers-guide.html\">Pinnacle Numbers Guide</a></h3><p>Learn what the four phases represent and how their timing is established.</p></article><article><h3><a href=\"challenge-numbers-guide.html\">Challenge Numbers Guide</a></h3><p>Understand why zero and repeated challenges require careful interpretation.</p></article><article><h3><a href=\"calculate-four-pinnacles.html\">Calculate the Four Pinnacles</a></h3><p>Follow a worked, transparent sequence from birth date to all four results.</p></article></div></section>"
+  },
+  {
+    "slug": "number-meanings",
+    "h1": "Numerology Number Meanings",
+    "title": "Numerology Number Meanings 1–9, 11, 22 and 33",
+    "description": "Numerology number meanings for 1 to 9 and Master Numbers 11, 22 and 33, with balanced strengths, cautions and chart context.",
+    "answer": "Numerology number meanings provide traditional symbolic themes for the numbers 1 to 9 and Master Numbers 11, 22 and 33. A meaning changes with its chart position, so the same number should not be interpreted identically as a Life Path, Birthday, Expression or Personal Year result.",
+    "group": "Categories",
+    "index": true,
+    "sections": "<section><h2>Which numerology number meaning do I need?</h2><p>Select the number produced by your calculator, then read it alongside the chart position that produced it. Each guide includes strengths, cautions and reminders not to treat a symbolic meaning as a fixed judgement.</p><div class=\"number-directory\"><a class=\"number-link\" href=\"number-1.html\"><strong>1</strong><span>Read number 1</span></a><a class=\"number-link\" href=\"number-2.html\"><strong>2</strong><span>Read number 2</span></a><a class=\"number-link\" href=\"number-3.html\"><strong>3</strong><span>Read number 3</span></a><a class=\"number-link\" href=\"number-4.html\"><strong>4</strong><span>Read number 4</span></a><a class=\"number-link\" href=\"number-5.html\"><strong>5</strong><span>Read number 5</span></a><a class=\"number-link\" href=\"number-6.html\"><strong>6</strong><span>Read number 6</span></a><a class=\"number-link\" href=\"number-7.html\"><strong>7</strong><span>Read number 7</span></a><a class=\"number-link\" href=\"number-8.html\"><strong>8</strong><span>Read number 8</span></a><a class=\"number-link\" href=\"number-9.html\"><strong>9</strong><span>Read number 9</span></a><a class=\"number-link\" href=\"number-11.html\"><strong>11</strong><span>Read number 11</span></a><a class=\"number-link\" href=\"number-22.html\"><strong>22</strong><span>Read number 22</span></a><a class=\"number-link\" href=\"number-33.html\"><strong>33</strong><span>Read number 33</span></a></div></section>"
+  },
+  {
+    "slug": "numerology-guides",
+    "h1": "Numerology Guides and Comparisons",
+    "title": "Numerology Guides and Comparisons | Learning Centre",
+    "description": "Numerology guides covering methods, master numbers, name choices, calculator differences, compatibility and key chart comparisons.",
+    "answer": "Numerology guides help you understand why calculations differ, which name to use, how major chart numbers compare and where traditional systems disagree. Use this learning category to answer a specific question before calculating, rather than relying on a final number without understanding the method behind it.",
+    "group": "Categories",
+    "index": true,
+    "sections": "<section><h2>What can I learn in the numerology guide collection?</h2><div class=\"grid cards\"><article><h3><a href=\"what-is-numerology.html\">What Is Numerology?</a></h3><p>Begin with the purpose, limits and basic structure of a numerology chart.</p></article><article><h3><a href=\"why-calculators-disagree.html\">Why Calculators Disagree</a></h3><p>Compare reduction rules, systems and master-number policies.</p></article><article><h3><a href=\"birth-name-vs-current-name.html\">Birth Name vs Current Name</a></h3><p>Understand which name different calculations traditionally use.</p></article><article><h3><a href=\"life-path-vs-expression.html\">Life Path vs Expression</a></h3><p>Compare the central date-based number with the full-name number.</p></article><article><h3><a href=\"master-numbers.html\">Master Numbers</a></h3><p>Learn where 11, 22 and 33 may be preserved and where they are reduced.</p></article><article><h3><a href=\"chaldean-vs-pythagorean.html\">Chaldean vs Pythagorean</a></h3><p>See why letter values and methods produce different name results.</p></article><article><h3><a href=\"numerology-compatibility-guide.html\">Compatibility Guide</a></h3><p>Use number comparisons carefully without treating them as relationship verdicts.</p></article></div></section>"
+  },
+  {
+    "slug": "trust-legal-centre",
+    "h1": "Trust, Privacy and Legal Centre",
+    "title": "Trust, Privacy and Legal Centre | MyNumerologyCharts",
+    "description": "Trust, privacy and legal information for MyNumerologyCharts, including methodology, editorial standards, cookies, data rights and accessibility.",
+    "answer": "The MyNumerologyCharts Trust, Privacy and Legal Centre brings together the policies that explain how the site calculates results, handles data, uses cookies, manages email verification and limits numerology claims. Use this category to review your choices, request deletion, check accessibility information or understand the site’s editorial safeguards.",
+    "group": "Categories",
+    "index": true,
+    "sections": "<section><h2>Where can I check how MyNumerologyCharts operates?</h2><div class=\"grid cards\"><article><h3><a href=\"methodology.html\">Calculation Methodology</a></h3><p>Review formula rules, master-number handling and versioning.</p></article><article><h3><a href=\"privacy.html\">Privacy Policy</a></h3><p>See what information is processed and how your rights are supported.</p></article><article><h3><a href=\"cookie-policy.html\">Cookie Policy</a></h3><p>Understand necessary storage and optional analytics choices.</p></article><article><h3><a href=\"editorial-policy.html\">Editorial Policy</a></h3><p>Read how explanations are written, checked and kept measured.</p></article><article><h3><a href=\"disclaimer.html\">Numerology Disclaimer</a></h3><p>Review the educational and entertainment limits of the service.</p></article><article><h3><a href=\"accessibility.html\">Accessibility</a></h3><p>Find accessibility commitments and contact routes for barriers.</p></article><article><h3><a href=\"data-deletion.html\">Data Deletion</a></h3><p>Follow the process for requesting removal of stored information.</p></article></div></section>"
   }
 ]
