@@ -60,3 +60,9 @@
 - https://mynumerologycharts.com/accessibility.html: The Accessibility Statement describes the aim to meet WCAG 2.2 AA and provides a route for reporting accessibility barriers.
 - https://mynumerologycharts.com/data-deletion.html: Data Deletion Instructions explain how to clear browser profiles, unsubscribe from email and request deletion of server-held contact or subscriber information.
 - https://mynumerologycharts.com/a-z.html: Numerology A to Z index linking calculators, number meanings, methodology topics and beginner guides.
+- https://mynumerologycharts.com/core-numbers.html: Core numerology numbers explained with calculators and guides for Life Path, Birthday, Attitude, Expression, Soul Urge and Personality numbers.
+- https://mynumerologycharts.com/timing-cycles.html: Numerology timing calculators and guides for Personal Year, Personal Month and Personal Day cycles with transparent date-based working.
+- https://mynumerologycharts.com/pinnacles-challenges.html: Pinnacles and Challenge Numbers calculators, age ranges and guides showing four long-term phases and their paired challenge themes.
+- https://mynumerologycharts.com/number-meanings.html: Numerology number meanings for 1 to 9 and Master Numbers 11, 22 and 33, with balanced strengths, cautions and chart context.
+- https://mynumerologycharts.com/numerology-guides.html: Numerology guides covering methods, master numbers, name choices, calculator differences, compatibility and key chart comparisons.
+- https://mynumerologycharts.com/trust-legal-centre.html: Trust, privacy and legal information for MyNumerologyCharts, including methodology, editorial standards, cookies, data rights and accessibility.
