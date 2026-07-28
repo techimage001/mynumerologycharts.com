@@ -215,7 +215,7 @@
     "description": "personal day calculator with transparent working, master-number rules and a link to the complete numerology chart.",
     "h1": "Personal Day Calculator",
     "answer": "Personal Day Calculator uses your birth details and selected date to produce a traditional numerology number and a transparent calculation trace. The result is intended for education, entertainment and personal reflection rather than certainty or professional advice.",
-    "sections": "<section class=\"tool-cta\"><h2>How do I use the Personal Day Calculator?</h2><ol><li>Open the calculator.</li><li>Enter the requested information.</li><li>Create the result.</li><li>Open the calculation details to inspect every step.</li></ol><a class=\"btn btn-primary\" href=\"app.html?calculator=personal-day-calculator\">Open Personal Day Calculator</a></section><section><h2>What does this calculator show?</h2><p>Calculate a Personal Day Number using the user’s local date.</p></section><section><h2>Why might another result differ?</h2><p>Calculation order, name systems and master-number rules vary. This app labels the method and formula version so the result can be checked. This detail is applied specifically to Personal Day Calculator.</p></section>",
+    "sections": "<section class=\"tool-cta\"><h2>How do I use the Personal Day Calculator?</h2><ol><li>Open the calculator.</li><li>Enter the requested information.</li><li>Create the result.</li><li>Open the calculation details to inspect every step.</li></ol><a class=\"btn btn-primary\" href=\"app.html?calculator=personal-day-calculator\">Open Personal Day Calculator</a></section><section><h2>What does this calculator show?</h2><p>Calculate a Personal Day Number using the user\u2019s local date.</p></section><section><h2>Why might another result differ?</h2><p>Calculation order, name systems and master-number rules vary. This app labels the method and formula version so the result can be checked. This detail is applied specifically to Personal Day Calculator.</p></section>",
     "group": "Calculators",
     "index": true
   },
@@ -662,7 +662,7 @@
   {
     "slug": "number-meanings",
     "h1": "Numerology Number Meanings",
-    "title": "Numerology Number Meanings 1–9, 11, 22 and 33",
+    "title": "Numerology Number Meanings 1\u20139, 11, 22 and 33",
     "description": "Numerology number meanings for 1 to 9 and Master Numbers 11, 22 and 33, with balanced strengths, cautions and chart context.",
     "answer": "Numerology number meanings provide traditional symbolic themes for the numbers 1 to 9 and Master Numbers 11, 22 and 33. A meaning changes with its chart position, so the same number should not be interpreted identically as a Life Path, Birthday, Expression or Personal Year result.",
     "group": "Categories",
@@ -684,9 +684,149 @@
     "h1": "Trust, Privacy and Legal Centre",
     "title": "Trust, Privacy and Legal Centre | MyNumerologyCharts",
     "description": "Trust, privacy and legal information for MyNumerologyCharts, including methodology, editorial standards, cookies, data rights and accessibility.",
-    "answer": "The MyNumerologyCharts Trust, Privacy and Legal Centre brings together the policies that explain how the site calculates results, handles data, uses cookies, manages email verification and limits numerology claims. Use this category to review your choices, request deletion, check accessibility information or understand the site’s editorial safeguards.",
+    "answer": "The MyNumerologyCharts Trust, Privacy and Legal Centre brings together the policies that explain how the site calculates results, handles data, uses cookies, manages email verification and limits numerology claims. Use this category to review your choices, request deletion, check accessibility information or understand the site\u2019s editorial safeguards.",
     "group": "Categories",
     "index": true,
     "sections": "<section><h2>Where can I check how MyNumerologyCharts operates?</h2><div class=\"grid cards\"><article><h3><a href=\"methodology.html\">Calculation Methodology</a></h3><p>Review formula rules, master-number handling and versioning.</p></article><article><h3><a href=\"privacy.html\">Privacy Policy</a></h3><p>See what information is processed and how your rights are supported.</p></article><article><h3><a href=\"cookie-policy.html\">Cookie Policy</a></h3><p>Understand necessary storage and optional analytics choices.</p></article><article><h3><a href=\"editorial-policy.html\">Editorial Policy</a></h3><p>Read how explanations are written, checked and kept measured.</p></article><article><h3><a href=\"disclaimer.html\">Numerology Disclaimer</a></h3><p>Review the educational and entertainment limits of the service.</p></article><article><h3><a href=\"accessibility.html\">Accessibility</a></h3><p>Find accessibility commitments and contact routes for barriers.</p></article><article><h3><a href=\"data-deletion.html\">Data Deletion</a></h3><p>Follow the process for requesting removal of stored information.</p></article></div></section>"
+  },
+  {
+    "slug": "astrology",
+    "title": "Astrology Tools and Zodiac Guides | MyNumerologyCharts",
+    "description": "Accurate date-based astrology tools, zodiac sign guides and combined numerology insights without unfinished calculator pages.",
+    "h1": "Astrology Tools and Zodiac Guides",
+    "answer": "Explore working date-based astrology tools alongside clear zodiac guides. Every calculator published here produces a real result immediately. The section begins with Sun Sign, Sun Sign compatibility and a combined Life Path plus Sun Sign reading.",
+    "sections": "<section class=\"hero-actions\"><a class=\"btn btn-primary\" href=\"sun-sign-calculator.html\">Calculate My Sun Sign</a><a class=\"btn btn-secondary\" href=\"life-path-sun-sign.html\">Combine My Number and Sign</a></section><section class=\"grid cards\"><article><h2>Sun Sign Calculator</h2><p>Enter a birth date to identify the tropical zodiac Sun sign used by this site.</p><a href=\"sun-sign-calculator.html\">Open calculator</a></article><article><h2>Sun Sign Compatibility</h2><p>Compare two Sun signs with a transparent, educational element-and-modality framework.</p><a href=\"sun-sign-compatibility.html\">Compare signs</a></article><article><h2>Life Path + Sun Sign</h2><p>See two separate traditions presented together without blending their formulas.</p><a href=\"life-path-sun-sign.html\">Create combined reading</a></article></section><section><h2>Explore all twelve zodiac signs</h2><div class=\"zodiac-link-grid\"><a href=\"zodiac-aries.html\">Aries</a><a href=\"zodiac-taurus.html\">Taurus</a><a href=\"zodiac-gemini.html\">Gemini</a><a href=\"zodiac-cancer.html\">Cancer</a><a href=\"zodiac-leo.html\">Leo</a><a href=\"zodiac-virgo.html\">Virgo</a><a href=\"zodiac-libra.html\">Libra</a><a href=\"zodiac-scorpio.html\">Scorpio</a><a href=\"zodiac-sagittarius.html\">Sagittarius</a><a href=\"zodiac-capricorn.html\">Capricorn</a><a href=\"zodiac-aquarius.html\">Aquarius</a><a href=\"zodiac-pisces.html\">Pisces</a></div></section>",
+    "group": "Astrology",
+    "index": true
+  },
+  {
+    "slug": "numerology-and-astrology",
+    "title": "Numerology and Astrology Compared | MyNumerologyCharts",
+    "description": "Understand how numerology and astrology use different inputs, methods and symbolic traditions.",
+    "h1": "Numerology and Astrology: What Is the Difference?",
+    "answer": "Numerology works mainly with numbers derived from names and dates, while astrology maps celestial positions and zodiac signs. MyNumerologyCharts keeps their calculations separate and labels any combined reading clearly so users can see where each interpretation comes from.",
+    "sections": "<section><h2>How are they different?</h2><table><thead><tr><th>System</th><th>Main input</th><th>What this site currently calculates</th></tr></thead><tbody><tr><td>Numerology</td><td>Birth date and birth name</td><td>Core numbers, cycles, Pinnacles and Challenges</td></tr><tr><td>Astrology</td><td>Birth date for Sun sign</td><td>Sun sign, Sun-sign compatibility and combined reading</td></tr></tbody></table></section><section><h2>Why keep the methods separate?</h2><p>Keeping the formulas visible prevents a combined result from appearing more precise than it is. Each result can be checked on its own.</p></section>",
+    "group": "Astrology",
+    "index": true
+  },
+  {
+    "slug": "zodiac-aries",
+    "title": "Aries Zodiac Sign Meaning | MyNumerologyCharts",
+    "description": "Aries zodiac sign dates, traditional themes, strengths and reflection prompts.",
+    "h1": "Aries Zodiac Sign Meaning",
+    "answer": "Aries is the tropical zodiac Sun sign traditionally associated with birthdays from 21 March to 19 April. Its common symbolic themes include initiative, courage and direct action. This guide is educational and does not claim that one sign determines a complete personality.",
+    "sections": "<section class=\"zodiac-profile\"><div class=\"zodiac-symbol\">A</div><div><h2>Aries at a glance</h2><p><strong>Date range:</strong> 21 March to 19 April</p><p><strong>Traditional themes:</strong> initiative, courage and direct action.</p></div></section><section><h2>How should I use this meaning?</h2><p>Use it as a broad reflection prompt. A Sun sign is only one part of astrology and should not be treated as a diagnosis, prediction or fixed judgement.</p></section><section class=\"tool-cta\"><h2>Check your Sun sign</h2><a class=\"btn btn-primary\" href=\"sun-sign-calculator.html\">Open Sun Sign Calculator</a></section><section class=\"sign-deep-dive\"><h2>How can Aries themes appear in everyday life?</h2><h3>Starting energy</h3><p>Aries symbolism is often used when reflecting on the courage to begin before every detail is settled. A useful question is where direct action would help, and where a short pause would prevent unnecessary conflict. In group settings, Aries themes can appear as willingness to volunteer first, defend an idea or create momentum when others hesitate. The balancing practice is to make room for listening, pacing and follow-through after the first burst of enthusiasm.</p><h3>A grounded reflection exercise</h3><p>Choose one delayed task, define the smallest safe first step, and complete it without rushing the people involved.</p></section>",
+    "group": "Astrology",
+    "index": true
+  },
+  {
+    "slug": "zodiac-taurus",
+    "title": "Taurus Zodiac Sign Meaning | MyNumerologyCharts",
+    "description": "Taurus zodiac sign dates, traditional themes, strengths and reflection prompts.",
+    "h1": "Taurus Zodiac Sign Meaning",
+    "answer": "Taurus is the tropical zodiac Sun sign traditionally associated with birthdays from 20 April to 20 May. Its common symbolic themes include steadiness, patience and practical values. This guide is educational and does not claim that one sign determines a complete personality.",
+    "sections": "<section class=\"zodiac-profile\"><div class=\"zodiac-symbol\">T</div><div><h2>Taurus at a glance</h2><p><strong>Date range:</strong> 20 April to 20 May</p><p><strong>Traditional themes:</strong> steadiness, patience and practical values.</p></div></section><section><h2>How should I use this meaning?</h2><p>Use it as a broad reflection prompt. A Sun sign is only one part of astrology and should not be treated as a diagnosis, prediction or fixed judgement.</p></section><section class=\"tool-cta\"><h2>Check your Sun sign</h2><a class=\"btn btn-primary\" href=\"sun-sign-calculator.html\">Open Sun Sign Calculator</a></section><section class=\"sign-deep-dive\"><h2>How can Taurus themes appear in everyday life?</h2><h3>Steady value</h3><p>Taurus symbolism invites reflection on stability, patience and the things that feel worth protecting. It can be useful when reviewing money habits, routines, physical comfort or the pace at which trust develops. In practical situations, Taurus themes favour consistency over dramatic promises and often ask whether a choice can be maintained for months rather than days. The balancing practice is to distinguish healthy persistence from staying with a plan only because changing direction feels uncomfortable.</p><h3>A grounded reflection exercise</h3><p>Review one routine you value and improve it gently rather than replacing everything at once.</p></section>",
+    "group": "Astrology",
+    "index": true
+  },
+  {
+    "slug": "zodiac-gemini",
+    "title": "Gemini Zodiac Sign Meaning | MyNumerologyCharts",
+    "description": "Gemini zodiac sign dates, traditional themes, strengths and reflection prompts.",
+    "h1": "Gemini Zodiac Sign Meaning",
+    "answer": "Gemini is the tropical zodiac Sun sign traditionally associated with birthdays from 21 May to 20 June. Its common symbolic themes include curiosity, communication and adaptability. This guide is educational and does not claim that one sign determines a complete personality.",
+    "sections": "<section class=\"zodiac-profile\"><div class=\"zodiac-symbol\">G</div><div><h2>Gemini at a glance</h2><p><strong>Date range:</strong> 21 May to 20 June</p><p><strong>Traditional themes:</strong> curiosity, communication and adaptability.</p></div></section><section><h2>How should I use this meaning?</h2><p>Use it as a broad reflection prompt. A Sun sign is only one part of astrology and should not be treated as a diagnosis, prediction or fixed judgement.</p></section><section class=\"tool-cta\"><h2>Check your Sun sign</h2><a class=\"btn btn-primary\" href=\"sun-sign-calculator.html\">Open Sun Sign Calculator</a></section><section class=\"sign-deep-dive\"><h2>How can Gemini themes appear in everyday life?</h2><h3>Curious connection</h3><p>Gemini symbolism centres on questions, language and the movement of information between people. It can support reflection on how you learn, explain, compare and adapt when new facts arrive. In everyday life, Gemini themes may appear through writing, conversation, short journeys or holding more than one perspective at the same time. The balancing practice is to slow down long enough to verify information, finish an important thought and listen beyond the urge to prepare the next reply.</p><h3>A grounded reflection exercise</h3><p>Take one complicated idea and explain it in three simple sentences that a child could understand.</p></section>",
+    "group": "Astrology",
+    "index": true
+  },
+  {
+    "slug": "zodiac-cancer",
+    "title": "Cancer Zodiac Sign Meaning | MyNumerologyCharts",
+    "description": "Cancer zodiac sign dates, traditional themes, strengths and reflection prompts.",
+    "h1": "Cancer Zodiac Sign Meaning",
+    "answer": "Cancer is the tropical zodiac Sun sign traditionally associated with birthdays from 21 June to 22 July. Its common symbolic themes include care, intuition and emotional security. This guide is educational and does not claim that one sign determines a complete personality.",
+    "sections": "<section class=\"zodiac-profile\"><div class=\"zodiac-symbol\">C</div><div><h2>Cancer at a glance</h2><p><strong>Date range:</strong> 21 June to 22 July</p><p><strong>Traditional themes:</strong> care, intuition and emotional security.</p></div></section><section><h2>How should I use this meaning?</h2><p>Use it as a broad reflection prompt. A Sun sign is only one part of astrology and should not be treated as a diagnosis, prediction or fixed judgement.</p></section><section class=\"tool-cta\"><h2>Check your Sun sign</h2><a class=\"btn btn-primary\" href=\"sun-sign-calculator.html\">Open Sun Sign Calculator</a></section><section class=\"sign-deep-dive\"><h2>How can Cancer themes appear in everyday life?</h2><h3>Protective care</h3><p>Cancer symbolism is commonly linked with belonging, memory and the ways people create emotional safety. It can be used to reflect on home, family patterns, boundaries and the difference between caring for someone and carrying their responsibilities. In difficult moments, Cancer themes may encourage sensitivity to what is unspoken and attention to the environment in which people feel secure. The balancing practice is to communicate needs directly instead of expecting others to recognise them automatically.</p><h3>A grounded reflection exercise</h3><p>Create one small change at home that supports rest, connection or a clearer personal boundary.</p></section>",
+    "group": "Astrology",
+    "index": true
+  },
+  {
+    "slug": "zodiac-leo",
+    "title": "Leo Zodiac Sign Meaning | MyNumerologyCharts",
+    "description": "Leo zodiac sign dates, traditional themes, strengths and reflection prompts.",
+    "h1": "Leo Zodiac Sign Meaning",
+    "answer": "Leo is the tropical zodiac Sun sign traditionally associated with birthdays from 23 July to 22 August. Its common symbolic themes include confidence, creativity and generous self-expression. This guide is educational and does not claim that one sign determines a complete personality.",
+    "sections": "<section class=\"zodiac-profile\"><div class=\"zodiac-symbol\">L</div><div><h2>Leo at a glance</h2><p><strong>Date range:</strong> 23 July to 22 August</p><p><strong>Traditional themes:</strong> confidence, creativity and generous self-expression.</p></div></section><section><h2>How should I use this meaning?</h2><p>Use it as a broad reflection prompt. A Sun sign is only one part of astrology and should not be treated as a diagnosis, prediction or fixed judgement.</p></section><section class=\"tool-cta\"><h2>Check your Sun sign</h2><a class=\"btn btn-primary\" href=\"sun-sign-calculator.html\">Open Sun Sign Calculator</a></section><section class=\"sign-deep-dive\"><h2>How can Leo themes appear in everyday life?</h2><h3>Visible creativity</h3><p>Leo symbolism invites reflection on confidence, generosity and the courage to let creative work be seen. It can be helpful when considering leadership, celebration, performance or the desire to contribute something personally meaningful. In teams, Leo themes may appear as warmth, encouragement and the ability to make an occasion feel special. The balancing practice is to share attention, accept useful feedback and separate genuine self-expression from needing constant approval.</p><h3>A grounded reflection exercise</h3><p>Share one piece of work you are proud of and invite one specific, constructive response.</p></section>",
+    "group": "Astrology",
+    "index": true
+  },
+  {
+    "slug": "zodiac-virgo",
+    "title": "Virgo Zodiac Sign Meaning | MyNumerologyCharts",
+    "description": "Virgo zodiac sign dates, traditional themes, strengths and reflection prompts.",
+    "h1": "Virgo Zodiac Sign Meaning",
+    "answer": "Virgo is the tropical zodiac Sun sign traditionally associated with birthdays from 23 August to 22 September. Its common symbolic themes include analysis, service and careful improvement. This guide is educational and does not claim that one sign determines a complete personality.",
+    "sections": "<section class=\"zodiac-profile\"><div class=\"zodiac-symbol\">V</div><div><h2>Virgo at a glance</h2><p><strong>Date range:</strong> 23 August to 22 September</p><p><strong>Traditional themes:</strong> analysis, service and careful improvement.</p></div></section><section><h2>How should I use this meaning?</h2><p>Use it as a broad reflection prompt. A Sun sign is only one part of astrology and should not be treated as a diagnosis, prediction or fixed judgement.</p></section><section class=\"tool-cta\"><h2>Check your Sun sign</h2><a class=\"btn btn-primary\" href=\"sun-sign-calculator.html\">Open Sun Sign Calculator</a></section><section class=\"sign-deep-dive\"><h2>How can Virgo themes appear in everyday life?</h2><h3>Useful improvement</h3><p>Virgo symbolism focuses on careful observation, practical service and improving a process one detail at a time. It can be useful when reviewing health routines, work systems, study methods or the quality of information before acting. Virgo themes often favour checklists, editing and small corrections that prevent larger problems later. The balancing practice is to recognise when something is already good enough, so that high standards do not become endless criticism of yourself or other people.</p><h3>A grounded reflection exercise</h3><p>Choose one repeated task and remove a single unnecessary step while keeping the useful result.</p></section>",
+    "group": "Astrology",
+    "index": true
+  },
+  {
+    "slug": "zodiac-libra",
+    "title": "Libra Zodiac Sign Meaning | MyNumerologyCharts",
+    "description": "Libra zodiac sign dates, traditional themes, strengths and reflection prompts.",
+    "h1": "Libra Zodiac Sign Meaning",
+    "answer": "Libra is the tropical zodiac Sun sign traditionally associated with birthdays from 23 September to 22 October. Its common symbolic themes include balance, cooperation and relationship awareness. This guide is educational and does not claim that one sign determines a complete personality.",
+    "sections": "<section class=\"zodiac-profile\"><div class=\"zodiac-symbol\">L</div><div><h2>Libra at a glance</h2><p><strong>Date range:</strong> 23 September to 22 October</p><p><strong>Traditional themes:</strong> balance, cooperation and relationship awareness.</p></div></section><section><h2>How should I use this meaning?</h2><p>Use it as a broad reflection prompt. A Sun sign is only one part of astrology and should not be treated as a diagnosis, prediction or fixed judgement.</p></section><section class=\"tool-cta\"><h2>Check your Sun sign</h2><a class=\"btn btn-primary\" href=\"sun-sign-calculator.html\">Open Sun Sign Calculator</a></section><section class=\"sign-deep-dive\"><h2>How can Libra themes appear in everyday life?</h2><h3>Considered balance</h3><p>Libra symbolism explores cooperation, fairness and the choices required to build workable relationships. It can help when reflecting on negotiation, aesthetics, shared decisions or how different needs can be acknowledged without pretending they are identical. In conversation, Libra themes may encourage tact and a search for language that lowers unnecessary tension. The balancing practice is to decide when enough information has been gathered, because avoiding discomfort can sometimes delay a clear and respectful answer.</p><h3>A grounded reflection exercise</h3><p>Name the two most important needs in one decision, then choose a fair next step with a deadline.</p></section>",
+    "group": "Astrology",
+    "index": true
+  },
+  {
+    "slug": "zodiac-scorpio",
+    "title": "Scorpio Zodiac Sign Meaning | MyNumerologyCharts",
+    "description": "Scorpio zodiac sign dates, traditional themes, strengths and reflection prompts.",
+    "h1": "Scorpio Zodiac Sign Meaning",
+    "answer": "Scorpio is the tropical zodiac Sun sign traditionally associated with birthdays from 23 October to 21 November. Its common symbolic themes include depth, determination and transformation. This guide is educational and does not claim that one sign determines a complete personality.",
+    "sections": "<section class=\"zodiac-profile\"><div class=\"zodiac-symbol\">S</div><div><h2>Scorpio at a glance</h2><p><strong>Date range:</strong> 23 October to 21 November</p><p><strong>Traditional themes:</strong> depth, determination and transformation.</p></div></section><section><h2>How should I use this meaning?</h2><p>Use it as a broad reflection prompt. A Sun sign is only one part of astrology and should not be treated as a diagnosis, prediction or fixed judgement.</p></section><section class=\"tool-cta\"><h2>Check your Sun sign</h2><a class=\"btn btn-primary\" href=\"sun-sign-calculator.html\">Open Sun Sign Calculator</a></section><section class=\"sign-deep-dive\"><h2>How can Scorpio themes appear in everyday life?</h2><h3>Honest depth</h3><p>Scorpio symbolism is associated with privacy, commitment and the willingness to examine what lies beneath a surface explanation. It can support reflection during major transitions, trust-building or situations that require emotional honesty and sustained focus. Scorpio themes may appear as determination, research and a strong instinct to protect what matters. The balancing practice is to avoid testing people in secret, holding power too tightly or treating every uncertainty as evidence of betrayal.</p><h3>A grounded reflection exercise</h3><p>Write down one fear behind a difficult conversation and turn it into a direct, non-accusing question.</p></section>",
+    "group": "Astrology",
+    "index": true
+  },
+  {
+    "slug": "zodiac-sagittarius",
+    "title": "Sagittarius Zodiac Sign Meaning | MyNumerologyCharts",
+    "description": "Sagittarius zodiac sign dates, traditional themes, strengths and reflection prompts.",
+    "h1": "Sagittarius Zodiac Sign Meaning",
+    "answer": "Sagittarius is the tropical zodiac Sun sign traditionally associated with birthdays from 22 November to 21 December. Its common symbolic themes include exploration, optimism and broad perspective. This guide is educational and does not claim that one sign determines a complete personality.",
+    "sections": "<section class=\"zodiac-profile\"><div class=\"zodiac-symbol\">S</div><div><h2>Sagittarius at a glance</h2><p><strong>Date range:</strong> 22 November to 21 December</p><p><strong>Traditional themes:</strong> exploration, optimism and broad perspective.</p></div></section><section><h2>How should I use this meaning?</h2><p>Use it as a broad reflection prompt. A Sun sign is only one part of astrology and should not be treated as a diagnosis, prediction or fixed judgement.</p></section><section class=\"tool-cta\"><h2>Check your Sun sign</h2><a class=\"btn btn-primary\" href=\"sun-sign-calculator.html\">Open Sun Sign Calculator</a></section><section class=\"sign-deep-dive\"><h2>How can Sagittarius themes appear in everyday life?</h2><h3>Expanding perspective</h3><p>Sagittarius symbolism invites exploration, learning and a wider view beyond familiar assumptions. It can be useful when reflecting on travel, education, belief systems or the need to connect daily activity with a larger sense of purpose. Sagittarius themes often bring enthusiasm and the ability to see possibilities that others overlook. The balancing practice is to check facts, respect practical limits and avoid promising more than time or resources can realistically support.</p><h3>A grounded reflection exercise</h3><p>Learn one fact from a viewpoint different from your own, then note what it changes and what it does not.</p></section>",
+    "group": "Astrology",
+    "index": true
+  },
+  {
+    "slug": "zodiac-capricorn",
+    "title": "Capricorn Zodiac Sign Meaning | MyNumerologyCharts",
+    "description": "Capricorn zodiac sign dates, traditional themes, strengths and reflection prompts.",
+    "h1": "Capricorn Zodiac Sign Meaning",
+    "answer": "Capricorn is the tropical zodiac Sun sign traditionally associated with birthdays from 22 December to 19 January. Its common symbolic themes include discipline, responsibility and long-term building. This guide is educational and does not claim that one sign determines a complete personality.",
+    "sections": "<section class=\"zodiac-profile\"><div class=\"zodiac-symbol\">C</div><div><h2>Capricorn at a glance</h2><p><strong>Date range:</strong> 22 December to 19 January</p><p><strong>Traditional themes:</strong> discipline, responsibility and long-term building.</p></div></section><section><h2>How should I use this meaning?</h2><p>Use it as a broad reflection prompt. A Sun sign is only one part of astrology and should not be treated as a diagnosis, prediction or fixed judgement.</p></section><section class=\"tool-cta\"><h2>Check your Sun sign</h2><a class=\"btn btn-primary\" href=\"sun-sign-calculator.html\">Open Sun Sign Calculator</a></section><section class=\"sign-deep-dive\"><h2>How can Capricorn themes appear in everyday life?</h2><h3>Long-term building</h3><p>Capricorn symbolism focuses on responsibility, structure and progress that can be measured across a long period. It can help when reflecting on career, commitments, leadership or the systems needed to turn ambition into reliable results. Capricorn themes may favour planning, boundaries and respect for earned competence. The balancing practice is to include rest, relationships and flexibility in the plan, so that achievement does not become the only measure of personal value.</p><h3>A grounded reflection exercise</h3><p>Choose one twelve-month goal and define the next action that can be completed within seven days.</p></section>",
+    "group": "Astrology",
+    "index": true
+  },
+  {
+    "slug": "zodiac-aquarius",
+    "title": "Aquarius Zodiac Sign Meaning | MyNumerologyCharts",
+    "description": "Aquarius zodiac sign dates, traditional themes, strengths and reflection prompts.",
+    "h1": "Aquarius Zodiac Sign Meaning",
+    "answer": "Aquarius is the tropical zodiac Sun sign traditionally associated with birthdays from 20 January to 18 February. Its common symbolic themes include independence, originality and community thinking. This guide is educational and does not claim that one sign determines a complete personality.",
+    "sections": "<section class=\"zodiac-profile\"><div class=\"zodiac-symbol\">A</div><div><h2>Aquarius at a glance</h2><p><strong>Date range:</strong> 20 January to 18 February</p><p><strong>Traditional themes:</strong> independence, originality and community thinking.</p></div></section><section><h2>How should I use this meaning?</h2><p>Use it as a broad reflection prompt. A Sun sign is only one part of astrology and should not be treated as a diagnosis, prediction or fixed judgement.</p></section><section class=\"tool-cta\"><h2>Check your Sun sign</h2><a class=\"btn btn-primary\" href=\"sun-sign-calculator.html\">Open Sun Sign Calculator</a></section><section class=\"sign-deep-dive\"><h2>How can Aquarius themes appear in everyday life?</h2><h3>Independent contribution</h3><p>Aquarius symbolism explores originality, community and the tension between individual freedom and collective responsibility. It can be useful when reflecting on technology, social groups, reform or ideas that challenge an established habit. Aquarius themes may appear as inventive thinking and the ability to connect people around a shared principle. The balancing practice is to stay emotionally present and test whether an unusual idea genuinely helps the people it is intended to serve.</p><h3>A grounded reflection exercise</h3><p>Describe one improvement for your community and ask a person affected by it what you may have missed.</p></section>",
+    "group": "Astrology",
+    "index": true
+  },
+  {
+    "slug": "zodiac-pisces",
+    "title": "Pisces Zodiac Sign Meaning | MyNumerologyCharts",
+    "description": "Pisces zodiac sign dates, traditional themes, strengths and reflection prompts.",
+    "h1": "Pisces Zodiac Sign Meaning",
+    "answer": "Pisces is the tropical zodiac Sun sign traditionally associated with birthdays from 19 February to 20 March. Its common symbolic themes include imagination, compassion and sensitivity. This guide is educational and does not claim that one sign determines a complete personality.",
+    "sections": "<section class=\"zodiac-profile\"><div class=\"zodiac-symbol\">P</div><div><h2>Pisces at a glance</h2><p><strong>Date range:</strong> 19 February to 20 March</p><p><strong>Traditional themes:</strong> imagination, compassion and sensitivity.</p></div></section><section><h2>How should I use this meaning?</h2><p>Use it as a broad reflection prompt. A Sun sign is only one part of astrology and should not be treated as a diagnosis, prediction or fixed judgement.</p></section><section class=\"tool-cta\"><h2>Check your Sun sign</h2><a class=\"btn btn-primary\" href=\"sun-sign-calculator.html\">Open Sun Sign Calculator</a></section><section class=\"sign-deep-dive\"><h2>How can Pisces themes appear in everyday life?</h2><h3>Imaginative empathy</h3><p>Pisces symbolism is linked with imagination, compassion and sensitivity to moods, symbols and subtle connections. It can support reflection on art, spirituality, forgiveness or the need for quiet space away from constant demands. Pisces themes may encourage kindness and the ability to understand experiences that are difficult to express directly. The balancing practice is to use clear boundaries, concrete plans and reliable information so that empathy does not become confusion or avoidance.</p><h3>A grounded reflection exercise</h3><p>Turn one compassionate intention into a specific action with a clear time, limit and practical outcome.</p></section>",
+    "group": "Astrology",
+    "index": true
   }
 ]

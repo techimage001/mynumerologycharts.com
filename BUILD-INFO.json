@@ -1,10 +1,10 @@
 {
   "brand": "MyNumerologyCharts",
   "domain": "https://mynumerologycharts.com",
-  "pageCount": 70,
-  "indexableCount": 69,
+  "pageCount": 84,
+  "indexableCount": 86,
   "formulaVersion": "1.0",
-  "assetVersion": "4",
+  "assetVersion": "9",
   "indexNowKey": "cfc01691af81debf8f454bdd64817c0d",
   "seoAeoVersion": "4.0"
 }
