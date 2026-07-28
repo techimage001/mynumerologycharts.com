@@ -1,0 +1,27 @@
+{
+  "brand": "MyNumerologyCharts",
+  "domain": "https://mynumerologycharts.com",
+  "pageCount": 64,
+  "indexableCount": 63,
+  "formulaVersion": "1.0",
+  "assetVersion": "2",
+  "indexNowKey": "cfc01691af81debf8f454bdd64817c0d",
+  "seoAeoVersion": "2.0",
+  "version": "3.0.0",
+  "security_update": {
+    "shared_header_signup": true,
+    "double_opt_in": true,
+    "honeypot": true,
+    "time_trap": true,
+    "js_session_token": true,
+    "ip_rate_limit": true,
+    "email_rate_limit": true,
+    "disposable_domain_blocklist": true,
+    "captcha": null,
+    "private_folder": "mnc_private",
+    "database": "mnc_private/mnc.sqlite",
+    "authenticated_smtp": true,
+    "admin_gdpr_delete": true,
+    "verified_only_csv": true
+  }
+}

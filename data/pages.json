@@ -1,0 +1,632 @@
+[
+  {
+    "slug": "index",
+    "title": "Numerology Calculator and Complete Chart | MyNumerologyCharts",
+    "description": "Numerology calculator for Life Path, name numbers, Pinnacles, Challenges and personal cycles with transparent calculation steps.",
+    "h1": "Numerology Calculator and Complete Personal Chart",
+    "answer": "MyNumerologyCharts calculates your core numbers, life cycles, Pinnacles and Challenges in one clear chart. Enter a birth date and, where needed, a full birth name to see the result, the working behind it and practical reflection prompts.",
+    "sections": "<section class=\"hero-actions\"><a class=\"btn btn-primary\" href=\"app.html\">Create My Numerology Chart</a><a class=\"btn btn-secondary\" href=\"methodology.html\">See How Calculations Work</a></section>\n<section class=\"grid cards\"><article><h2>What will my chart include?</h2><p>Your overview can include Life Path, Birthday, Attitude, Expression, Soul Urge, Personality, Maturity, Pinnacles, Challenges and current personal cycles.</p></article><article><h2>Why are the calculations transparent?</h2><p>Every result shows the numbers used, each reduction step, the master-number policy and the formula version.</p></article><article><h2>Is my information saved?</h2><p>Calculations run in your browser. Nothing is saved unless you deliberately save a local profile or submit your email.</p></article></section>\n<section><h2>How do I create a complete numerology chart?</h2><ol><li>Enter your date of birth.</li><li>Add your full birth name for name-based numbers.</li><li>Select Create My Chart.</li><li>Review the summary and open any calculation for the full working.</li><li>Print, save locally or explore a related guide.</li></ol></section>\n<section><h2>How is this different from a basic calculator?</h2><table><thead><tr><th>Feature</th><th>MyNumerologyCharts</th><th>Typical numerology tools</th></tr></thead><tbody><tr><td>Complete overview</td><td>Included</td><td>Often split into separate reports</td></tr><tr><td>Calculation steps</td><td>Shown clearly</td><td>Often hidden</td></tr><tr><td>Pinnacle timeline</td><td>Included</td><td>Often limited</td></tr><tr><td>Paid API required</td><td>No</td><td>Varies</td></tr><tr><td>Advertising</td><td>None</td><td>Often present</td></tr></tbody></table></section>",
+    "group": "Home",
+    "index": true
+  },
+  {
+    "slug": "calculators",
+    "title": "Numerology Calculators | MyNumerologyCharts",
+    "description": "Numerology calculators for Life Path, name numbers, Personal Year, Pinnacles, Challenges and compatibility concepts.",
+    "h1": "Numerology Calculators",
+    "answer": "Numerology calculators help you examine different parts of a traditional numerology chart. Start with the complete overview, or choose one calculator when you want a focused result and a clear explanation of the calculation.",
+    "sections": "<div id=\"calculator-directory\" class=\"grid cards\"></div>",
+    "group": "Calculators",
+    "index": true
+  },
+  {
+    "slug": "about",
+    "title": "About MyNumerologyCharts",
+    "description": "About MyNumerologyCharts, its education-first purpose, privacy approach and transparent calculation principles.",
+    "h1": "About MyNumerologyCharts",
+    "answer": "MyNumerologyCharts is an education and self-reflection platform built around transparent numerology calculations. The service explains how each number is produced and presents traditional interpretations without claiming certainty, scientific proof or guaranteed outcomes.",
+    "sections": "<section><h2>What is the purpose of MyNumerologyCharts?</h2><p>The purpose is to make numerology calculations understandable, accessible and easy to check. The platform focuses on calculation transparency, beginner-friendly explanations and privacy-conscious tools.</p></section><section><h2>Who publishes the content?</h2><p>All educational content is published by MyNumerologyCharts as an organisation. The methodology and editorial pages explain how formulas and interpretations are maintained.</p></section>",
+    "group": "Trust",
+    "index": true
+  },
+  {
+    "slug": "how-it-works",
+    "title": "How Numerology Calculations Work | MyNumerologyCharts",
+    "description": "How numerology calculations work, from birth-date reduction and name values to Pinnacles and personal cycles.",
+    "h1": "How Numerology Calculations Work",
+    "answer": "Numerology calculations convert dates or letters into numbers using a defined system, then reduce totals according to stated rules. MyNumerologyCharts uses a documented Pythagorean method at launch and shows every intermediate step so the result can be checked.",
+    "sections": "<section><h2>How do I use the app?</h2><ol><li>Enter a valid birth date.</li><li>Add a full birth name if you want name-based numbers.</li><li>Create the chart.</li><li>Open the detailed working for any number.</li><li>Read the interpretation as a reflective tradition rather than a prediction.</li></ol></section><section><h2>Which method is used?</h2><p>The launch version uses the Pythagorean letter chart and a stated master-number policy. The Methodology Centre documents the exact rules.</p></section>",
+    "group": "Trust",
+    "index": true
+  },
+  {
+    "slug": "features",
+    "title": "Numerology App Features | MyNumerologyCharts",
+    "description": "Numerology app features including a complete chart, calculation explorer, Pinnacle timeline, personal cycles and printable reports.",
+    "h1": "Numerology App Features",
+    "answer": "MyNumerologyCharts combines core numerology numbers, life-stage calculations and current personal cycles in one browser-based experience. Its main features are transparent working, a complete overview and a visual Pinnacle and Challenge timeline.",
+    "sections": "<section class=\"grid cards\"><article><h2>Complete chart</h2><p>See date-based and name-based numbers together.</p></article><article><h2>Calculation Explorer</h2><p>Inspect every value and reduction step.</p></article><article><h2>Pinnacle timeline</h2><p>Review four traditional life phases and their Challenge Numbers.</p></article><article><h2>Private local saving</h2><p>Save profiles on the current device without sending them to analytics.</p></article><article><h2>Print-friendly report</h2><p>Open a clean report and use the browser's print or PDF feature.</p></article><article><h2>No advertising</h2><p>The interface contains no advertising, sponsored placements or ad tracking.</p></article></section>",
+    "group": "Trust",
+    "index": true
+  },
+  {
+    "slug": "why-choose-us",
+    "title": "Why Choose MyNumerologyCharts",
+    "description": "Why choose MyNumerologyCharts for transparent calculations, privacy-conscious use and beginner-friendly explanations.",
+    "h1": "Why Choose MyNumerologyCharts",
+    "answer": "MyNumerologyCharts is designed for people who want more than a unexplained number. It displays the calculation method, handles master numbers consistently, avoids fear-based wording and keeps the core tool free from advertising.",
+    "sections": "<section><h2>Why do numerology calculators disagree?</h2><p>Different tools may reduce dates in different orders, preserve different master numbers or use different name systems. This platform identifies the method on each result and explains the rules.</p></section><section><h2>What does privacy-first mean here?</h2><p>Birth details are processed in the browser. The app does not put a name or birth date into a public URL, and local profiles remain on the device unless the user chooses another action.</p></section>",
+    "group": "Trust",
+    "index": true
+  },
+  {
+    "slug": "faq",
+    "title": "Numerology Calculator FAQ | MyNumerologyCharts",
+    "description": "Numerology calculator FAQ covering accuracy, master numbers, birth names, privacy, different results and personal cycles.",
+    "h1": "Numerology Calculator FAQ",
+    "answer": "The numerology calculator FAQ explains the most common questions about formulas, names, master numbers, saved information and interpretation. Numerology is treated as a traditional reflective practice, not as scientific or professional advice.",
+    "sections": "<section class=\"faq\"><details><summary>Why does another calculator show a different Life Path Number?</summary><p>Another calculator may add every digit at once, reduce the month, day and year separately, or retain different master numbers. Open the Calculation Explorer to see the method used here and compare each step.</p></details><details><summary>Should I use my birth name or current name?</summary><p>Traditional Pythagorean numerology commonly uses the full birth name for core name numbers. A current or preferred name may be explored separately, but it should be clearly labelled rather than silently substituted.</p></details><details><summary>Are numerology results scientifically proven?</summary><p>No. Numerology is a traditional symbolic system used for education, entertainment and personal reflection. It should not replace medical, legal, financial or psychological advice.</p></details><details><summary>Does the app save my date of birth?</summary><p>The calculation itself runs in your browser. A birth date is saved only if you deliberately save a local profile on the device. It is not included in analytics or public share links.</p></details><details><summary>What are master numbers?</summary><p>Master numbers are compound totals, commonly 11, 22 and 33, that some numerology traditions retain rather than immediately reducing. The methodology page explains exactly where this app retains them.</p></details></section>",
+    "group": "Trust",
+    "index": true
+  },
+  {
+    "slug": "contact",
+    "title": "Contact MyNumerologyCharts",
+    "description": "Contact MyNumerologyCharts for support, calculation feedback, privacy questions or content corrections.",
+    "h1": "Contact MyNumerologyCharts",
+    "answer": "Contact MyNumerologyCharts at info@mynumerologycharts.com for support, calculation feedback, privacy questions or content corrections. Do not send passwords, payment details or unnecessary personal information.",
+    "sections": "<section><h2>How can I contact support?</h2><p>Email <a href=\"mailto:info@mynumerologycharts.com\">info@mynumerologycharts.com</a>. You can also use the form below.</p><form class=\"contact-form\" action=\"api/contact.php\" method=\"post\"><label>Name <input name=\"name\" maxlength=\"80\" required></label><label>Email <input type=\"email\" name=\"email\" maxlength=\"160\" required></label><label>Reason <select name=\"reason\"><option>General support</option><option>Calculation feedback</option><option>Privacy request</option><option>Content correction</option></select></label><label>Message <textarea name=\"message\" rows=\"7\" maxlength=\"3000\" required></textarea></label><input class=\"hp\" name=\"website\" tabindex=\"-1\" autocomplete=\"off\"><button class=\"btn btn-primary\" type=\"submit\">Send Message</button></form></section>",
+    "group": "Trust",
+    "index": true
+  },
+  {
+    "slug": "methodology",
+    "title": "Numerology Calculation Methodology | MyNumerologyCharts",
+    "description": "Numerology calculation methodology for Life Path, name values, master numbers, Pinnacles, Challenges and personal cycles.",
+    "h1": "Numerology Calculation Methodology",
+    "answer": "The MyNumerologyCharts methodology defines one consistent Pythagorean calculation system, identifies where master numbers are retained and records the exact formula version used by the app. Every result links back to these rules.",
+    "sections": "<section><h2>Which letter chart is used?</h2><table><tbody><tr><th>1</th><td>A J S</td></tr><tr><th>2</th><td>B K T</td></tr><tr><th>3</th><td>C L U</td></tr><tr><th>4</th><td>D M V</td></tr><tr><th>5</th><td>E N W</td></tr><tr><th>6</th><td>F O X</td></tr><tr><th>7</th><td>G P Y</td></tr><tr><th>8</th><td>H Q Z</td></tr><tr><th>9</th><td>I R</td></tr></tbody></table></section><section><h2>How are master numbers handled?</h2><p>The launch formula retains 11, 22 and 33 as final values where the calculation explicitly permits master numbers. Intermediate rules are shown in each calculation trace. Compound values can still be inspected before reduction.</p></section><section><h2>How are names normalised?</h2><p>Latin letters A to Z are mapped after Unicode normalisation. Spaces, hyphens and apostrophes are ignored for totals but preserved for display. Users with non-Latin names receive a clear notice that transliteration may change the result.</p></section><section><h2>What is the formula version?</h2><p>The launch calculation engine uses formula version 1.0. Saved results display this version so future methodology changes can be traced.</p></section>",
+    "group": "Methodology",
+    "index": true
+  },
+  {
+    "slug": "life-path-calculator",
+    "title": "Life Path Calculator | MyNumerologyCharts",
+    "description": "life path calculator with transparent working, master-number rules and a link to the complete numerology chart.",
+    "h1": "Life Path Calculator",
+    "answer": "Life Path Calculator uses your date of birth to produce a traditional numerology number and a transparent calculation trace. The result is intended for education, entertainment and personal reflection rather than certainty or professional advice.",
+    "sections": "<section class=\"tool-cta\"><h2>How do I use the Life Path Calculator?</h2><ol><li>Open the calculator.</li><li>Enter the requested information.</li><li>Create the result.</li><li>Open the calculation details to inspect every step.</li></ol><a class=\"btn btn-primary\" href=\"app.html?calculator=life-path-calculator\">Open Life Path Calculator</a></section><section><h2>What does this calculator show?</h2><p>Calculate your Life Path Number from your complete date of birth and inspect every reduction step.</p></section><section><h2>Why might another result differ?</h2><p>Calculation order, name systems and master-number rules vary. This app labels the method and formula version so the result can be checked. This detail is applied specifically to Life Path Calculator.</p></section>",
+    "group": "Calculators",
+    "index": true
+  },
+  {
+    "slug": "birthday-number-calculator",
+    "title": "Birthday Number Calculator | MyNumerologyCharts",
+    "description": "birthday number calculator with transparent working, master-number rules and a link to the complete numerology chart.",
+    "h1": "Birthday Number Calculator",
+    "answer": "Birthday Number Calculator uses your date of birth to produce a traditional numerology number and a transparent calculation trace. The result is intended for education, entertainment and personal reflection rather than certainty or professional advice.",
+    "sections": "<section class=\"tool-cta\"><h2>How do I use the Birthday Number Calculator?</h2><ol><li>Open the calculator.</li><li>Enter the requested information.</li><li>Create the result.</li><li>Open the calculation details to inspect every step.</li></ol><a class=\"btn btn-primary\" href=\"app.html?calculator=birthday-number-calculator\">Open Birthday Number Calculator</a></section><section><h2>What does this calculator show?</h2><p>Calculate the traditional Birthday Number from the day of the month on which you were born.</p></section><section><h2>Why might another result differ?</h2><p>Calculation order, name systems and master-number rules vary. This app labels the method and formula version so the result can be checked. This detail is applied specifically to Birthday Number Calculator.</p></section>",
+    "group": "Calculators",
+    "index": true
+  },
+  {
+    "slug": "attitude-number-calculator",
+    "title": "Attitude Number Calculator | MyNumerologyCharts",
+    "description": "attitude number calculator with transparent working, master-number rules and a link to the complete numerology chart.",
+    "h1": "Attitude Number Calculator",
+    "answer": "Attitude Number Calculator uses your date of birth to produce a traditional numerology number and a transparent calculation trace. The result is intended for education, entertainment and personal reflection rather than certainty or professional advice.",
+    "sections": "<section class=\"tool-cta\"><h2>How do I use the Attitude Number Calculator?</h2><ol><li>Open the calculator.</li><li>Enter the requested information.</li><li>Create the result.</li><li>Open the calculation details to inspect every step.</li></ol><a class=\"btn btn-primary\" href=\"app.html?calculator=attitude-number-calculator\">Open Attitude Number Calculator</a></section><section><h2>What does this calculator show?</h2><p>Calculate the Attitude Number from the birth month and day.</p></section><section><h2>Why might another result differ?</h2><p>Calculation order, name systems and master-number rules vary. This app labels the method and formula version so the result can be checked. This detail is applied specifically to Attitude Number Calculator.</p></section>",
+    "group": "Calculators",
+    "index": true
+  },
+  {
+    "slug": "expression-number-calculator",
+    "title": "Expression Number Calculator | MyNumerologyCharts",
+    "description": "expression number calculator with transparent working, master-number rules and a link to the complete numerology chart.",
+    "h1": "Expression Number Calculator",
+    "answer": "Expression Number Calculator uses your full birth name to produce a traditional numerology number and a transparent calculation trace. The result is intended for education, entertainment and personal reflection rather than certainty or professional advice.",
+    "sections": "<section class=\"tool-cta\"><h2>How do I use the Expression Number Calculator?</h2><ol><li>Open the calculator.</li><li>Enter the requested information.</li><li>Create the result.</li><li>Open the calculation details to inspect every step.</li></ol><a class=\"btn btn-primary\" href=\"app.html?calculator=expression-number-calculator\">Open Expression Number Calculator</a></section><section><h2>What does this calculator show?</h2><p>Calculate the Expression or Destiny Number from every letter in a full birth name.</p></section><section><h2>Why might another result differ?</h2><p>Calculation order, name systems and master-number rules vary. This app labels the method and formula version so the result can be checked. This detail is applied specifically to Expression Number Calculator.</p></section>",
+    "group": "Calculators",
+    "index": true
+  },
+  {
+    "slug": "soul-urge-calculator",
+    "title": "Soul Urge Calculator | MyNumerologyCharts",
+    "description": "soul urge calculator with transparent working, master-number rules and a link to the complete numerology chart.",
+    "h1": "Soul Urge Calculator",
+    "answer": "Soul Urge Calculator uses your full birth name to produce a traditional numerology number and a transparent calculation trace. The result is intended for education, entertainment and personal reflection rather than certainty or professional advice.",
+    "sections": "<section class=\"tool-cta\"><h2>How do I use the Soul Urge Calculator?</h2><ol><li>Open the calculator.</li><li>Enter the requested information.</li><li>Create the result.</li><li>Open the calculation details to inspect every step.</li></ol><a class=\"btn btn-primary\" href=\"app.html?calculator=soul-urge-calculator\">Open Soul Urge Calculator</a></section><section><h2>What does this calculator show?</h2><p>Calculate the Soul Urge Number using the vowels in a full birth name.</p></section><section><h2>Why might another result differ?</h2><p>Calculation order, name systems and master-number rules vary. This app labels the method and formula version so the result can be checked. This detail is applied specifically to Soul Urge Calculator.</p></section>",
+    "group": "Calculators",
+    "index": true
+  },
+  {
+    "slug": "personality-number-calculator",
+    "title": "Personality Number Calculator | MyNumerologyCharts",
+    "description": "personality number calculator with transparent working, master-number rules and a link to the complete numerology chart.",
+    "h1": "Personality Number Calculator",
+    "answer": "Personality Number Calculator uses your full birth name to produce a traditional numerology number and a transparent calculation trace. The result is intended for education, entertainment and personal reflection rather than certainty or professional advice.",
+    "sections": "<section class=\"tool-cta\"><h2>How do I use the Personality Number Calculator?</h2><ol><li>Open the calculator.</li><li>Enter the requested information.</li><li>Create the result.</li><li>Open the calculation details to inspect every step.</li></ol><a class=\"btn btn-primary\" href=\"app.html?calculator=personality-number-calculator\">Open Personality Number Calculator</a></section><section><h2>What does this calculator show?</h2><p>Calculate the Personality Number using the consonants in a full birth name.</p></section><section><h2>Why might another result differ?</h2><p>Calculation order, name systems and master-number rules vary. This app labels the method and formula version so the result can be checked. This detail is applied specifically to Personality Number Calculator.</p></section>",
+    "group": "Calculators",
+    "index": true
+  },
+  {
+    "slug": "maturity-number-calculator",
+    "title": "Maturity Number Calculator | MyNumerologyCharts",
+    "description": "maturity number calculator with transparent working, master-number rules and a link to the complete numerology chart.",
+    "h1": "Maturity Number Calculator",
+    "answer": "Maturity Number Calculator uses your date of birth and full birth name to produce a traditional numerology number and a transparent calculation trace. The result is intended for education, entertainment and personal reflection rather than certainty or professional advice.",
+    "sections": "<section class=\"tool-cta\"><h2>How do I use the Maturity Number Calculator?</h2><ol><li>Open the calculator.</li><li>Enter the requested information.</li><li>Create the result.</li><li>Open the calculation details to inspect every step.</li></ol><a class=\"btn btn-primary\" href=\"app.html?calculator=maturity-number-calculator\">Open Maturity Number Calculator</a></section><section><h2>What does this calculator show?</h2><p>Calculate the Maturity Number by combining the Life Path and Expression numbers.</p></section><section><h2>Why might another result differ?</h2><p>Calculation order, name systems and master-number rules vary. This app labels the method and formula version so the result can be checked. This detail is applied specifically to Maturity Number Calculator.</p></section>",
+    "group": "Calculators",
+    "index": true
+  },
+  {
+    "slug": "hidden-passion-calculator",
+    "title": "Hidden Passion Calculator | MyNumerologyCharts",
+    "description": "hidden passion calculator with transparent working, master-number rules and a link to the complete numerology chart.",
+    "h1": "Hidden Passion Calculator",
+    "answer": "Hidden Passion Calculator uses your full birth name to produce a traditional numerology number and a transparent calculation trace. The result is intended for education, entertainment and personal reflection rather than certainty or professional advice.",
+    "sections": "<section class=\"tool-cta\"><h2>How do I use the Hidden Passion Calculator?</h2><ol><li>Open the calculator.</li><li>Enter the requested information.</li><li>Create the result.</li><li>Open the calculation details to inspect every step.</li></ol><a class=\"btn btn-primary\" href=\"app.html?calculator=hidden-passion-calculator\">Open Hidden Passion Calculator</a></section><section><h2>What does this calculator show?</h2><p>Find the most frequently occurring number value in a full birth name.</p></section><section><h2>Why might another result differ?</h2><p>Calculation order, name systems and master-number rules vary. This app labels the method and formula version so the result can be checked. This detail is applied specifically to Hidden Passion Calculator.</p></section>",
+    "group": "Calculators",
+    "index": true
+  },
+  {
+    "slug": "balance-number-calculator",
+    "title": "Balance Number Calculator | MyNumerologyCharts",
+    "description": "balance number calculator with transparent working, master-number rules and a link to the complete numerology chart.",
+    "h1": "Balance Number Calculator",
+    "answer": "Balance Number Calculator uses your full birth name to produce a traditional numerology number and a transparent calculation trace. The result is intended for education, entertainment and personal reflection rather than certainty or professional advice.",
+    "sections": "<section class=\"tool-cta\"><h2>How do I use the Balance Number Calculator?</h2><ol><li>Open the calculator.</li><li>Enter the requested information.</li><li>Create the result.</li><li>Open the calculation details to inspect every step.</li></ol><a class=\"btn btn-primary\" href=\"app.html?calculator=balance-number-calculator\">Open Balance Number Calculator</a></section><section><h2>What does this calculator show?</h2><p>Calculate the Balance Number from the initials in a full birth name.</p></section><section><h2>Why might another result differ?</h2><p>Calculation order, name systems and master-number rules vary. This app labels the method and formula version so the result can be checked. This detail is applied specifically to Balance Number Calculator.</p></section>",
+    "group": "Calculators",
+    "index": true
+  },
+  {
+    "slug": "karmic-lessons-calculator",
+    "title": "Karmic Lessons Calculator | MyNumerologyCharts",
+    "description": "karmic lessons calculator with transparent working, master-number rules and a link to the complete numerology chart.",
+    "h1": "Karmic Lessons Calculator",
+    "answer": "Karmic Lessons Calculator uses your full birth name to produce a traditional numerology number and a transparent calculation trace. The result is intended for education, entertainment and personal reflection rather than certainty or professional advice.",
+    "sections": "<section class=\"tool-cta\"><h2>How do I use the Karmic Lessons Calculator?</h2><ol><li>Open the calculator.</li><li>Enter the requested information.</li><li>Create the result.</li><li>Open the calculation details to inspect every step.</li></ol><a class=\"btn btn-primary\" href=\"app.html?calculator=karmic-lessons-calculator\">Open Karmic Lessons Calculator</a></section><section><h2>What does this calculator show?</h2><p>Find number values missing from a full birth name according to the selected method.</p></section><section><h2>Why might another result differ?</h2><p>Calculation order, name systems and master-number rules vary. This app labels the method and formula version so the result can be checked. This detail is applied specifically to Karmic Lessons Calculator.</p></section>",
+    "group": "Calculators",
+    "index": true
+  },
+  {
+    "slug": "personal-year-calculator",
+    "title": "Personal Year Calculator | MyNumerologyCharts",
+    "description": "personal year calculator with transparent working, master-number rules and a link to the complete numerology chart.",
+    "h1": "Personal Year Calculator",
+    "answer": "Personal Year Calculator uses your birth month, birth day and year to produce a traditional numerology number and a transparent calculation trace. The result is intended for education, entertainment and personal reflection rather than certainty or professional advice.",
+    "sections": "<section class=\"tool-cta\"><h2>How do I use the Personal Year Calculator?</h2><ol><li>Open the calculator.</li><li>Enter the requested information.</li><li>Create the result.</li><li>Open the calculation details to inspect every step.</li></ol><a class=\"btn btn-primary\" href=\"app.html?calculator=personal-year-calculator\">Open Personal Year Calculator</a></section><section><h2>What does this calculator show?</h2><p>Calculate a Personal Year Number for a selected calendar year.</p></section><section><h2>Why might another result differ?</h2><p>Calculation order, name systems and master-number rules vary. This app labels the method and formula version so the result can be checked. This detail is applied specifically to Personal Year Calculator.</p></section>",
+    "group": "Calculators",
+    "index": true
+  },
+  {
+    "slug": "personal-month-calculator",
+    "title": "Personal Month Calculator | MyNumerologyCharts",
+    "description": "personal month calculator with transparent working, master-number rules and a link to the complete numerology chart.",
+    "h1": "Personal Month Calculator",
+    "answer": "Personal Month Calculator uses your birth details and selected month to produce a traditional numerology number and a transparent calculation trace. The result is intended for education, entertainment and personal reflection rather than certainty or professional advice.",
+    "sections": "<section class=\"tool-cta\"><h2>How do I use the Personal Month Calculator?</h2><ol><li>Open the calculator.</li><li>Enter the requested information.</li><li>Create the result.</li><li>Open the calculation details to inspect every step.</li></ol><a class=\"btn btn-primary\" href=\"app.html?calculator=personal-month-calculator\">Open Personal Month Calculator</a></section><section><h2>What does this calculator show?</h2><p>Calculate a Personal Month Number for a selected month.</p></section><section><h2>Why might another result differ?</h2><p>Calculation order, name systems and master-number rules vary. This app labels the method and formula version so the result can be checked. This detail is applied specifically to Personal Month Calculator.</p></section>",
+    "group": "Calculators",
+    "index": true
+  },
+  {
+    "slug": "personal-day-calculator",
+    "title": "Personal Day Calculator | MyNumerologyCharts",
+    "description": "personal day calculator with transparent working, master-number rules and a link to the complete numerology chart.",
+    "h1": "Personal Day Calculator",
+    "answer": "Personal Day Calculator uses your birth details and selected date to produce a traditional numerology number and a transparent calculation trace. The result is intended for education, entertainment and personal reflection rather than certainty or professional advice.",
+    "sections": "<section class=\"tool-cta\"><h2>How do I use the Personal Day Calculator?</h2><ol><li>Open the calculator.</li><li>Enter the requested information.</li><li>Create the result.</li><li>Open the calculation details to inspect every step.</li></ol><a class=\"btn btn-primary\" href=\"app.html?calculator=personal-day-calculator\">Open Personal Day Calculator</a></section><section><h2>What does this calculator show?</h2><p>Calculate a Personal Day Number using the user’s local date.</p></section><section><h2>Why might another result differ?</h2><p>Calculation order, name systems and master-number rules vary. This app labels the method and formula version so the result can be checked. This detail is applied specifically to Personal Day Calculator.</p></section>",
+    "group": "Calculators",
+    "index": true
+  },
+  {
+    "slug": "pinnacles-calculator",
+    "title": "Pinnacles Calculator | MyNumerologyCharts",
+    "description": "pinnacles calculator with transparent working, master-number rules and a link to the complete numerology chart.",
+    "h1": "Pinnacles Calculator",
+    "answer": "Pinnacles Calculator uses your complete date of birth to produce a traditional numerology number and a transparent calculation trace. The result is intended for education, entertainment and personal reflection rather than certainty or professional advice.",
+    "sections": "<section class=\"tool-cta\"><h2>How do I use the Pinnacles Calculator?</h2><ol><li>Open the calculator.</li><li>Enter the requested information.</li><li>Create the result.</li><li>Open the calculation details to inspect every step.</li></ol><a class=\"btn btn-primary\" href=\"app.html?calculator=pinnacles-calculator\">Open Pinnacles Calculator</a></section><section><h2>What does this calculator show?</h2><p>Calculate four Pinnacle Numbers, age ranges and the current traditional phase.</p></section><section><h2>Why might another result differ?</h2><p>Calculation order, name systems and master-number rules vary. This app labels the method and formula version so the result can be checked. This detail is applied specifically to Pinnacles Calculator.</p></section>",
+    "group": "Calculators",
+    "index": true
+  },
+  {
+    "slug": "challenge-numbers-calculator",
+    "title": "Challenge Numbers Calculator | MyNumerologyCharts",
+    "description": "challenge numbers calculator with transparent working, master-number rules and a link to the complete numerology chart.",
+    "h1": "Challenge Numbers Calculator",
+    "answer": "Challenge Numbers Calculator uses your complete date of birth to produce a traditional numerology number and a transparent calculation trace. The result is intended for education, entertainment and personal reflection rather than certainty or professional advice.",
+    "sections": "<section class=\"tool-cta\"><h2>How do I use the Challenge Numbers Calculator?</h2><ol><li>Open the calculator.</li><li>Enter the requested information.</li><li>Create the result.</li><li>Open the calculation details to inspect every step.</li></ol><a class=\"btn btn-primary\" href=\"app.html?calculator=challenge-numbers-calculator\">Open Challenge Numbers Calculator</a></section><section><h2>What does this calculator show?</h2><p>Calculate four Challenge Numbers and compare them with corresponding Pinnacles.</p></section><section><h2>Why might another result differ?</h2><p>Calculation order, name systems and master-number rules vary. This app labels the method and formula version so the result can be checked. This detail is applied specifically to Challenge Numbers Calculator.</p></section>",
+    "group": "Calculators",
+    "index": true
+  },
+  {
+    "slug": "numerology-chart-calculator",
+    "title": "Numerology Chart Calculator | MyNumerologyCharts",
+    "description": "numerology chart calculator with transparent working, master-number rules and a link to the complete numerology chart.",
+    "h1": "Numerology Chart Calculator",
+    "answer": "Numerology Chart Calculator uses your date of birth and optional full birth name to produce a traditional numerology number and a transparent calculation trace. The result is intended for education, entertainment and personal reflection rather than certainty or professional advice.",
+    "sections": "<section class=\"tool-cta\"><h2>How do I use the Numerology Chart Calculator?</h2><ol><li>Open the calculator.</li><li>Enter the requested information.</li><li>Create the result.</li><li>Open the calculation details to inspect every step.</li></ol><a class=\"btn btn-primary\" href=\"app.html?calculator=numerology-chart-calculator\">Open Numerology Chart Calculator</a></section><section><h2>What does this calculator show?</h2><p>Create one complete overview of core numbers, life stages and current cycles.</p></section><section><h2>Why might another result differ?</h2><p>Calculation order, name systems and master-number rules vary. This app labels the method and formula version so the result can be checked. This detail is applied specifically to Numerology Chart Calculator.</p></section>",
+    "group": "Calculators",
+    "index": true
+  },
+  {
+    "slug": "learn",
+    "title": "Learn Numerology | MyNumerologyCharts",
+    "description": "Learn numerology through beginner guides covering core numbers, name calculations, Pinnacles, Challenges and personal cycles.",
+    "h1": "Learn Numerology",
+    "answer": "Learn numerology through clear guides that explain the calculations, terminology and areas where traditions disagree. Each guide links to the relevant calculator and methodology rather than asking readers to accept an unexplained result.",
+    "sections": "<div id=\"learning-directory\" class=\"grid cards\"></div>",
+    "group": "Learn",
+    "index": true
+  },
+  {
+    "slug": "what-is-numerology",
+    "title": "What Is Numerology? | MyNumerologyCharts",
+    "description": "Numerology is a traditional symbolic practice that associates numbers with themes, characteristics and cycles. It is used for cultural interest, enterta",
+    "h1": "What Is Numerology?",
+    "answer": "Numerology is a traditional symbolic practice that associates numbers with themes, characteristics and cycles. It is used for cultural interest, entertainment and personal reflection, but it is not a scientifically validated forecasting system.",
+    "sections": "<section><h2>What should a beginner remember?</h2><p>Use one documented method consistently, inspect the calculation steps and treat the interpretation as reflective material rather than certainty.</p></section><section><h2>How can I explore this in the app?</h2><p>Open the <a href=\"app.html\">complete numerology chart</a> or visit the <a href=\"methodology.html\">Methodology Centre</a> to inspect the exact rules.</p></section><section><h2>What related topics should I read next?</h2><ul><li><a href=\"why-calculators-disagree.html\">Why calculators disagree</a></li><li><a href=\"master-numbers.html\">Master numbers</a></li><li><a href=\"learn.html\">Learning Centre</a></li></ul></section>",
+    "group": "Learn",
+    "index": true
+  },
+  {
+    "slug": "how-to-calculate-life-path",
+    "title": "How Do I Calculate a Life Path Number? | MyNumerologyCharts",
+    "description": "A Life Path Number is calculated from a complete birth date using a declared reduction method. The month, day and year may be reduced separately before ",
+    "h1": "How Do I Calculate a Life Path Number?",
+    "answer": "A Life Path Number is calculated from a complete birth date using a declared reduction method. The month, day and year may be reduced separately before their totals are combined, while permitted master numbers can be retained.",
+    "sections": "<section><h2>What should a beginner remember?</h2><p>Use one documented method consistently, inspect the calculation steps and treat the interpretation as reflective material rather than certainty.</p></section><section><h2>How can I explore this in the app?</h2><p>Open the <a href=\"app.html\">complete numerology chart</a> or visit the <a href=\"methodology.html\">Methodology Centre</a> to inspect the exact rules.</p></section><section><h2>What related topics should I read next?</h2><ul><li><a href=\"why-calculators-disagree.html\">Why calculators disagree</a></li><li><a href=\"master-numbers.html\">Master numbers</a></li><li><a href=\"learn.html\">Learning Centre</a></li></ul></section>",
+    "group": "Learn",
+    "index": true
+  },
+  {
+    "slug": "why-calculators-disagree",
+    "title": "Why Do Numerology Calculators Give Different Answers? | MyNumerologyCharts",
+    "description": "Numerology calculators give different answers when they reduce dates in different orders, use different letter charts, handle master numbers differently",
+    "h1": "Why Do Numerology Calculators Give Different Answers?",
+    "answer": "Numerology calculators give different answers when they reduce dates in different orders, use different letter charts, handle master numbers differently or substitute a current name for a birth name.",
+    "sections": "<section><h2>What should a beginner remember?</h2><p>Use one documented method consistently, inspect the calculation steps and treat the interpretation as reflective material rather than certainty.</p></section><section><h2>How can I explore this in the app?</h2><p>Open the <a href=\"app.html\">complete numerology chart</a> or visit the <a href=\"methodology.html\">Methodology Centre</a> to inspect the exact rules.</p></section><section><h2>What related topics should I read next?</h2><ul><li><a href=\"why-calculators-disagree.html\">Why calculators disagree</a></li><li><a href=\"master-numbers.html\">Master numbers</a></li><li><a href=\"learn.html\">Learning Centre</a></li></ul></section>",
+    "group": "Learn",
+    "index": true
+  },
+  {
+    "slug": "master-numbers",
+    "title": "What Are Master Numbers 11, 22 and 33? | MyNumerologyCharts",
+    "description": "Master numbers are compound totals that many modern numerology traditions retain instead of immediately reducing to 2, 4 or 6. The exact points at which",
+    "h1": "What Are Master Numbers 11, 22 and 33?",
+    "answer": "Master numbers are compound totals that many modern numerology traditions retain instead of immediately reducing to 2, 4 or 6. The exact points at which they are retained vary by method.",
+    "sections": "<section><h2>What should a beginner remember?</h2><p>Use one documented method consistently, inspect the calculation steps and treat the interpretation as reflective material rather than certainty.</p></section><section><h2>How can I explore this in the app?</h2><p>Open the <a href=\"app.html\">complete numerology chart</a> or visit the <a href=\"methodology.html\">Methodology Centre</a> to inspect the exact rules.</p></section><section><h2>What related topics should I read next?</h2><ul><li><a href=\"why-calculators-disagree.html\">Why calculators disagree</a></li><li><a href=\"master-numbers.html\">Master numbers</a></li><li><a href=\"learn.html\">Learning Centre</a></li></ul></section>",
+    "group": "Learn",
+    "index": true
+  },
+  {
+    "slug": "birth-name-vs-current-name",
+    "title": "Should Numerology Use a Birth Name or Current Name? | MyNumerologyCharts",
+    "description": "Core name calculations commonly use the full birth name, while a current, married or preferred name may be explored as a separate influence. The app lab",
+    "h1": "Should Numerology Use a Birth Name or Current Name?",
+    "answer": "Core name calculations commonly use the full birth name, while a current, married or preferred name may be explored as a separate influence. The app labels the chosen name type to avoid mixing results.",
+    "sections": "<section><h2>What should a beginner remember?</h2><p>Use one documented method consistently, inspect the calculation steps and treat the interpretation as reflective material rather than certainty.</p></section><section><h2>How can I explore this in the app?</h2><p>Open the <a href=\"app.html\">complete numerology chart</a> or visit the <a href=\"methodology.html\">Methodology Centre</a> to inspect the exact rules.</p></section><section><h2>What related topics should I read next?</h2><ul><li><a href=\"why-calculators-disagree.html\">Why calculators disagree</a></li><li><a href=\"master-numbers.html\">Master numbers</a></li><li><a href=\"learn.html\">Learning Centre</a></li></ul></section>",
+    "group": "Learn",
+    "index": true
+  },
+  {
+    "slug": "life-path-vs-expression",
+    "title": "What Is the Difference Between Life Path and Expression? | MyNumerologyCharts",
+    "description": "Life Path is derived from the birth date and is traditionally associated with an overall journey. Expression is derived from all letters in the full bir",
+    "h1": "What Is the Difference Between Life Path and Expression?",
+    "answer": "Life Path is derived from the birth date and is traditionally associated with an overall journey. Expression is derived from all letters in the full birth name and is traditionally associated with abilities and direction.",
+    "sections": "<section><h2>What should a beginner remember?</h2><p>Use one documented method consistently, inspect the calculation steps and treat the interpretation as reflective material rather than certainty.</p></section><section><h2>How can I explore this in the app?</h2><p>Open the <a href=\"app.html\">complete numerology chart</a> or visit the <a href=\"methodology.html\">Methodology Centre</a> to inspect the exact rules.</p></section><section><h2>What related topics should I read next?</h2><ul><li><a href=\"why-calculators-disagree.html\">Why calculators disagree</a></li><li><a href=\"master-numbers.html\">Master numbers</a></li><li><a href=\"learn.html\">Learning Centre</a></li></ul></section>",
+    "group": "Learn",
+    "index": true
+  },
+  {
+    "slug": "soul-urge-number-guide",
+    "title": "What Is a Soul Urge Number? | MyNumerologyCharts",
+    "description": "A Soul Urge Number is calculated from the vowels in a full name. Traditional interpretations associate it with inner motivations, values and emotional n",
+    "h1": "What Is a Soul Urge Number?",
+    "answer": "A Soul Urge Number is calculated from the vowels in a full name. Traditional interpretations associate it with inner motivations, values and emotional needs.",
+    "sections": "<section><h2>What should a beginner remember?</h2><p>Use one documented method consistently, inspect the calculation steps and treat the interpretation as reflective material rather than certainty.</p></section><section><h2>How can I explore this in the app?</h2><p>Open the <a href=\"app.html\">complete numerology chart</a> or visit the <a href=\"methodology.html\">Methodology Centre</a> to inspect the exact rules.</p></section><section><h2>What related topics should I read next?</h2><ul><li><a href=\"why-calculators-disagree.html\">Why calculators disagree</a></li><li><a href=\"master-numbers.html\">Master numbers</a></li><li><a href=\"learn.html\">Learning Centre</a></li></ul></section>",
+    "group": "Learn",
+    "index": true
+  },
+  {
+    "slug": "personality-number-guide",
+    "title": "What Is a Personality Number? | MyNumerologyCharts",
+    "description": "A Personality Number is calculated from the consonants in a full name. Traditional interpretations associate it with outward presentation and first impr",
+    "h1": "What Is a Personality Number?",
+    "answer": "A Personality Number is calculated from the consonants in a full name. Traditional interpretations associate it with outward presentation and first impressions.",
+    "sections": "<section><h2>What should a beginner remember?</h2><p>Use one documented method consistently, inspect the calculation steps and treat the interpretation as reflective material rather than certainty.</p></section><section><h2>How can I explore this in the app?</h2><p>Open the <a href=\"app.html\">complete numerology chart</a> or visit the <a href=\"methodology.html\">Methodology Centre</a> to inspect the exact rules.</p></section><section><h2>What related topics should I read next?</h2><ul><li><a href=\"why-calculators-disagree.html\">Why calculators disagree</a></li><li><a href=\"master-numbers.html\">Master numbers</a></li><li><a href=\"learn.html\">Learning Centre</a></li></ul></section>",
+    "group": "Learn",
+    "index": true
+  },
+  {
+    "slug": "pinnacle-numbers-guide",
+    "title": "What Are Pinnacle Numbers? | MyNumerologyCharts",
+    "description": "Pinnacle Numbers are four traditional life-stage values calculated from the birth month, day and year. Each phase has an age range that depends on the L",
+    "h1": "What Are Pinnacle Numbers?",
+    "answer": "Pinnacle Numbers are four traditional life-stage values calculated from the birth month, day and year. Each phase has an age range that depends on the Life Path Number.",
+    "sections": "<section><h2>What should a beginner remember?</h2><p>Use one documented method consistently, inspect the calculation steps and treat the interpretation as reflective material rather than certainty.</p></section><section><h2>How can I explore this in the app?</h2><p>Open the <a href=\"app.html\">complete numerology chart</a> or visit the <a href=\"methodology.html\">Methodology Centre</a> to inspect the exact rules.</p></section><section><h2>What related topics should I read next?</h2><ul><li><a href=\"why-calculators-disagree.html\">Why calculators disagree</a></li><li><a href=\"master-numbers.html\">Master numbers</a></li><li><a href=\"learn.html\">Learning Centre</a></li></ul></section>",
+    "group": "Learn",
+    "index": true
+  },
+  {
+    "slug": "calculate-four-pinnacles",
+    "title": "How Do I Calculate the Four Pinnacles? | MyNumerologyCharts",
+    "description": "The first Pinnacle combines birth month and day, the second combines day and year, the third combines the first two Pinnacles, and the fourth combines m",
+    "h1": "How Do I Calculate the Four Pinnacles?",
+    "answer": "The first Pinnacle combines birth month and day, the second combines day and year, the third combines the first two Pinnacles, and the fourth combines month and year, subject to the declared reduction policy.",
+    "sections": "<section><h2>What should a beginner remember?</h2><p>Use one documented method consistently, inspect the calculation steps and treat the interpretation as reflective material rather than certainty.</p></section><section><h2>How can I explore this in the app?</h2><p>Open the <a href=\"app.html\">complete numerology chart</a> or visit the <a href=\"methodology.html\">Methodology Centre</a> to inspect the exact rules.</p></section><section><h2>What related topics should I read next?</h2><ul><li><a href=\"why-calculators-disagree.html\">Why calculators disagree</a></li><li><a href=\"master-numbers.html\">Master numbers</a></li><li><a href=\"learn.html\">Learning Centre</a></li></ul></section>",
+    "group": "Learn",
+    "index": true
+  },
+  {
+    "slug": "pinnacles-vs-personal-year",
+    "title": "How Are Pinnacles Different from Personal Years? | MyNumerologyCharts",
+    "description": "Pinnacles describe long traditional phases spanning years, while a Personal Year changes each calendar year. They can be read together, but they answer ",
+    "h1": "How Are Pinnacles Different from Personal Years?",
+    "answer": "Pinnacles describe long traditional phases spanning years, while a Personal Year changes each calendar year. They can be read together, but they answer different timing questions.",
+    "sections": "<section><h2>What should a beginner remember?</h2><p>Use one documented method consistently, inspect the calculation steps and treat the interpretation as reflective material rather than certainty.</p></section><section><h2>How can I explore this in the app?</h2><p>Open the <a href=\"app.html\">complete numerology chart</a> or visit the <a href=\"methodology.html\">Methodology Centre</a> to inspect the exact rules.</p></section><section><h2>What related topics should I read next?</h2><ul><li><a href=\"why-calculators-disagree.html\">Why calculators disagree</a></li><li><a href=\"master-numbers.html\">Master numbers</a></li><li><a href=\"learn.html\">Learning Centre</a></li></ul></section>",
+    "group": "Learn",
+    "index": true
+  },
+  {
+    "slug": "challenge-numbers-guide",
+    "title": "What Are Challenge Numbers? | MyNumerologyCharts",
+    "description": "Challenge Numbers are calculated from absolute differences between reduced birth-date components. They are traditionally read as recurring areas for ref",
+    "h1": "What Are Challenge Numbers?",
+    "answer": "Challenge Numbers are calculated from absolute differences between reduced birth-date components. They are traditionally read as recurring areas for reflection rather than unavoidable problems.",
+    "sections": "<section><h2>What should a beginner remember?</h2><p>Use one documented method consistently, inspect the calculation steps and treat the interpretation as reflective material rather than certainty.</p></section><section><h2>How can I explore this in the app?</h2><p>Open the <a href=\"app.html\">complete numerology chart</a> or visit the <a href=\"methodology.html\">Methodology Centre</a> to inspect the exact rules.</p></section><section><h2>What related topics should I read next?</h2><ul><li><a href=\"why-calculators-disagree.html\">Why calculators disagree</a></li><li><a href=\"master-numbers.html\">Master numbers</a></li><li><a href=\"learn.html\">Learning Centre</a></li></ul></section>",
+    "group": "Learn",
+    "index": true
+  },
+  {
+    "slug": "personal-year-guide",
+    "title": "What Is a Personal Year Number? | MyNumerologyCharts",
+    "description": "A Personal Year Number combines the birth month and day with a selected calendar year. It changes annually and is traditionally associated with a broad ",
+    "h1": "What Is a Personal Year Number?",
+    "answer": "A Personal Year Number combines the birth month and day with a selected calendar year. It changes annually and is traditionally associated with a broad yearly theme.",
+    "sections": "<section><h2>What should a beginner remember?</h2><p>Use one documented method consistently, inspect the calculation steps and treat the interpretation as reflective material rather than certainty.</p></section><section><h2>How can I explore this in the app?</h2><p>Open the <a href=\"app.html\">complete numerology chart</a> or visit the <a href=\"methodology.html\">Methodology Centre</a> to inspect the exact rules.</p></section><section><h2>What related topics should I read next?</h2><ul><li><a href=\"why-calculators-disagree.html\">Why calculators disagree</a></li><li><a href=\"master-numbers.html\">Master numbers</a></li><li><a href=\"learn.html\">Learning Centre</a></li></ul></section>",
+    "group": "Learn",
+    "index": true
+  },
+  {
+    "slug": "numerology-compatibility-guide",
+    "title": "How Does Numerology Compatibility Work? | MyNumerologyCharts",
+    "description": "Numerology compatibility compares selected numbers from two charts to explore similarities and differences. It should never be used as an instruction to",
+    "h1": "How Does Numerology Compatibility Work?",
+    "answer": "Numerology compatibility compares selected numbers from two charts to explore similarities and differences. It should never be used as an instruction to begin or end a relationship.",
+    "sections": "<section><h2>What should a beginner remember?</h2><p>Use one documented method consistently, inspect the calculation steps and treat the interpretation as reflective material rather than certainty.</p></section><section><h2>How can I explore this in the app?</h2><p>Open the <a href=\"app.html\">complete numerology chart</a> or visit the <a href=\"methodology.html\">Methodology Centre</a> to inspect the exact rules.</p></section><section><h2>What related topics should I read next?</h2><ul><li><a href=\"why-calculators-disagree.html\">Why calculators disagree</a></li><li><a href=\"master-numbers.html\">Master numbers</a></li><li><a href=\"learn.html\">Learning Centre</a></li></ul></section>",
+    "group": "Learn",
+    "index": true
+  },
+  {
+    "slug": "pythagorean-numerology",
+    "title": "What Is Pythagorean Numerology? | MyNumerologyCharts",
+    "description": "Pythagorean numerology maps the Latin alphabet repeatedly across numbers 1 to 9. It is one of the most common modern systems for name calculations.",
+    "h1": "What Is Pythagorean Numerology?",
+    "answer": "Pythagorean numerology maps the Latin alphabet repeatedly across numbers 1 to 9. It is one of the most common modern systems for name calculations.",
+    "sections": "<section><h2>What should a beginner remember?</h2><p>Use one documented method consistently, inspect the calculation steps and treat the interpretation as reflective material rather than certainty.</p></section><section><h2>How can I explore this in the app?</h2><p>Open the <a href=\"app.html\">complete numerology chart</a> or visit the <a href=\"methodology.html\">Methodology Centre</a> to inspect the exact rules.</p></section><section><h2>What related topics should I read next?</h2><ul><li><a href=\"why-calculators-disagree.html\">Why calculators disagree</a></li><li><a href=\"master-numbers.html\">Master numbers</a></li><li><a href=\"learn.html\">Learning Centre</a></li></ul></section>",
+    "group": "Learn",
+    "index": true
+  },
+  {
+    "slug": "chaldean-vs-pythagorean",
+    "title": "How Is Chaldean Numerology Different? | MyNumerologyCharts",
+    "description": "Chaldean numerology uses a different letter chart and often gives more attention to compound numbers. Results should not be mixed with Pythagorean resul",
+    "h1": "How Is Chaldean Numerology Different?",
+    "answer": "Chaldean numerology uses a different letter chart and often gives more attention to compound numbers. Results should not be mixed with Pythagorean results without clear labels.",
+    "sections": "<section><h2>What should a beginner remember?</h2><p>Use one documented method consistently, inspect the calculation steps and treat the interpretation as reflective material rather than certainty.</p></section><section><h2>How can I explore this in the app?</h2><p>Open the <a href=\"app.html\">complete numerology chart</a> or visit the <a href=\"methodology.html\">Methodology Centre</a> to inspect the exact rules.</p></section><section><h2>What related topics should I read next?</h2><ul><li><a href=\"why-calculators-disagree.html\">Why calculators disagree</a></li><li><a href=\"master-numbers.html\">Master numbers</a></li><li><a href=\"learn.html\">Learning Centre</a></li></ul></section>",
+    "group": "Learn",
+    "index": true
+  },
+  {
+    "slug": "number-1",
+    "title": "Numerology Number 1 Meaning | MyNumerologyCharts",
+    "description": "Numerology Number 1 meaning, traditional strengths, possible challenges and how the number may appear across a numerology chart.",
+    "h1": "Numerology Number 1 Meaning",
+    "answer": "Numerology Number 1 is traditionally associated with initiative, independence and direct action. Its meaning changes according to whether it appears as a Life Path, Expression, Soul Urge, Pinnacle or another chart position.",
+    "sections": "<section><h2>What are the traditional strengths of 1?</h2><p>Traditional strengths are best understood in context. A number can be constructive, excessive or underused depending on the chart position and the person's circumstances. This detail is applied specifically to Numerology Number 1 Meaning.</p></section><section><h2>What challenges can 1 represent?</h2><p>Possible challenges are presented as reflection prompts, not fixed traits. The app avoids labelling a person as good, bad, compatible or incompatible based on one number. This detail is applied specifically to Numerology Number 1 Meaning.</p></section><section><h2>How do I find where 1 appears in my chart?</h2><p>Create a <a href=\"app.html\">complete chart</a> and inspect the overview, Pinnacle timeline and current-cycle cards.</p></section>",
+    "group": "Numbers",
+    "index": true
+  },
+  {
+    "slug": "number-2",
+    "title": "Numerology Number 2 Meaning | MyNumerologyCharts",
+    "description": "Numerology Number 2 meaning, traditional strengths, possible challenges and how the number may appear across a numerology chart.",
+    "h1": "Numerology Number 2 Meaning",
+    "answer": "Numerology Number 2 is traditionally associated with cooperation, sensitivity and balance. Its meaning changes according to whether it appears as a Life Path, Expression, Soul Urge, Pinnacle or another chart position.",
+    "sections": "<section><h2>What are the traditional strengths of 2?</h2><p>Traditional strengths are best understood in context. A number can be constructive, excessive or underused depending on the chart position and the person's circumstances. This detail is applied specifically to Numerology Number 2 Meaning.</p></section><section><h2>What challenges can 2 represent?</h2><p>Possible challenges are presented as reflection prompts, not fixed traits. The app avoids labelling a person as good, bad, compatible or incompatible based on one number. This detail is applied specifically to Numerology Number 2 Meaning.</p></section><section><h2>How do I find where 2 appears in my chart?</h2><p>Create a <a href=\"app.html\">complete chart</a> and inspect the overview, Pinnacle timeline and current-cycle cards.</p></section>",
+    "group": "Numbers",
+    "index": true
+  },
+  {
+    "slug": "number-3",
+    "title": "Numerology Number 3 Meaning | MyNumerologyCharts",
+    "description": "Numerology Number 3 meaning, traditional strengths, possible challenges and how the number may appear across a numerology chart.",
+    "h1": "Numerology Number 3 Meaning",
+    "answer": "Numerology Number 3 is traditionally associated with expression, creativity and sociability. Its meaning changes according to whether it appears as a Life Path, Expression, Soul Urge, Pinnacle or another chart position.",
+    "sections": "<section><h2>What are the traditional strengths of 3?</h2><p>Traditional strengths are best understood in context. A number can be constructive, excessive or underused depending on the chart position and the person's circumstances. This detail is applied specifically to Numerology Number 3 Meaning.</p></section><section><h2>What challenges can 3 represent?</h2><p>Possible challenges are presented as reflection prompts, not fixed traits. The app avoids labelling a person as good, bad, compatible or incompatible based on one number. This detail is applied specifically to Numerology Number 3 Meaning.</p></section><section><h2>How do I find where 3 appears in my chart?</h2><p>Create a <a href=\"app.html\">complete chart</a> and inspect the overview, Pinnacle timeline and current-cycle cards.</p></section>",
+    "group": "Numbers",
+    "index": true
+  },
+  {
+    "slug": "number-4",
+    "title": "Numerology Number 4 Meaning | MyNumerologyCharts",
+    "description": "Numerology Number 4 meaning, traditional strengths, possible challenges and how the number may appear across a numerology chart.",
+    "h1": "Numerology Number 4 Meaning",
+    "answer": "Numerology Number 4 is traditionally associated with structure, discipline and reliability. Its meaning changes according to whether it appears as a Life Path, Expression, Soul Urge, Pinnacle or another chart position.",
+    "sections": "<section><h2>What are the traditional strengths of 4?</h2><p>Traditional strengths are best understood in context. A number can be constructive, excessive or underused depending on the chart position and the person's circumstances. This detail is applied specifically to Numerology Number 4 Meaning.</p></section><section><h2>What challenges can 4 represent?</h2><p>Possible challenges are presented as reflection prompts, not fixed traits. The app avoids labelling a person as good, bad, compatible or incompatible based on one number. This detail is applied specifically to Numerology Number 4 Meaning.</p></section><section><h2>How do I find where 4 appears in my chart?</h2><p>Create a <a href=\"app.html\">complete chart</a> and inspect the overview, Pinnacle timeline and current-cycle cards.</p></section>",
+    "group": "Numbers",
+    "index": true
+  },
+  {
+    "slug": "number-5",
+    "title": "Numerology Number 5 Meaning | MyNumerologyCharts",
+    "description": "Numerology Number 5 meaning, traditional strengths, possible challenges and how the number may appear across a numerology chart.",
+    "h1": "Numerology Number 5 Meaning",
+    "answer": "Numerology Number 5 is traditionally associated with change, freedom and adaptability. Its meaning changes according to whether it appears as a Life Path, Expression, Soul Urge, Pinnacle or another chart position.",
+    "sections": "<section><h2>What are the traditional strengths of 5?</h2><p>Traditional strengths are best understood in context. A number can be constructive, excessive or underused depending on the chart position and the person's circumstances. This detail is applied specifically to Numerology Number 5 Meaning.</p></section><section><h2>What challenges can 5 represent?</h2><p>Possible challenges are presented as reflection prompts, not fixed traits. The app avoids labelling a person as good, bad, compatible or incompatible based on one number. This detail is applied specifically to Numerology Number 5 Meaning.</p></section><section><h2>How do I find where 5 appears in my chart?</h2><p>Create a <a href=\"app.html\">complete chart</a> and inspect the overview, Pinnacle timeline and current-cycle cards.</p></section>",
+    "group": "Numbers",
+    "index": true
+  },
+  {
+    "slug": "number-6",
+    "title": "Numerology Number 6 Meaning | MyNumerologyCharts",
+    "description": "Numerology Number 6 meaning, traditional strengths, possible challenges and how the number may appear across a numerology chart.",
+    "h1": "Numerology Number 6 Meaning",
+    "answer": "Numerology Number 6 is traditionally associated with care, responsibility and harmony. Its meaning changes according to whether it appears as a Life Path, Expression, Soul Urge, Pinnacle or another chart position.",
+    "sections": "<section><h2>What are the traditional strengths of 6?</h2><p>Traditional strengths are best understood in context. A number can be constructive, excessive or underused depending on the chart position and the person's circumstances. This detail is applied specifically to Numerology Number 6 Meaning.</p></section><section><h2>What challenges can 6 represent?</h2><p>Possible challenges are presented as reflection prompts, not fixed traits. The app avoids labelling a person as good, bad, compatible or incompatible based on one number. This detail is applied specifically to Numerology Number 6 Meaning.</p></section><section><h2>How do I find where 6 appears in my chart?</h2><p>Create a <a href=\"app.html\">complete chart</a> and inspect the overview, Pinnacle timeline and current-cycle cards.</p></section>",
+    "group": "Numbers",
+    "index": true
+  },
+  {
+    "slug": "number-7",
+    "title": "Numerology Number 7 Meaning | MyNumerologyCharts",
+    "description": "Numerology Number 7 meaning, traditional strengths, possible challenges and how the number may appear across a numerology chart.",
+    "h1": "Numerology Number 7 Meaning",
+    "answer": "Numerology Number 7 is traditionally associated with analysis, reflection and inner study. Its meaning changes according to whether it appears as a Life Path, Expression, Soul Urge, Pinnacle or another chart position.",
+    "sections": "<section><h2>What are the traditional strengths of 7?</h2><p>Traditional strengths are best understood in context. A number can be constructive, excessive or underused depending on the chart position and the person's circumstances. This detail is applied specifically to Numerology Number 7 Meaning.</p></section><section><h2>What challenges can 7 represent?</h2><p>Possible challenges are presented as reflection prompts, not fixed traits. The app avoids labelling a person as good, bad, compatible or incompatible based on one number. This detail is applied specifically to Numerology Number 7 Meaning.</p></section><section><h2>How do I find where 7 appears in my chart?</h2><p>Create a <a href=\"app.html\">complete chart</a> and inspect the overview, Pinnacle timeline and current-cycle cards.</p></section>",
+    "group": "Numbers",
+    "index": true
+  },
+  {
+    "slug": "number-8",
+    "title": "Numerology Number 8 Meaning | MyNumerologyCharts",
+    "description": "Numerology Number 8 meaning, traditional strengths, possible challenges and how the number may appear across a numerology chart.",
+    "h1": "Numerology Number 8 Meaning",
+    "answer": "Numerology Number 8 is traditionally associated with organisation, ambition and material stewardship. Its meaning changes according to whether it appears as a Life Path, Expression, Soul Urge, Pinnacle or another chart position.",
+    "sections": "<section><h2>What are the traditional strengths of 8?</h2><p>Traditional strengths are best understood in context. A number can be constructive, excessive or underused depending on the chart position and the person's circumstances. This detail is applied specifically to Numerology Number 8 Meaning.</p></section><section><h2>What challenges can 8 represent?</h2><p>Possible challenges are presented as reflection prompts, not fixed traits. The app avoids labelling a person as good, bad, compatible or incompatible based on one number. This detail is applied specifically to Numerology Number 8 Meaning.</p></section><section><h2>How do I find where 8 appears in my chart?</h2><p>Create a <a href=\"app.html\">complete chart</a> and inspect the overview, Pinnacle timeline and current-cycle cards.</p></section>",
+    "group": "Numbers",
+    "index": true
+  },
+  {
+    "slug": "number-9",
+    "title": "Numerology Number 9 Meaning | MyNumerologyCharts",
+    "description": "Numerology Number 9 meaning, traditional strengths, possible challenges and how the number may appear across a numerology chart.",
+    "h1": "Numerology Number 9 Meaning",
+    "answer": "Numerology Number 9 is traditionally associated with compassion, completion and broad perspective. Its meaning changes according to whether it appears as a Life Path, Expression, Soul Urge, Pinnacle or another chart position.",
+    "sections": "<section><h2>What are the traditional strengths of 9?</h2><p>Traditional strengths are best understood in context. A number can be constructive, excessive or underused depending on the chart position and the person's circumstances. This detail is applied specifically to Numerology Number 9 Meaning.</p></section><section><h2>What challenges can 9 represent?</h2><p>Possible challenges are presented as reflection prompts, not fixed traits. The app avoids labelling a person as good, bad, compatible or incompatible based on one number. This detail is applied specifically to Numerology Number 9 Meaning.</p></section><section><h2>How do I find where 9 appears in my chart?</h2><p>Create a <a href=\"app.html\">complete chart</a> and inspect the overview, Pinnacle timeline and current-cycle cards.</p></section>",
+    "group": "Numbers",
+    "index": true
+  },
+  {
+    "slug": "number-11",
+    "title": "Master Number 11 Meaning | MyNumerologyCharts",
+    "description": "Master Number 11 meaning, traditional strengths, possible challenges and how the number may appear across a numerology chart.",
+    "h1": "Master Number 11 Meaning",
+    "answer": "Master Number 11 is traditionally associated with intuition, inspiration and heightened sensitivity. Its meaning changes according to whether it appears as a Life Path, Expression, Soul Urge, Pinnacle or another chart position.",
+    "sections": "<section><h2>What are the traditional strengths of 11?</h2><p>Traditional strengths are best understood in context. A number can be constructive, excessive or underused depending on the chart position and the person's circumstances. This detail is applied specifically to Master Number 11 Meaning.</p></section><section><h2>What challenges can 11 represent?</h2><p>Possible challenges are presented as reflection prompts, not fixed traits. The app avoids labelling a person as good, bad, compatible or incompatible based on one number. This detail is applied specifically to Master Number 11 Meaning.</p></section><section><h2>How do I find where 11 appears in my chart?</h2><p>Create a <a href=\"app.html\">complete chart</a> and inspect the overview, Pinnacle timeline and current-cycle cards.</p></section>",
+    "group": "Numbers",
+    "index": true
+  },
+  {
+    "slug": "number-22",
+    "title": "Master Number 22 Meaning | MyNumerologyCharts",
+    "description": "Master Number 22 meaning, traditional strengths, possible challenges and how the number may appear across a numerology chart.",
+    "h1": "Master Number 22 Meaning",
+    "answer": "Master Number 22 is traditionally associated with large-scale building, practical vision and responsibility. Its meaning changes according to whether it appears as a Life Path, Expression, Soul Urge, Pinnacle or another chart position.",
+    "sections": "<section><h2>What are the traditional strengths of 22?</h2><p>Traditional strengths are best understood in context. A number can be constructive, excessive or underused depending on the chart position and the person's circumstances. This detail is applied specifically to Master Number 22 Meaning.</p></section><section><h2>What challenges can 22 represent?</h2><p>Possible challenges are presented as reflection prompts, not fixed traits. The app avoids labelling a person as good, bad, compatible or incompatible based on one number. This detail is applied specifically to Master Number 22 Meaning.</p></section><section><h2>How do I find where 22 appears in my chart?</h2><p>Create a <a href=\"app.html\">complete chart</a> and inspect the overview, Pinnacle timeline and current-cycle cards.</p></section>",
+    "group": "Numbers",
+    "index": true
+  },
+  {
+    "slug": "number-33",
+    "title": "Master Number 33 Meaning | MyNumerologyCharts",
+    "description": "Master Number 33 meaning, traditional strengths, possible challenges and how the number may appear across a numerology chart.",
+    "h1": "Master Number 33 Meaning",
+    "answer": "Master Number 33 is traditionally associated with service, compassion and teaching. Its meaning changes according to whether it appears as a Life Path, Expression, Soul Urge, Pinnacle or another chart position.",
+    "sections": "<section><h2>What are the traditional strengths of 33?</h2><p>Traditional strengths are best understood in context. A number can be constructive, excessive or underused depending on the chart position and the person's circumstances. This detail is applied specifically to Master Number 33 Meaning.</p></section><section><h2>What challenges can 33 represent?</h2><p>Possible challenges are presented as reflection prompts, not fixed traits. The app avoids labelling a person as good, bad, compatible or incompatible based on one number. This detail is applied specifically to Master Number 33 Meaning.</p></section><section><h2>How do I find where 33 appears in my chart?</h2><p>Create a <a href=\"app.html\">complete chart</a> and inspect the overview, Pinnacle timeline and current-cycle cards.</p></section>",
+    "group": "Numbers",
+    "index": true
+  },
+  {
+    "slug": "privacy",
+    "title": "Privacy Policy | MyNumerologyCharts",
+    "description": "The Privacy Policy explains what information MyNumerologyCharts processes, what remains in the browser, how email submissions are handled and how users can request deletion.",
+    "h1": "Privacy Policy",
+    "answer": "The Privacy Policy explains what information MyNumerologyCharts processes, what remains in the browser, how email submissions are handled and how users can request deletion.",
+    "sections": "<section><h2>What information is processed?</h2><p>Calculator inputs are processed in the browser. Local profiles remain in browser storage. Email addresses submitted for verification, contact messages and minimal security logs may be stored on the server.</p></section><section><h2>Does the website carry advertising?</h2><p>No. MyNumerologyCharts carries no adverts, ad slots or advertising trackers.</p></section><section><h2>How long is information retained?</h2><p>Unverified subscriber records may be removed after a limited administrative period. Contact messages and security logs should be retained only as long as reasonably needed. Deployment owners must document their final retention schedule.</p></section>",
+    "group": "Legal",
+    "index": true
+  },
+  {
+    "slug": "cookie-policy",
+    "title": "Cookie Policy | MyNumerologyCharts",
+    "description": "The Cookie Policy explains necessary browser storage, optional analytics consent and how to reopen cookie settings. MyNumerologyCharts uses no advertising cookies.",
+    "h1": "Cookie Policy",
+    "answer": "The Cookie Policy explains necessary browser storage, optional analytics consent and how to reopen cookie settings. MyNumerologyCharts uses no advertising cookies.",
+    "sections": "<section><h2>Which browser storage is necessary?</h2><p>Necessary storage remembers cookie choices, theme, calculation state and local profiles. Optional analytics remains disabled unless the user consents and an analytics service is configured.</p></section><section><h2>Are advertising cookies used?</h2><p>No. The website has no advertising or advertising-cookie category.</p></section><button class=\"btn btn-secondary\" data-cookie-settings>Open Cookie Settings</button>",
+    "group": "Legal",
+    "index": true
+  },
+  {
+    "slug": "terms",
+    "title": "Terms of Use | MyNumerologyCharts",
+    "description": "The Terms of Use define acceptable use, intellectual-property rules, account responsibilities and limitations of the reflective numerology service.",
+    "h1": "Terms of Use",
+    "answer": "The Terms of Use define acceptable use, intellectual-property rules, account responsibilities and limitations of the reflective numerology service.",
+    "sections": "<section><h2>How can I ask a question about this policy?</h2><p>Email <a href=\"mailto:info@mynumerologycharts.com\">info@mynumerologycharts.com</a>. Include only the information necessary to identify the request.</p></section>",
+    "group": "Legal",
+    "index": true
+  },
+  {
+    "slug": "disclaimer",
+    "title": "Numerology Disclaimer | MyNumerologyCharts",
+    "description": "The Numerology Disclaimer confirms that interpretations are provided for education, entertainment and personal reflection and do not replace professional advice.",
+    "h1": "Numerology Disclaimer",
+    "answer": "The Numerology Disclaimer confirms that interpretations are provided for education, entertainment and personal reflection and do not replace professional advice.",
+    "sections": "<section><h2>What should numerology not replace?</h2><p>Numerology should not replace medical, legal, financial, psychological, safeguarding or relationship advice from an appropriately qualified professional.</p></section><section><h2>Are outcomes guaranteed?</h2><p>No. The platform does not guarantee wealth, health, marriage, pregnancy, business success or any future event.</p></section>",
+    "group": "Legal",
+    "index": true
+  },
+  {
+    "slug": "editorial-policy",
+    "title": "Editorial and Methodology Policy | MyNumerologyCharts",
+    "description": "The Editorial and Methodology Policy explains how calculation rules, interpretations and corrections are written, checked and versioned by MyNumerologyCharts.",
+    "h1": "Editorial and Methodology Policy",
+    "answer": "The Editorial and Methodology Policy explains how calculation rules, interpretations and corrections are written, checked and versioned by MyNumerologyCharts.",
+    "sections": "<section><h2>How can I ask a question about this policy?</h2><p>Email <a href=\"mailto:info@mynumerologycharts.com\">info@mynumerologycharts.com</a>. Include only the information necessary to identify the request.</p></section>",
+    "group": "Legal",
+    "index": true
+  },
+  {
+    "slug": "accessibility",
+    "title": "Accessibility Statement | MyNumerologyCharts",
+    "description": "The Accessibility Statement describes the aim to meet WCAG 2.2 AA and provides a route for reporting accessibility barriers.",
+    "h1": "Accessibility Statement",
+    "answer": "The Accessibility Statement describes the aim to meet WCAG 2.2 AA and provides a route for reporting accessibility barriers.",
+    "sections": "<section><h2>How can I ask a question about this policy?</h2><p>Email <a href=\"mailto:info@mynumerologycharts.com\">info@mynumerologycharts.com</a>. Include only the information necessary to identify the request.</p></section>",
+    "group": "Legal",
+    "index": true
+  },
+  {
+    "slug": "data-deletion",
+    "title": "Data Deletion Instructions | MyNumerologyCharts",
+    "description": "Data Deletion Instructions explain how to clear browser profiles, unsubscribe from email and request deletion of server-held contact or subscriber information.",
+    "h1": "Data Deletion Instructions",
+    "answer": "Data Deletion Instructions explain how to clear browser profiles, unsubscribe from email and request deletion of server-held contact or subscriber information.",
+    "sections": "<section><h2>How can I ask a question about this policy?</h2><p>Email <a href=\"mailto:info@mynumerologycharts.com\">info@mynumerologycharts.com</a>. Include only the information necessary to identify the request.</p></section>",
+    "group": "Legal",
+    "index": true
+  },
+  {
+    "slug": "a-z",
+    "title": "Numerology A to Z | MyNumerologyCharts",
+    "description": "Numerology A to Z index linking calculators, number meanings, methodology topics and beginner guides.",
+    "h1": "Numerology A to Z",
+    "answer": "The Numerology A to Z index provides a direct route to every main calculator, number meaning, guide and trust page. It helps visitors and search engines reach each public page within a few clicks.",
+    "sections": "<div id=\"az-directory\" class=\"az-list\"></div>",
+    "group": "Directory",
+    "index": true
+  },
+  {
+    "slug": "404",
+    "title": "Page Not Found | MyNumerologyCharts",
+    "description": "The requested MyNumerologyCharts page could not be found.",
+    "h1": "Page Not Found",
+    "answer": "The requested page could not be found. Use the links below to return to the complete chart, calculators or Learning Centre.",
+    "sections": "<section class=\"hero-actions\"><a class=\"btn btn-primary\" href=\"/app.html\">Create My Chart</a><a class=\"btn btn-secondary\" href=\"/calculators.html\">Browse Calculators</a></section>",
+    "group": "System",
+    "index": false
+  }
+]
