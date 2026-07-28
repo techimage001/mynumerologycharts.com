@@ -215,7 +215,7 @@
     "description": "personal day calculator with transparent working, master-number rules and a link to the complete numerology chart.",
     "h1": "Personal Day Calculator",
     "answer": "Personal Day Calculator uses your birth details and selected date to produce a traditional numerology number and a transparent calculation trace. The result is intended for education, entertainment and personal reflection rather than certainty or professional advice.",
-    "sections": "<section class=\"tool-cta\"><h2>How do I use the Personal Day Calculator?</h2><ol><li>Open the calculator.</li><li>Enter the requested information.</li><li>Create the result.</li><li>Open the calculation details to inspect every step.</li></ol><a class=\"btn btn-primary\" href=\"app.html?calculator=personal-day-calculator\">Open Personal Day Calculator</a></section><section><h2>What does this calculator show?</h2><p>Calculate a Personal Day Number using the user\u2019s local date.</p></section><section><h2>Why might another result differ?</h2><p>Calculation order, name systems and master-number rules vary. This app labels the method and formula version so the result can be checked. This detail is applied specifically to Personal Day Calculator.</p></section>",
+    "sections": "<section class=\"tool-cta\"><h2>How do I use the Personal Day Calculator?</h2><ol><li>Open the calculator.</li><li>Enter the requested information.</li><li>Create the result.</li><li>Open the calculation details to inspect every step.</li></ol><a class=\"btn btn-primary\" href=\"app.html?calculator=personal-day-calculator\">Open Personal Day Calculator</a></section><section><h2>What does this calculator show?</h2><p>Calculate a Personal Day Number using the user’s local date.</p></section><section><h2>Why might another result differ?</h2><p>Calculation order, name systems and master-number rules vary. This app labels the method and formula version so the result can be checked. This detail is applied specifically to Personal Day Calculator.</p></section>",
     "group": "Calculators",
     "index": true
   },
@@ -662,7 +662,7 @@
   {
     "slug": "number-meanings",
     "h1": "Numerology Number Meanings",
-    "title": "Numerology Number Meanings 1\u20139, 11, 22 and 33",
+    "title": "Numerology Number Meanings 1–9, 11, 22 and 33",
     "description": "Numerology number meanings for 1 to 9 and Master Numbers 11, 22 and 33, with balanced strengths, cautions and chart context.",
     "answer": "Numerology number meanings provide traditional symbolic themes for the numbers 1 to 9 and Master Numbers 11, 22 and 33. A meaning changes with its chart position, so the same number should not be interpreted identically as a Life Path, Birthday, Expression or Personal Year result.",
     "group": "Categories",
@@ -684,7 +684,7 @@
     "h1": "Trust, Privacy and Legal Centre",
     "title": "Trust, Privacy and Legal Centre | MyNumerologyCharts",
     "description": "Trust, privacy and legal information for MyNumerologyCharts, including methodology, editorial standards, cookies, data rights and accessibility.",
-    "answer": "The MyNumerologyCharts Trust, Privacy and Legal Centre brings together the policies that explain how the site calculates results, handles data, uses cookies, manages email verification and limits numerology claims. Use this category to review your choices, request deletion, check accessibility information or understand the site\u2019s editorial safeguards.",
+    "answer": "The MyNumerologyCharts Trust, Privacy and Legal Centre brings together the policies that explain how the site calculates results, handles data, uses cookies, manages email verification and limits numerology claims. Use this category to review your choices, request deletion, check accessibility information or understand the site’s editorial safeguards.",
     "group": "Categories",
     "index": true,
     "sections": "<section><h2>Where can I check how MyNumerologyCharts operates?</h2><div class=\"grid cards\"><article><h3><a href=\"methodology.html\">Calculation Methodology</a></h3><p>Review formula rules, master-number handling and versioning.</p></article><article><h3><a href=\"privacy.html\">Privacy Policy</a></h3><p>See what information is processed and how your rights are supported.</p></article><article><h3><a href=\"cookie-policy.html\">Cookie Policy</a></h3><p>Understand necessary storage and optional analytics choices.</p></article><article><h3><a href=\"editorial-policy.html\">Editorial Policy</a></h3><p>Read how explanations are written, checked and kept measured.</p></article><article><h3><a href=\"disclaimer.html\">Numerology Disclaimer</a></h3><p>Review the educational and entertainment limits of the service.</p></article><article><h3><a href=\"accessibility.html\">Accessibility</a></h3><p>Find accessibility commitments and contact routes for barriers.</p></article><article><h3><a href=\"data-deletion.html\">Data Deletion</a></h3><p>Follow the process for requesting removal of stored information.</p></article></div></section>"
@@ -827,6 +827,13 @@
     "answer": "Pisces is the tropical zodiac Sun sign traditionally associated with birthdays from 19 February to 20 March. Its common symbolic themes include imagination, compassion and sensitivity. This guide is educational and does not claim that one sign determines a complete personality.",
     "sections": "<section class=\"zodiac-profile\"><div class=\"zodiac-symbol\">P</div><div><h2>Pisces at a glance</h2><p><strong>Date range:</strong> 19 February to 20 March</p><p><strong>Traditional themes:</strong> imagination, compassion and sensitivity.</p></div></section><section><h2>How should I use this meaning?</h2><p>Use it as a broad reflection prompt. A Sun sign is only one part of astrology and should not be treated as a diagnosis, prediction or fixed judgement.</p></section><section class=\"tool-cta\"><h2>Check your Sun sign</h2><a class=\"btn btn-primary\" href=\"sun-sign-calculator.html\">Open Sun Sign Calculator</a></section><section class=\"sign-deep-dive\"><h2>How can Pisces themes appear in everyday life?</h2><h3>Imaginative empathy</h3><p>Pisces symbolism is linked with imagination, compassion and sensitivity to moods, symbols and subtle connections. It can support reflection on art, spirituality, forgiveness or the need for quiet space away from constant demands. Pisces themes may encourage kindness and the ability to understand experiences that are difficult to express directly. The balancing practice is to use clear boundaries, concrete plans and reliable information so that empathy does not become confusion or avoidance.</p><h3>A grounded reflection exercise</h3><p>Turn one compassionate intention into a specific action with a clear time, limit and practical outcome.</p></section>",
     "group": "Astrology",
+    "index": true
+  },
+  {
+    "slug": "daily-horoscope",
+    "h1": "Today's Personal Insight",
+    "answer": "A dated daily numerology and Sun-sign reflection with transparent Personal Day working and practical prompts.",
+    "group": "Combined Insights",
     "index": true
   }
 ]
