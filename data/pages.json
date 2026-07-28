@@ -65,7 +65,7 @@
     "description": "Numerology calculator FAQ covering accuracy, master numbers, birth names, privacy, different results and personal cycles.",
     "h1": "Numerology Calculator FAQ",
     "answer": "The numerology calculator FAQ explains the most common questions about formulas, names, master numbers, saved information and interpretation. Numerology is treated as a traditional reflective practice, not as scientific or professional advice.",
-    "sections": "<section class=\"faq\"><details><summary>Why does another calculator show a different Life Path Number?</summary><p>Another calculator may add every digit at once, reduce the month, day and year separately, or retain different master numbers. Open the Calculation Explorer to see the method used here and compare each step.</p></details><details><summary>Should I use my birth name or current name?</summary><p>Traditional Pythagorean numerology commonly uses the full birth name for core name numbers. A current or preferred name may be explored separately, but it should be clearly labelled rather than silently substituted.</p></details><details><summary>Are numerology results scientifically proven?</summary><p>No. Numerology is a traditional symbolic system used for education, entertainment and personal reflection. It should not replace medical, legal, financial or psychological advice.</p></details><details><summary>Does the app save my date of birth?</summary><p>The calculation itself runs in your browser. A birth date is saved only if you deliberately save a local profile on the device. It is not included in analytics or public share links.</p></details><details><summary>What are master numbers?</summary><p>Master numbers are compound totals, commonly 11, 22 and 33, that some numerology traditions retain rather than immediately reducing. The methodology page explains exactly where this app retains them.</p></details></section>",
+    "sections": "<section class=\"faq\"><details><summary>Why does another calculator show a different Life Path Number?</summary><p>Another calculator may add every digit at once, reduce the month, day and year separately, or retain different master numbers. Open the Calculation Explorer to see the method used here and compare each step.</p></details><details><summary>Should I use my birth name or current name?</summary><p>Traditional Pythagorean numerology commonly uses the full birth name for core name numbers. A current or preferred name may be explored separately, but it should be clearly labelled rather than silently substituted.</p></details><details><summary>Are numerology results scientifically proven?</summary><p>No. Numerology is a traditional symbolic system used for entertainment purposes only. It should not replace medical, legal, financial or psychological advice.</p></details><details><summary>Does the app save my date of birth?</summary><p>The calculation itself runs in your browser. A birth date is saved only if you deliberately save a local profile on the device. It is not included in analytics or public share links.</p></details><details><summary>What are master numbers?</summary><p>Master numbers are compound totals, commonly 11, 22 and 33, that some numerology traditions retain rather than immediately reducing. The methodology page explains exactly where this app retains them.</p></details></section>",
     "group": "Trust",
     "index": true
   },
@@ -94,7 +94,7 @@
     "title": "Life Path Calculator | MyNumerologyCharts",
     "description": "life path calculator with transparent working, master-number rules and a link to the complete numerology chart.",
     "h1": "Life Path Calculator",
-    "answer": "Life Path Calculator uses your date of birth to produce a traditional numerology number and a transparent calculation trace. The result is intended for education, entertainment and personal reflection rather than certainty or professional advice.",
+    "answer": "Life Path Calculator uses your date of birth to produce a traditional numerology number and a transparent calculation trace. The result is intended for entertainment purposes only rather than certainty or professional advice.",
     "sections": "<section class=\"tool-cta\"><h2>How do I use the Life Path Calculator?</h2><ol><li>Open the calculator.</li><li>Enter the requested information.</li><li>Create the result.</li><li>Open the calculation details to inspect every step.</li></ol><a class=\"btn btn-primary\" href=\"app.html?calculator=life-path-calculator\">Open Life Path Calculator</a></section><section><h2>What does this calculator show?</h2><p>Calculate your Life Path Number from your complete date of birth and inspect every reduction step.</p></section><section><h2>Why might another result differ?</h2><p>Calculation order, name systems and master-number rules vary. This app labels the method and formula version so the result can be checked. This detail is applied specifically to Life Path Calculator.</p></section>",
     "group": "Calculators",
     "index": true
@@ -104,7 +104,7 @@
     "title": "Birthday Number Calculator | MyNumerologyCharts",
     "description": "birthday number calculator with transparent working, master-number rules and a link to the complete numerology chart.",
     "h1": "Birthday Number Calculator",
-    "answer": "Birthday Number Calculator uses your date of birth to produce a traditional numerology number and a transparent calculation trace. The result is intended for education, entertainment and personal reflection rather than certainty or professional advice.",
+    "answer": "Birthday Number Calculator uses your date of birth to produce a traditional numerology number and a transparent calculation trace. The result is intended for entertainment purposes only rather than certainty or professional advice.",
     "sections": "<section class=\"tool-cta\"><h2>How do I use the Birthday Number Calculator?</h2><ol><li>Open the calculator.</li><li>Enter the requested information.</li><li>Create the result.</li><li>Open the calculation details to inspect every step.</li></ol><a class=\"btn btn-primary\" href=\"app.html?calculator=birthday-number-calculator\">Open Birthday Number Calculator</a></section><section><h2>What does this calculator show?</h2><p>Calculate the traditional Birthday Number from the day of the month on which you were born.</p></section><section><h2>Why might another result differ?</h2><p>Calculation order, name systems and master-number rules vary. This app labels the method and formula version so the result can be checked. This detail is applied specifically to Birthday Number Calculator.</p></section>",
     "group": "Calculators",
     "index": true
@@ -114,7 +114,7 @@
     "title": "Attitude Number Calculator | MyNumerologyCharts",
     "description": "attitude number calculator with transparent working, master-number rules and a link to the complete numerology chart.",
     "h1": "Attitude Number Calculator",
-    "answer": "Attitude Number Calculator uses your date of birth to produce a traditional numerology number and a transparent calculation trace. The result is intended for education, entertainment and personal reflection rather than certainty or professional advice.",
+    "answer": "Attitude Number Calculator uses your date of birth to produce a traditional numerology number and a transparent calculation trace. The result is intended for entertainment purposes only rather than certainty or professional advice.",
     "sections": "<section class=\"tool-cta\"><h2>How do I use the Attitude Number Calculator?</h2><ol><li>Open the calculator.</li><li>Enter the requested information.</li><li>Create the result.</li><li>Open the calculation details to inspect every step.</li></ol><a class=\"btn btn-primary\" href=\"app.html?calculator=attitude-number-calculator\">Open Attitude Number Calculator</a></section><section><h2>What does this calculator show?</h2><p>Calculate the Attitude Number from the birth month and day.</p></section><section><h2>Why might another result differ?</h2><p>Calculation order, name systems and master-number rules vary. This app labels the method and formula version so the result can be checked. This detail is applied specifically to Attitude Number Calculator.</p></section>",
     "group": "Calculators",
     "index": true
@@ -124,7 +124,7 @@
     "title": "Expression Number Calculator | MyNumerologyCharts",
     "description": "expression number calculator with transparent working, master-number rules and a link to the complete numerology chart.",
     "h1": "Expression Number Calculator",
-    "answer": "Expression Number Calculator uses your full birth name to produce a traditional numerology number and a transparent calculation trace. The result is intended for education, entertainment and personal reflection rather than certainty or professional advice.",
+    "answer": "Expression Number Calculator uses your full birth name to produce a traditional numerology number and a transparent calculation trace. The result is intended for entertainment purposes only rather than certainty or professional advice.",
     "sections": "<section class=\"tool-cta\"><h2>How do I use the Expression Number Calculator?</h2><ol><li>Open the calculator.</li><li>Enter the requested information.</li><li>Create the result.</li><li>Open the calculation details to inspect every step.</li></ol><a class=\"btn btn-primary\" href=\"app.html?calculator=expression-number-calculator\">Open Expression Number Calculator</a></section><section><h2>What does this calculator show?</h2><p>Calculate the Expression or Destiny Number from every letter in a full birth name.</p></section><section><h2>Why might another result differ?</h2><p>Calculation order, name systems and master-number rules vary. This app labels the method and formula version so the result can be checked. This detail is applied specifically to Expression Number Calculator.</p></section>",
     "group": "Calculators",
     "index": true
@@ -134,7 +134,7 @@
     "title": "Soul Urge Calculator | MyNumerologyCharts",
     "description": "soul urge calculator with transparent working, master-number rules and a link to the complete numerology chart.",
     "h1": "Soul Urge Calculator",
-    "answer": "Soul Urge Calculator uses your full birth name to produce a traditional numerology number and a transparent calculation trace. The result is intended for education, entertainment and personal reflection rather than certainty or professional advice.",
+    "answer": "Soul Urge Calculator uses your full birth name to produce a traditional numerology number and a transparent calculation trace. The result is intended for entertainment purposes only rather than certainty or professional advice.",
     "sections": "<section class=\"tool-cta\"><h2>How do I use the Soul Urge Calculator?</h2><ol><li>Open the calculator.</li><li>Enter the requested information.</li><li>Create the result.</li><li>Open the calculation details to inspect every step.</li></ol><a class=\"btn btn-primary\" href=\"app.html?calculator=soul-urge-calculator\">Open Soul Urge Calculator</a></section><section><h2>What does this calculator show?</h2><p>Calculate the Soul Urge Number using the vowels in a full birth name.</p></section><section><h2>Why might another result differ?</h2><p>Calculation order, name systems and master-number rules vary. This app labels the method and formula version so the result can be checked. This detail is applied specifically to Soul Urge Calculator.</p></section>",
     "group": "Calculators",
     "index": true
@@ -144,7 +144,7 @@
     "title": "Personality Number Calculator | MyNumerologyCharts",
     "description": "personality number calculator with transparent working, master-number rules and a link to the complete numerology chart.",
     "h1": "Personality Number Calculator",
-    "answer": "Personality Number Calculator uses your full birth name to produce a traditional numerology number and a transparent calculation trace. The result is intended for education, entertainment and personal reflection rather than certainty or professional advice.",
+    "answer": "Personality Number Calculator uses your full birth name to produce a traditional numerology number and a transparent calculation trace. The result is intended for entertainment purposes only rather than certainty or professional advice.",
     "sections": "<section class=\"tool-cta\"><h2>How do I use the Personality Number Calculator?</h2><ol><li>Open the calculator.</li><li>Enter the requested information.</li><li>Create the result.</li><li>Open the calculation details to inspect every step.</li></ol><a class=\"btn btn-primary\" href=\"app.html?calculator=personality-number-calculator\">Open Personality Number Calculator</a></section><section><h2>What does this calculator show?</h2><p>Calculate the Personality Number using the consonants in a full birth name.</p></section><section><h2>Why might another result differ?</h2><p>Calculation order, name systems and master-number rules vary. This app labels the method and formula version so the result can be checked. This detail is applied specifically to Personality Number Calculator.</p></section>",
     "group": "Calculators",
     "index": true
@@ -154,7 +154,7 @@
     "title": "Maturity Number Calculator | MyNumerologyCharts",
     "description": "maturity number calculator with transparent working, master-number rules and a link to the complete numerology chart.",
     "h1": "Maturity Number Calculator",
-    "answer": "Maturity Number Calculator uses your date of birth and full birth name to produce a traditional numerology number and a transparent calculation trace. The result is intended for education, entertainment and personal reflection rather than certainty or professional advice.",
+    "answer": "Maturity Number Calculator uses your date of birth and full birth name to produce a traditional numerology number and a transparent calculation trace. The result is intended for entertainment purposes only rather than certainty or professional advice.",
     "sections": "<section class=\"tool-cta\"><h2>How do I use the Maturity Number Calculator?</h2><ol><li>Open the calculator.</li><li>Enter the requested information.</li><li>Create the result.</li><li>Open the calculation details to inspect every step.</li></ol><a class=\"btn btn-primary\" href=\"app.html?calculator=maturity-number-calculator\">Open Maturity Number Calculator</a></section><section><h2>What does this calculator show?</h2><p>Calculate the Maturity Number by combining the Life Path and Expression numbers.</p></section><section><h2>Why might another result differ?</h2><p>Calculation order, name systems and master-number rules vary. This app labels the method and formula version so the result can be checked. This detail is applied specifically to Maturity Number Calculator.</p></section>",
     "group": "Calculators",
     "index": true
@@ -164,7 +164,7 @@
     "title": "Hidden Passion Calculator | MyNumerologyCharts",
     "description": "hidden passion calculator with transparent working, master-number rules and a link to the complete numerology chart.",
     "h1": "Hidden Passion Calculator",
-    "answer": "Hidden Passion Calculator uses your full birth name to produce a traditional numerology number and a transparent calculation trace. The result is intended for education, entertainment and personal reflection rather than certainty or professional advice.",
+    "answer": "Hidden Passion Calculator uses your full birth name to produce a traditional numerology number and a transparent calculation trace. The result is intended for entertainment purposes only rather than certainty or professional advice.",
     "sections": "<section class=\"tool-cta\"><h2>How do I use the Hidden Passion Calculator?</h2><ol><li>Open the calculator.</li><li>Enter the requested information.</li><li>Create the result.</li><li>Open the calculation details to inspect every step.</li></ol><a class=\"btn btn-primary\" href=\"app.html?calculator=hidden-passion-calculator\">Open Hidden Passion Calculator</a></section><section><h2>What does this calculator show?</h2><p>Find the most frequently occurring number value in a full birth name.</p></section><section><h2>Why might another result differ?</h2><p>Calculation order, name systems and master-number rules vary. This app labels the method and formula version so the result can be checked. This detail is applied specifically to Hidden Passion Calculator.</p></section>",
     "group": "Calculators",
     "index": true
@@ -174,7 +174,7 @@
     "title": "Balance Number Calculator | MyNumerologyCharts",
     "description": "balance number calculator with transparent working, master-number rules and a link to the complete numerology chart.",
     "h1": "Balance Number Calculator",
-    "answer": "Balance Number Calculator uses your full birth name to produce a traditional numerology number and a transparent calculation trace. The result is intended for education, entertainment and personal reflection rather than certainty or professional advice.",
+    "answer": "Balance Number Calculator uses your full birth name to produce a traditional numerology number and a transparent calculation trace. The result is intended for entertainment purposes only rather than certainty or professional advice.",
     "sections": "<section class=\"tool-cta\"><h2>How do I use the Balance Number Calculator?</h2><ol><li>Open the calculator.</li><li>Enter the requested information.</li><li>Create the result.</li><li>Open the calculation details to inspect every step.</li></ol><a class=\"btn btn-primary\" href=\"app.html?calculator=balance-number-calculator\">Open Balance Number Calculator</a></section><section><h2>What does this calculator show?</h2><p>Calculate the Balance Number from the initials in a full birth name.</p></section><section><h2>Why might another result differ?</h2><p>Calculation order, name systems and master-number rules vary. This app labels the method and formula version so the result can be checked. This detail is applied specifically to Balance Number Calculator.</p></section>",
     "group": "Calculators",
     "index": true
@@ -184,7 +184,7 @@
     "title": "Karmic Lessons Calculator | MyNumerologyCharts",
     "description": "karmic lessons calculator with transparent working, master-number rules and a link to the complete numerology chart.",
     "h1": "Karmic Lessons Calculator",
-    "answer": "Karmic Lessons Calculator uses your full birth name to produce a traditional numerology number and a transparent calculation trace. The result is intended for education, entertainment and personal reflection rather than certainty or professional advice.",
+    "answer": "Karmic Lessons Calculator uses your full birth name to produce a traditional numerology number and a transparent calculation trace. The result is intended for entertainment purposes only rather than certainty or professional advice.",
     "sections": "<section class=\"tool-cta\"><h2>How do I use the Karmic Lessons Calculator?</h2><ol><li>Open the calculator.</li><li>Enter the requested information.</li><li>Create the result.</li><li>Open the calculation details to inspect every step.</li></ol><a class=\"btn btn-primary\" href=\"app.html?calculator=karmic-lessons-calculator\">Open Karmic Lessons Calculator</a></section><section><h2>What does this calculator show?</h2><p>Find number values missing from a full birth name according to the selected method.</p></section><section><h2>Why might another result differ?</h2><p>Calculation order, name systems and master-number rules vary. This app labels the method and formula version so the result can be checked. This detail is applied specifically to Karmic Lessons Calculator.</p></section>",
     "group": "Calculators",
     "index": true
@@ -194,7 +194,7 @@
     "title": "Personal Year Calculator | MyNumerologyCharts",
     "description": "personal year calculator with transparent working, master-number rules and a link to the complete numerology chart.",
     "h1": "Personal Year Calculator",
-    "answer": "Personal Year Calculator uses your birth month, birth day and year to produce a traditional numerology number and a transparent calculation trace. The result is intended for education, entertainment and personal reflection rather than certainty or professional advice.",
+    "answer": "Personal Year Calculator uses your birth month, birth day and year to produce a traditional numerology number and a transparent calculation trace. The result is intended for entertainment purposes only rather than certainty or professional advice.",
     "sections": "<section class=\"tool-cta\"><h2>How do I use the Personal Year Calculator?</h2><ol><li>Open the calculator.</li><li>Enter the requested information.</li><li>Create the result.</li><li>Open the calculation details to inspect every step.</li></ol><a class=\"btn btn-primary\" href=\"app.html?calculator=personal-year-calculator\">Open Personal Year Calculator</a></section><section><h2>What does this calculator show?</h2><p>Calculate a Personal Year Number for a selected calendar year.</p></section><section><h2>Why might another result differ?</h2><p>Calculation order, name systems and master-number rules vary. This app labels the method and formula version so the result can be checked. This detail is applied specifically to Personal Year Calculator.</p></section>",
     "group": "Calculators",
     "index": true
@@ -204,7 +204,7 @@
     "title": "Personal Month Calculator | MyNumerologyCharts",
     "description": "personal month calculator with transparent working, master-number rules and a link to the complete numerology chart.",
     "h1": "Personal Month Calculator",
-    "answer": "Personal Month Calculator uses your birth details and selected month to produce a traditional numerology number and a transparent calculation trace. The result is intended for education, entertainment and personal reflection rather than certainty or professional advice.",
+    "answer": "Personal Month Calculator uses your birth details and selected month to produce a traditional numerology number and a transparent calculation trace. The result is intended for entertainment purposes only rather than certainty or professional advice.",
     "sections": "<section class=\"tool-cta\"><h2>How do I use the Personal Month Calculator?</h2><ol><li>Open the calculator.</li><li>Enter the requested information.</li><li>Create the result.</li><li>Open the calculation details to inspect every step.</li></ol><a class=\"btn btn-primary\" href=\"app.html?calculator=personal-month-calculator\">Open Personal Month Calculator</a></section><section><h2>What does this calculator show?</h2><p>Calculate a Personal Month Number for a selected month.</p></section><section><h2>Why might another result differ?</h2><p>Calculation order, name systems and master-number rules vary. This app labels the method and formula version so the result can be checked. This detail is applied specifically to Personal Month Calculator.</p></section>",
     "group": "Calculators",
     "index": true
@@ -214,7 +214,7 @@
     "title": "Personal Day Calculator | MyNumerologyCharts",
     "description": "personal day calculator with transparent working, master-number rules and a link to the complete numerology chart.",
     "h1": "Personal Day Calculator",
-    "answer": "Personal Day Calculator uses your birth details and selected date to produce a traditional numerology number and a transparent calculation trace. The result is intended for education, entertainment and personal reflection rather than certainty or professional advice.",
+    "answer": "Personal Day Calculator uses your birth details and selected date to produce a traditional numerology number and a transparent calculation trace. The result is intended for entertainment purposes only rather than certainty or professional advice.",
     "sections": "<section class=\"tool-cta\"><h2>How do I use the Personal Day Calculator?</h2><ol><li>Open the calculator.</li><li>Enter the requested information.</li><li>Create the result.</li><li>Open the calculation details to inspect every step.</li></ol><a class=\"btn btn-primary\" href=\"app.html?calculator=personal-day-calculator\">Open Personal Day Calculator</a></section><section><h2>What does this calculator show?</h2><p>Calculate a Personal Day Number using the user’s local date.</p></section><section><h2>Why might another result differ?</h2><p>Calculation order, name systems and master-number rules vary. This app labels the method and formula version so the result can be checked. This detail is applied specifically to Personal Day Calculator.</p></section>",
     "group": "Calculators",
     "index": true
@@ -224,7 +224,7 @@
     "title": "Pinnacles Calculator | MyNumerologyCharts",
     "description": "pinnacles calculator with transparent working, master-number rules and a link to the complete numerology chart.",
     "h1": "Pinnacles Calculator",
-    "answer": "Pinnacles Calculator uses your complete date of birth to produce a traditional numerology number and a transparent calculation trace. The result is intended for education, entertainment and personal reflection rather than certainty or professional advice.",
+    "answer": "Pinnacles Calculator uses your complete date of birth to produce a traditional numerology number and a transparent calculation trace. The result is intended for entertainment purposes only rather than certainty or professional advice.",
     "sections": "<section class=\"tool-cta\"><h2>How do I use the Pinnacles Calculator?</h2><ol><li>Open the calculator.</li><li>Enter the requested information.</li><li>Create the result.</li><li>Open the calculation details to inspect every step.</li></ol><a class=\"btn btn-primary\" href=\"app.html?calculator=pinnacles-calculator\">Open Pinnacles Calculator</a></section><section><h2>What does this calculator show?</h2><p>Calculate four Pinnacle Numbers, age ranges and the current traditional phase.</p></section><section><h2>Why might another result differ?</h2><p>Calculation order, name systems and master-number rules vary. This app labels the method and formula version so the result can be checked. This detail is applied specifically to Pinnacles Calculator.</p></section>",
     "group": "Calculators",
     "index": true
@@ -234,7 +234,7 @@
     "title": "Challenge Numbers Calculator | MyNumerologyCharts",
     "description": "challenge numbers calculator with transparent working, master-number rules and a link to the complete numerology chart.",
     "h1": "Challenge Numbers Calculator",
-    "answer": "Challenge Numbers Calculator uses your complete date of birth to produce a traditional numerology number and a transparent calculation trace. The result is intended for education, entertainment and personal reflection rather than certainty or professional advice.",
+    "answer": "Challenge Numbers Calculator uses your complete date of birth to produce a traditional numerology number and a transparent calculation trace. The result is intended for entertainment purposes only rather than certainty or professional advice.",
     "sections": "<section class=\"tool-cta\"><h2>How do I use the Challenge Numbers Calculator?</h2><ol><li>Open the calculator.</li><li>Enter the requested information.</li><li>Create the result.</li><li>Open the calculation details to inspect every step.</li></ol><a class=\"btn btn-primary\" href=\"app.html?calculator=challenge-numbers-calculator\">Open Challenge Numbers Calculator</a></section><section><h2>What does this calculator show?</h2><p>Calculate four Challenge Numbers and compare them with corresponding Pinnacles.</p></section><section><h2>Why might another result differ?</h2><p>Calculation order, name systems and master-number rules vary. This app labels the method and formula version so the result can be checked. This detail is applied specifically to Challenge Numbers Calculator.</p></section>",
     "group": "Calculators",
     "index": true
@@ -244,7 +244,7 @@
     "title": "Numerology Chart Calculator | MyNumerologyCharts",
     "description": "numerology chart calculator with transparent working, master-number rules and a link to the complete numerology chart.",
     "h1": "Numerology Chart Calculator",
-    "answer": "Numerology Chart Calculator uses your date of birth and optional full birth name to produce a traditional numerology number and a transparent calculation trace. The result is intended for education, entertainment and personal reflection rather than certainty or professional advice.",
+    "answer": "Numerology Chart Calculator uses your date of birth and optional full birth name to produce a traditional numerology number and a transparent calculation trace. The result is intended for entertainment purposes only rather than certainty or professional advice.",
     "sections": "<section class=\"tool-cta\"><h2>How do I use the Numerology Chart Calculator?</h2><ol><li>Open the calculator.</li><li>Enter the requested information.</li><li>Create the result.</li><li>Open the calculation details to inspect every step.</li></ol><a class=\"btn btn-primary\" href=\"app.html?calculator=numerology-chart-calculator\">Open Numerology Chart Calculator</a></section><section><h2>What does this calculator show?</h2><p>Create one complete overview of core numbers, life stages and current cycles.</p></section><section><h2>Why might another result differ?</h2><p>Calculation order, name systems and master-number rules vary. This app labels the method and formula version so the result can be checked. This detail is applied specifically to Numerology Chart Calculator.</p></section>",
     "group": "Calculators",
     "index": true
@@ -572,9 +572,9 @@
   {
     "slug": "disclaimer",
     "title": "Numerology Disclaimer | MyNumerologyCharts",
-    "description": "The Numerology Disclaimer confirms that interpretations are provided for education, entertainment and personal reflection and do not replace professional advice.",
+    "description": "The Numerology Disclaimer confirms that interpretations are provided for entertainment purposes only and do not replace professional advice.",
     "h1": "Numerology Disclaimer",
-    "answer": "The Numerology Disclaimer confirms that interpretations are provided for education, entertainment and personal reflection and do not replace professional advice.",
+    "answer": "The Numerology Disclaimer confirms that interpretations are provided for entertainment purposes only and do not replace professional advice.",
     "sections": "<section><h2>What should numerology not replace?</h2><p>Numerology should not replace medical, legal, financial, psychological, safeguarding or relationship advice from an appropriately qualified professional.</p></section><section><h2>Are outcomes guaranteed?</h2><p>No. The platform does not guarantee wealth, health, marriage, pregnancy, business success or any future event.</p></section>",
     "group": "Legal",
     "index": true
