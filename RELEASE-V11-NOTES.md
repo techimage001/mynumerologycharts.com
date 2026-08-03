@@ -2,7 +2,7 @@
 
 - Comprehensive Life Path analysis: strengths, growth, love, career, money, friendships, communication, leadership and wellbeing.
 - Full Sun-sign detail inside the report with audio; no link away.
-- Dated daily Personal Insight inside every report and a dedicated daily page.
+- Dated Daily Horoscope inside every report and a dedicated daily page.
 - Personal colours, supportive days and recurring numbers.
 - Expanded trait profile.
 - Share/download controls moved below the complete report and compatibility section.
