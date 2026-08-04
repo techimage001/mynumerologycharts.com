@@ -1,0 +1,103 @@
+// Zodiac sun signs. Pure date-range logic (no ephemeris, no birth time),
+// so this is fully client-side and copyright-free. Drives the Sun Sign
+// calculator, 12 sign pages and the astrology hub. Moon/rising are a
+// noted fast-follow (they need birth time + location + an ephemeris).
+
+export const ZODIAC = [
+  { sign:'Aries', slug:'aries', symbol:'\u2648', from:[3,21], to:[4,19], element:'Fire', quality:'Cardinal', ruler:'Mars', dates:'March 21 \u2013 April 19',
+    keyword:'bold, pioneering, energetic',
+    essence:'Aries is the first sign of the zodiac \u2014 the initiator. Ruled by Mars, Aries charges at life head-first with courage, drive and a love of being first.',
+    strengths:['Courageous and bold','Energetic and driven','Honest and direct','Natural leader'],
+    challenges:['Impatient','Quick-tempered','Can be impulsive'],
+    love:'In love, Aries is passionate and pursuing; it wants excitement and a partner who can keep pace.',
+    career:'Thrives where it can lead and start things \u2014 entrepreneurship, sport, sales, the military.' },
+  { sign:'Taurus', slug:'taurus', symbol:'\u2649', from:[4,20], to:[5,20], element:'Earth', quality:'Fixed', ruler:'Venus', dates:'April 20 \u2013 May 20',
+    keyword:'steady, sensual, loyal',
+    essence:'Taurus is the zodiac\u2019s anchor \u2014 grounded, patient and pleasure-loving. Ruled by Venus, it values comfort, beauty, security and things that last.',
+    strengths:['Reliable and patient','Loyal and devoted','Practical and grounded','Appreciates beauty'],
+    challenges:['Stubborn','Resistant to change','Can be possessive'],
+    love:'In love, Taurus is deeply loyal and affectionate, seeking security and lasting comfort.',
+    career:'Excels in finance, food, design, agriculture and any field rewarding steadiness and taste.' },
+  { sign:'Gemini', slug:'gemini', symbol:'\u264a', from:[5,21], to:[6,20], element:'Air', quality:'Mutable', ruler:'Mercury', dates:'May 21 \u2013 June 20',
+    keyword:'curious, communicative, quick',
+    essence:'Gemini is the communicator of the zodiac \u2014 curious, clever and endlessly adaptable. Ruled by Mercury, it lives through words, ideas and connection.',
+    strengths:['Quick-witted and clever','Adaptable and versatile','Sociable and expressive','Curious'],
+    challenges:['Restless and inconsistent','Easily bored','Can be indecisive'],
+    love:'In love, Gemini needs mental spark and variety \u2014 a partner who can talk, play and keep things fresh.',
+    career:'Shines in writing, media, teaching, sales and anything fast-moving and verbal.' },
+  { sign:'Cancer', slug:'cancer', symbol:'\u264b', from:[6,21], to:[7,22], element:'Water', quality:'Cardinal', ruler:'Moon', dates:'June 21 \u2013 July 22',
+    keyword:'nurturing, intuitive, protective',
+    essence:'Cancer is the nurturer of the zodiac \u2014 deeply feeling, intuitive and protective of home and loved ones. Ruled by the Moon, its inner tides run strong.',
+    strengths:['Caring and nurturing','Highly intuitive','Loyal and protective','Emotionally deep'],
+    challenges:['Moody','Overly sensitive','Can retreat into its shell'],
+    love:'In love, Cancer is devoted and tender, craving emotional safety and a true home together.',
+    career:'Thrives in caregiving, hospitality, real estate, healthcare and family-centred work.' },
+  { sign:'Leo', slug:'leo', symbol:'\u264c', from:[7,23], to:[8,22], element:'Fire', quality:'Fixed', ruler:'Sun', dates:'July 23 \u2013 August 22',
+    keyword:'warm, confident, generous',
+    essence:'Leo is the zodiac\u2019s sovereign \u2014 warm, generous and radiant. Ruled by the Sun, it loves to shine, to lead with heart, and to be adored.',
+    strengths:['Confident and charismatic','Generous and warm','Loyal and brave','Creative'],
+    challenges:['Proud','Needs admiration','Can be domineering'],
+    love:'In love, Leo is passionate and loyal, giving warmth lavishly and wanting devotion in return.',
+    career:'Excels in leadership, performance, the arts, and any stage where it can be seen.' },
+  { sign:'Virgo', slug:'virgo', symbol:'\u264d', from:[8,23], to:[9,22], element:'Earth', quality:'Mutable', ruler:'Mercury', dates:'August 23 \u2013 September 22',
+    keyword:'precise, helpful, analytical',
+    essence:'Virgo is the zodiac\u2019s perfectionist \u2014 practical, precise and quietly devoted to being useful. Ruled by Mercury, it improves everything it touches.',
+    strengths:['Analytical and precise','Hard-working and reliable','Helpful and modest','Detail-focused'],
+    challenges:['Overly critical','Worries and overthinks','Perfectionism'],
+    love:'In love, Virgo shows care through acts of service and steady devotion rather than drama.',
+    career:'Thrives in health, editing, analysis, administration and any craft demanding precision.' },
+  { sign:'Libra', slug:'libra', symbol:'\u264e', from:[9,23], to:[10,22], element:'Air', quality:'Cardinal', ruler:'Venus', dates:'September 23 \u2013 October 22',
+    keyword:'harmonious, fair, charming',
+    essence:'Libra is the zodiac\u2019s diplomat \u2014 charming, fair-minded and drawn to balance and beauty. Ruled by Venus, it lives through relationship and harmony.',
+    strengths:['Diplomatic and fair','Charming and sociable','Seeks harmony','Aesthetic sense'],
+    challenges:['Indecisive','Avoids conflict','Can people-please'],
+    love:'In love, Libra is romantic and partnership-focused, happiest in a balanced, harmonious bond.',
+    career:'Excels in law, design, diplomacy, the arts and any people-centred, balanced work.' },
+  { sign:'Scorpio', slug:'scorpio', symbol:'\u264f', from:[10,23], to:[11,21], element:'Water', quality:'Fixed', ruler:'Pluto', dates:'October 23 \u2013 November 21',
+    keyword:'intense, magnetic, transformative',
+    essence:'Scorpio is the zodiac\u2019s alchemist \u2014 intense, magnetic and unafraid of depth. Ruled by Pluto, it seeks truth, transformation and total commitment.',
+    strengths:['Passionate and determined','Loyal and brave','Perceptive and deep','Resourceful'],
+    challenges:['Jealous or controlling','Secretive','Holds grudges'],
+    love:'In love, Scorpio is fiercely devoted and all-in, craving deep intimacy and total honesty.',
+    career:'Thrives in research, psychology, investigation, finance and anything requiring depth.' },
+  { sign:'Sagittarius', slug:'sagittarius', symbol:'\u2650', from:[11,22], to:[12,21], element:'Fire', quality:'Mutable', ruler:'Jupiter', dates:'November 22 \u2013 December 21',
+    keyword:'adventurous, optimistic, free',
+    essence:'Sagittarius is the zodiac\u2019s explorer \u2014 optimistic, freedom-loving and philosophical. Ruled by Jupiter, it chases meaning, adventure and the far horizon.',
+    strengths:['Optimistic and open','Adventurous and free','Honest and philosophical','Generous'],
+    challenges:['Restless','Blunt','Avoids commitment'],
+    love:'In love, Sagittarius needs freedom and a fellow adventurer \u2014 someone to explore life with.',
+    career:'Excels in travel, teaching, publishing, law and any expansive, meaning-driven field.' },
+  { sign:'Capricorn', slug:'capricorn', symbol:'\u2651', from:[12,22], to:[1,19], element:'Earth', quality:'Cardinal', ruler:'Saturn', dates:'December 22 \u2013 January 19',
+    keyword:'ambitious, disciplined, enduring',
+    essence:'Capricorn is the zodiac\u2019s achiever \u2014 disciplined, ambitious and built for the long climb. Ruled by Saturn, it earns success through patience and responsibility.',
+    strengths:['Ambitious and disciplined','Responsible and patient','Practical and enduring','Loyal'],
+    challenges:['Can be cold or rigid','Workaholic','Pessimistic'],
+    love:'In love, Capricorn is steady and committed, building a secure future rather than chasing sparks.',
+    career:'Thrives in business, management, finance and any arena rewarding ambition and grit.' },
+  { sign:'Aquarius', slug:'aquarius', symbol:'\u2652', from:[1,20], to:[2,18], element:'Air', quality:'Fixed', ruler:'Uranus', dates:'January 20 \u2013 February 18',
+    keyword:'original, humanitarian, independent',
+    essence:'Aquarius is the zodiac\u2019s visionary \u2014 original, independent and future-minded. Ruled by Uranus, it thinks for itself and cares for the collective.',
+    strengths:['Original and inventive','Humanitarian','Independent','Open-minded'],
+    challenges:['Detached','Stubborn','Unpredictable'],
+    love:'In love, Aquarius needs friendship, freedom and mental connection over convention.',
+    career:'Excels in technology, science, activism, innovation and unconventional paths.' },
+  { sign:'Pisces', slug:'pisces', symbol:'\u2653', from:[2,19], to:[3,20], element:'Water', quality:'Mutable', ruler:'Neptune', dates:'February 19 \u2013 March 20',
+    keyword:'compassionate, dreamy, intuitive',
+    essence:'Pisces is the zodiac\u2019s dreamer \u2014 compassionate, imaginative and deeply intuitive. Ruled by Neptune, it feels the unseen and dissolves boundaries between self and world.',
+    strengths:['Compassionate and kind','Imaginative and artistic','Intuitive and gentle','Selfless'],
+    challenges:['Escapist','Overly sensitive','Can lose boundaries'],
+    love:'In love, Pisces is romantic and devoted, longing for a soul-deep, almost spiritual union.',
+    career:'Thrives in the arts, healing, music, charity and any imaginative or caring field.' }
+];
+
+export function sunSign(month, day) {
+  for (const z of ZODIAC) {
+    const [fm, fd] = z.from, [tm, td] = z.to;
+    if (fm <= tm) {
+      if ((month === fm && day >= fd) || (month === tm && day <= td) || (month > fm && month < tm)) return z;
+    } else { // Capricorn wraps the year
+      if ((month === fm && day >= fd) || (month === tm && day <= td) || month > fm || month < tm) return z;
+    }
+  }
+  return null;
+}

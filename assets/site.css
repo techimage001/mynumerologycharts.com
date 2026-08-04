@@ -62,7 +62,7 @@ main section{box-shadow:0 18px 50px rgba(42,25,45,.075);border-color:color-mix(i
 
 /* Version 8: eliminate mobile horizontal clipping across the chart dashboard */
 @media (max-width:650px){
-  html,body{width:100%;max-width:100%;overflow-x:hidden}
+  html,body{width:100%;max-width:100%;overflow-x:clip}
   .container{width:calc(100% - 20px);max-width:100%;padding-left:0;padding-right:0}
   main[data-page-slug="app"]{width:calc(100% - 16px)}
   .app-shell,
@@ -159,7 +159,7 @@ main section{box-shadow:0 18px 50px rgba(42,25,45,.075);border-color:color-mix(i
 
 
 /* V14 mobile overflow and table safeguards */
-html,body{max-width:100%;overflow-x:hidden}
+html,body{max-width:100%;overflow-x:clip}
 *,*::before,*::after{box-sizing:border-box}
 img,svg,video,canvas{max-width:100%;height:auto}
 input,select,textarea,button{max-width:100%;box-sizing:border-box}
@@ -190,3 +190,29 @@ main table{display:table;width:100%}
   input,select,textarea{font-size:16px}
   button,.btn,a.btn{min-height:46px}
 }
+
+/* v15.1 mobile: dense hub link grids + long-word safety */
+.cards.link-cards{grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+.cards.link-cards article{min-height:0;padding:13px 15px}
+.cards.link-cards h3{margin:0;font-size:1rem;line-height:1.3}
+.cards.link-cards a{overflow-wrap:anywhere}
+@media(max-width:600px){.cards.link-cards{grid-template-columns:1fr 1fr}}
+@media(max-width:380px){.cards.link-cards{grid-template-columns:1fr}}
+
+/* v16: trait radar + mobile sticky results preview */
+.trait-radar{margin:0 0 8px;text-align:center}
+.trait-radar svg{width:100%;max-width:420px;height:auto}
+.trait-radar figcaption{color:var(--muted);font-size:.86rem;max-width:520px;margin:6px auto 0}
+@media(min-width:901px){.trait-section .trait-radar{float:right;width:44%;max-width:440px;margin:0 0 12px 22px}}
+@media(max-width:900px){.app-shell.report-ready>.app-panel:first-child{position:sticky;top:60px;z-index:20;max-height:46vh;overflow:auto;box-shadow:0 12px 26px rgba(43,21,50,.14)}}
+
+/* v17: moon & rising cards */
+.astro-body-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin:12px 0}
+.astro-body-card{display:flex;gap:14px;align-items:flex-start;padding:16px 18px;border:1px solid var(--line,#e7d9ea);border-radius:14px;background:var(--surface,#fff)}
+.astro-body-card .zodiac-mini{font-size:30px;line-height:1;color:#7b2a87}
+.astro-body-card small{display:block;color:var(--muted,#8a6a92);font-size:.78rem;text-transform:uppercase;letter-spacing:.04em}
+.astro-body-card strong{font-size:1.15rem}
+
+/* v19 a11y: darken section eyebrow on light backgrounds for AA contrast */
+.dashboard-kicker{color:#6f4a12}
+.chart-hero .dashboard-kicker{color:var(--accent)}

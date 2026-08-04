@@ -44,7 +44,7 @@ const prohibited = [
   /\beducational\b/i, /\beducation\b/i, /\bself[- ]reflection\b/i,
   /\bpersonal reflection\b/i, /\breflection purposes?\b/i, /\beducational purposes?\b/i,
   /\bdaily insight\b/i, /\btoday[’']s personal insight\b/i, /\bpersonal insight\b/i,
-  /\blucky numbers\b/i, /\btoday[’']s colour\b/i, /\blisten to today[’']s insight\b/i
+  /\btoday[’']s colour\b/i, /\blisten to today[’']s insight\b/i
 ];
 const exactDisclaimer = 'For entertainment purposes only. Not professional advice. You are responsible for your decisions and actions.';
 
