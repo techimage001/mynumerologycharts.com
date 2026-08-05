@@ -204,7 +204,6 @@ main table{display:table;width:100%}
 .trait-radar svg{width:100%;max-width:420px;height:auto}
 .trait-radar figcaption{color:var(--muted);font-size:.86rem;max-width:520px;margin:6px auto 0}
 @media(min-width:901px){.trait-section .trait-radar{float:right;width:44%;max-width:440px;margin:0 0 12px 22px}}
-@media(max-width:900px){.app-shell.report-ready>.app-panel:first-child{position:sticky;top:60px;z-index:20;max-height:46vh;overflow:auto;box-shadow:0 12px 26px rgba(43,21,50,.14)}}
 
 /* v17: moon & rising cards */
 .astro-body-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin:12px 0}
@@ -216,3 +215,11 @@ main table{display:table;width:100%}
 /* v19 a11y: darken section eyebrow on light backgrounds for AA contrast */
 .dashboard-kicker{color:#6f4a12}
 .chart-hero .dashboard-kicker{color:var(--accent)}
+
+/* v20: horizontal legal bar + bottom report actions */
+.footer-legal{display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:center;padding:22px 0 6px;border-top:1px solid rgba(255,255,255,.12);margin-top:16px}
+.footer-legal a{color:#cdbcd3;font-size:.85rem}
+.report-actions-panel{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;padding-top:8px}
+
+/* v22: inline SVG logo cleanup */
+svg.brand-mark{display:inline-block;background:none;box-shadow:none;vertical-align:middle;border-radius:0}
