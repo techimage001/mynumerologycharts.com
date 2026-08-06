@@ -25,8 +25,9 @@ function mnc_start_session(): void {
 
 function mnc_db(): PDO {
     $dir = mnc_private_dir();
-    if (!is_dir($dir)) {
-        throw new RuntimeException('Private directory is not configured. Create mnc_private outside public_html.');
+    if (!is_dir($dir)) { @mkdir($dir, 0755, true); }
+    if (!is_dir($dir) || !is_writable($dir)) {
+        throw new RuntimeException('Private directory is not writable. Create mnc_private outside public_html with write permission.');
     }
     $pdo = new PDO('sqlite:' . $dir . '/mnc.sqlite');
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
