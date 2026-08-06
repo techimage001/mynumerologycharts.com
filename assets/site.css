@@ -223,3 +223,16 @@ main table{display:table;width:100%}
 
 /* v22: inline SVG logo cleanup */
 svg.brand-mark{display:inline-block;background:none;box-shadow:none;vertical-align:middle;border-radius:0}
+
+/* ==== Account / signed-in state (v25) ==== */
+.account{position:relative;display:inline-flex}
+.account-btn{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;padding:0;border:none;border-radius:50%;cursor:pointer;font:inherit;font-weight:800;font-size:1rem;color:#fff;background:linear-gradient(135deg,var(--brand),var(--brand2));box-shadow:0 4px 14px rgba(42,25,45,.28),inset 0 1px 0 rgba(255,255,255,.25);transition:transform .15s ease,box-shadow .15s ease}
+.account-btn:hover{transform:translateY(-1px);box-shadow:0 8px 22px rgba(42,25,45,.34),inset 0 1px 0 rgba(255,255,255,.3)}
+.account-btn:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
+.account-menu{position:absolute;top:calc(100% + 10px);right:0;min-width:248px;background:color-mix(in srgb,var(--surface) 96%,transparent);backdrop-filter:blur(14px);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow),0 2px 8px rgba(42,25,45,.06);padding:14px;z-index:60;opacity:0;transform:translateY(-6px) scale(.98);pointer-events:none;transition:opacity .16s ease,transform .16s ease}
+.account.open .account-menu{opacity:1;transform:translateY(0) scale(1);pointer-events:auto}
+.account-menu .acc-email{display:block;font-weight:700;color:var(--text,#241d2a);word-break:break-all;font-size:.92rem;line-height:1.3}
+.account-menu .acc-note{display:block;margin:.35rem 0 .8rem;color:var(--muted);font-size:.82rem}
+.account-menu .acc-divider{height:1px;background:var(--line);margin:.2rem 0 .7rem;border:0}
+.account-menu .acc-signout{width:100%;padding:.55rem .7rem;border:1px solid var(--line);border-radius:10px;background:var(--surface2);color:var(--brand);font:inherit;font-weight:700;cursor:pointer;transition:background .14s ease}
+.account-menu .acc-signout:hover{background:color-mix(in srgb,var(--brand) 12%,var(--surface2))}

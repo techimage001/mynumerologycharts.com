@@ -1,2 +1,26 @@
 <?php
-declare(strict_types=1);require __DIR__.'/config.php';$email=filter_var((string)($_GET['email']??''),FILTER_VALIDATE_EMAIL);$token=(string)($_GET['token']??'');if(!$email||!preg_match('/^[a-f0-9]{48}$/',$token))mnc_page('Invalid link','The verification link is invalid.');$pdo=mnc_db();$st=$pdo->prepare('SELECT token_hash FROM subscribers WHERE email=?');$st->execute([$email]);$hash=$st->fetchColumn();if(!$hash||!hash_equals($hash,hash('sha256',$token)))mnc_page('Invalid link','The verification link is invalid or has already been used.');$st=$pdo->prepare('UPDATE subscribers SET status="VERIFIED",verified_at=?,token_hash=NULL WHERE email=?');$st->execute([date(DATE_ATOM),$email]);mnc_page('Email verified','Your email has been verified.');
+declare(strict_types=1);
+require __DIR__ . '/config.php';
+
+$email = filter_var((string)($_GET['email'] ?? ''), FILTER_VALIDATE_EMAIL);
+$token = (string)($_GET['token'] ?? '');
+if (!$email || !preg_match('/^[a-f0-9]{48}$/', $token)) {
+    mnc_page('Invalid link', 'The verification link is invalid.');
+}
+
+$pdo = mnc_db();
+$st = $pdo->prepare('SELECT token_hash FROM subscribers WHERE email=?');
+$st->execute([$email]);
+$hash = $st->fetchColumn();
+if (!$hash || !hash_equals($hash, hash('sha256', $token))) {
+    mnc_page('Invalid link', 'The verification link is invalid or has already been used.');
+}
+
+$st = $pdo->prepare('UPDATE subscribers SET status="VERIFIED",verified_at=?,token_hash=NULL WHERE email=?');
+$st->execute([date(DATE_ATOM), $email]);
+mnc_audit($pdo, 'email_verified', $email);
+
+// Send the browser back to the app with a one-time flag so this device remembers the signed-in state.
+$redirect = '../app.html?verified=' . urlencode(strtolower($email));
+header('Location: ' . $redirect, true, 302);
+exit;
