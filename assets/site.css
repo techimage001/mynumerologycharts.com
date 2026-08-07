@@ -224,7 +224,7 @@ main table{display:table;width:100%}
 /* v22: inline SVG logo cleanup */
 svg.brand-mark{display:inline-block;background:none;box-shadow:none;vertical-align:middle;border-radius:0}
 
-/* ==== Account / signed-in state (v25) ==== */
+/* ==== Account / signed-in state (v27) ==== */
 .account{position:relative;display:inline-flex}
 .account-btn{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;padding:0;border:none;border-radius:50%;cursor:pointer;font:inherit;font-weight:800;font-size:1rem;color:#fff;background:linear-gradient(135deg,var(--brand),var(--brand2));box-shadow:0 4px 14px rgba(42,25,45,.28),inset 0 1px 0 rgba(255,255,255,.25);transition:transform .15s ease,box-shadow .15s ease}
 .account-btn:hover{transform:translateY(-1px);box-shadow:0 8px 22px rgba(42,25,45,.34),inset 0 1px 0 rgba(255,255,255,.3)}
@@ -236,3 +236,25 @@ svg.brand-mark{display:inline-block;background:none;box-shadow:none;vertical-ali
 .account-menu .acc-divider{height:1px;background:var(--line);margin:.2rem 0 .7rem;border:0}
 .account-menu .acc-signout{width:100%;padding:.55rem .7rem;border:1px solid var(--line);border-radius:10px;background:var(--surface2);color:var(--brand);font:inherit;font-weight:700;cursor:pointer;transition:background .14s ease}
 .account-menu .acc-signout:hover{background:color-mix(in srgb,var(--brand) 12%,var(--surface2))}
+
+/* ==== Comparison table — horizontal scroll on mobile (v29), first column pinned ==== */
+@media (max-width:600px){
+  table{
+    display:block;
+    overflow-x:auto;
+    -webkit-overflow-scrolling:touch;
+    scrollbar-width:thin;
+    scrollbar-color:var(--line) transparent;
+    border:1px solid var(--line);
+    border-radius:12px;
+  }
+  table::-webkit-scrollbar{height:6px}
+  table::-webkit-scrollbar-track{background:transparent}
+  table::-webkit-scrollbar-thumb{background:var(--line);border-radius:3px}
+  th,td{padding:9px 10px;font-size:.94rem}
+  table td{min-width:104px}
+  table th:first-child,table td:first-child{position:sticky;left:0;z-index:1;background:var(--surface)}
+  table thead th:first-child{background:var(--surface2)}
+  table+.table-hint{display:flex;align-items:center;gap:5px}
+}
+.table-hint{display:none;font-size:.8rem;color:var(--muted);margin:6px 2px 0}

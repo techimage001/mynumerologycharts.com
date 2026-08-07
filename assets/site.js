@@ -6,7 +6,7 @@ async function prepareSignup(form){const started=form.querySelector('[name="star
 function openSignup(){signupModal?.removeAttribute('hidden');const form=signupModal?.querySelector('.signup-form');if(form)prepareSignup(form);setTimeout(()=>signupModal?.querySelector('input[type="email"]')?.focus(),0)}
 function closeSignup(){signupModal?.setAttribute('hidden','')}
 d.querySelectorAll('[data-open-signup]').forEach(b=>b.addEventListener('click',openSignup));d.querySelectorAll('[data-close-signup]').forEach(b=>b.addEventListener('click',closeSignup));signupModal?.addEventListener('click',e=>{if(e.target===signupModal)closeSignup()});d.addEventListener('keydown',e=>{if(e.key==='Escape'&&!signupModal?.hasAttribute('hidden'))closeSignup()});d.querySelectorAll('.signup-form').forEach(f=>prepareSignup(f));
-/* ==== Account / signed-in state (v25) ==== */
+/* ==== Account / signed-in state (v27) ==== */
 const ACC_KEY='mnc-account';
 function accGet(){try{const v=localStorage.getItem(ACC_KEY);if(!v)return null;const o=JSON.parse(v);return(o&&o.email)?o:null;}catch{return null;}}
 function accSet(email){try{localStorage.setItem(ACC_KEY,JSON.stringify({email:String(email).toLowerCase(),at:new Date().toISOString()}));}catch{}}
