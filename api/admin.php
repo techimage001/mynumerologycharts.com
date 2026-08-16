@@ -6,14 +6,14 @@ $secrets = mnc_secrets();
 $expected = (string)($secrets['admin_password'] ?? '');
 
 if (isset($_POST['logout'])) { session_regenerate_id(true); $_SESSION = []; session_destroy(); header('Location: admin.php'); exit; }
-if (isset($_POST['password']) && $expected !== '' && password_verify((string)$_POST['password'], $expected)) {
+if (isset($_POST['password']) && mnc_admin_password_matches((string)$_POST['password'])) {
     session_regenerate_id(true);
     $_SESSION['admin'] = true;
     $_SESSION['csrf'] = bin2hex(random_bytes(24));
 }
 if (empty($_SESSION['admin'])) {
     echo '<!doctype html><html lang="en-GB"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Admin</title><style>body{font-family:system-ui;max-width:520px;margin:60px auto;padding:20px}label,input,button{display:block;width:100%;box-sizing:border-box;margin:.6rem 0;padding:.7rem}</style><h1>MyNumerologyCharts Admin</h1>';
-    if ($expected === '') echo '<p>Admin is locked because no password hash is configured in mnc_private/secrets.php.</p>';
+    if ($expected === '') echo '<p>Admin is locked because no admin_password is set in mnc_private/secrets.php.</p>';
     else echo '<form method="post"><label>Password <input type="password" name="password" required autocomplete="current-password"></label><button>Sign in</button></form>';
     echo '</html>'; exit;
 }

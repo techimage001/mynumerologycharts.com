@@ -1,14 +1,98 @@
 <?php
 declare(strict_types=1);
 
+require_once __DIR__ . '/smtp_mailer.php';
+
+/* ------------------------------------------------------------------
+   Tunables. Set a limit to 0 to switch it off entirely.
+   These are deliberately generous so ordinary use, and your own
+   testing, never trip them.
+   ------------------------------------------------------------------ */
+const MNC_SIGNUP_LIMIT_PER_IP    = 20;   // per window, per connection
+const MNC_SIGNUP_WINDOW_IP       = 3600; // seconds
+const MNC_SIGNUP_LIMIT_PER_EMAIL = 6;    // per window, per address
+const MNC_SIGNUP_WINDOW_EMAIL    = 3600; // seconds
+const MNC_MIN_SUBMIT_MS          = 3000; // timing floor for the invisible bot check
+
 function mnc_private_dir(): string {
     $env = getenv('MNC_PRIVATE_DIR');
     return $env ?: dirname(__DIR__, 2) . '/mnc_private';
 }
 
+/* ------------------------------------------------------------------
+   Secrets.
+
+   The canonical format is the Card Maker Messages template:
+
+       'admin_password' => '...',
+       'SITE_SALT'      => '...',
+       'NOTIFY_EMAIL'   => 'info@mynumerologycharts.com',
+       'smtp_host'      => 'smtp.hostinger.com',
+       'smtp_port'      => 465,
+       'smtp_secure'    => 'ssl',
+       'smtp_user'      => 'info@mynumerologycharts.com',
+       'smtp_pass'      => '...',
+       'from_email'     => 'info@mynumerologycharts.com',
+       'from_name'      => 'MyNumerologyCharts',
+
+   Older key spellings from earlier MyNumerologyCharts releases
+   (smtp_username, smtp_password, rate_limit_pepper, admin_notify_email,
+   contact_to) are still accepted, so an existing secrets.php keeps
+   working without being rewritten.
+   ------------------------------------------------------------------ */
 function mnc_secrets(): array {
+    static $cache = null;
+    if (is_array($cache)) return $cache;
+
     $file = mnc_private_dir() . '/secrets.php';
-    return is_file($file) ? (array) require $file : [];
+    $raw  = is_file($file) ? (array) require $file : [];
+
+    $pick = static function (array $src, array $keys, $default = '') {
+        foreach ($keys as $k) {
+            if (isset($src[$k]) && $src[$k] !== '') return $src[$k];
+        }
+        return $default;
+    };
+
+    $user = (string)$pick($raw, ['smtp_user', 'smtp_username']);
+    $from = (string)$pick($raw, ['from_email'], $user);
+    $port = (int)$pick($raw, ['smtp_port'], 465);
+
+    $cache = [
+        'admin_password' => (string)$pick($raw, ['admin_password']),
+        'site_salt'      => (string)$pick($raw, ['SITE_SALT', 'site_salt', 'rate_limit_pepper']),
+        'notify_email'   => (string)$pick($raw, ['NOTIFY_EMAIL', 'notify_email', 'admin_notify_email'], $from),
+        'contact_to'     => (string)$pick($raw, ['contact_to', 'NOTIFY_EMAIL', 'notify_email'], $from),
+        'smtp_host'      => (string)$pick($raw, ['smtp_host'], 'smtp.hostinger.com'),
+        'smtp_port'      => $port,
+        'smtp_secure'    => (string)$pick($raw, ['smtp_secure'], $port === 465 ? 'ssl' : 'tls'),
+        'smtp_user'      => $user,
+        'smtp_pass'      => (string)$pick($raw, ['smtp_pass', 'smtp_password']),
+        'from_email'     => $from,
+        'from_name'      => (string)$pick($raw, ['from_name'], 'MyNumerologyCharts'),
+    ];
+    return $cache;
+}
+
+/* True only when a real mailbox login is available. */
+function mnc_smtp_configured(): bool {
+    $s = mnc_secrets();
+    return $s['smtp_host'] !== '' && $s['smtp_user'] !== '' && $s['smtp_pass'] !== '';
+}
+
+/*
+  Accepts the admin password stored either as a plain string (the
+  reference template format) or as a password_hash() digest (the format
+  earlier releases used). Both verify correctly, so neither an old nor
+  a new secrets.php locks you out.
+*/
+function mnc_admin_password_matches(string $candidate): bool {
+    $stored = (string)(mnc_secrets()['admin_password'] ?? '');
+    if ($stored === '' || $candidate === '') return false;
+    if (preg_match('/^\$(2[aby]|argon2(i|d|id))\$/', $stored) === 1) {
+        return password_verify($candidate, $stored);
+    }
+    return hash_equals($stored, $candidate);
 }
 
 function mnc_start_session(): void {
@@ -51,13 +135,20 @@ function mnc_client_ip(): string {
     return (string)($_SERVER['REMOTE_ADDR'] ?? 'unknown');
 }
 
+/*
+  Hashes an identifier with the site salt so raw IP addresses are never
+  stored. The same visitor produces the same hash, but the hash is
+  meaningless to anyone without the salt. This is why SITE_SALT must
+  never change once the site is live.
+*/
 function mnc_identity_hash(string $value): string {
-    $secrets = mnc_secrets();
-    $pepper = (string)($secrets['rate_limit_pepper'] ?? 'mynumerologycharts-rate-limit-v1');
+    $pepper = (string)(mnc_secrets()['site_salt'] ?? '');
+    if ($pepper === '') $pepper = 'mynumerologycharts-rate-limit-v1';
     return hash_hmac('sha256', strtolower(trim($value)), $pepper);
 }
 
 function mnc_rate_limit(PDO $pdo, string $scope, string $identity, int $limit, int $windowSeconds): bool {
+    if ($limit <= 0) return true; // limit switched off
     $now = time();
     $cutoff = $now - $windowSeconds;
     $hash = mnc_identity_hash($identity);
@@ -85,58 +176,31 @@ function mnc_audit(PDO $pdo, string $action, string $details = ''): void {
         ->execute([$action, $details, date(DATE_ATOM)]);
 }
 
-function mnc_smtp_send(string $to, string $subject, string $body): bool {
+/*
+  Sends through authenticated SMTP. On failure it returns false and
+  writes the real reason to the PHP error log, rather than failing
+  silently the way unauthenticated mail() does.
+*/
+function mnc_smtp_send(string $to, string $subject, string $body, ?string &$error = null): bool {
     $s = mnc_secrets();
-    $host = (string)($s['smtp_host'] ?? '');
-    $port = (int)($s['smtp_port'] ?? 587);
-    $user = (string)($s['smtp_username'] ?? '');
-    $pass = (string)($s['smtp_password'] ?? '');
-    $from = (string)($s['from_email'] ?? 'info@mynumerologycharts.com');
-    $fromName = (string)($s['from_name'] ?? 'MyNumerologyCharts');
-    if ($host === '' || $user === '' || $pass === '') return false;
-
-    $transport = $port === 465 ? 'ssl://' . $host : $host;
-    $socket = @stream_socket_client($transport . ':' . $port, $errno, $errstr, 15, STREAM_CLIENT_CONNECT);
-    if (!$socket) return false;
-    stream_set_timeout($socket, 15);
-    $read = static function() use ($socket): string {
-        $out = '';
-        while (($line = fgets($socket, 515)) !== false) {
-            $out .= $line;
-            if (strlen($line) < 4 || $line[3] === ' ') break;
-        }
-        return $out;
-    };
-    $cmd = static function(string $command, array $ok) use ($socket, $read): bool {
-        fwrite($socket, $command . "\r\n");
-        $reply = $read();
-        return in_array((int)substr($reply, 0, 3), $ok, true);
-    };
-    $reply = $read();
-    if ((int)substr($reply, 0, 3) !== 220) { fclose($socket); return false; }
-    if (!$cmd('EHLO mynumerologycharts.com', [250])) { fclose($socket); return false; }
-    if ($port !== 465) {
-        if (!$cmd('STARTTLS', [220])) { fclose($socket); return false; }
-        if (!stream_socket_enable_crypto($socket, true, STREAM_CRYPTO_METHOD_TLS_CLIENT)) { fclose($socket); return false; }
-        if (!$cmd('EHLO mynumerologycharts.com', [250])) { fclose($socket); return false; }
+    if (!mnc_smtp_configured()) {
+        $error = 'SMTP is not configured in mnc_private/secrets.php.';
+        error_log('MyNumerologyCharts SMTP: ' . $error);
+        return false;
     }
-    if (!$cmd('AUTH LOGIN', [334]) || !$cmd(base64_encode($user), [334]) || !$cmd(base64_encode($pass), [235])) { fclose($socket); return false; }
-    if (!$cmd('MAIL FROM:<' . $from . '>', [250]) || !$cmd('RCPT TO:<' . $to . '>', [250,251]) || !$cmd('DATA', [354])) { fclose($socket); return false; }
-    $headers = [
-        'Date: ' . date(DATE_RFC2822),
-        'From: ' . $fromName . ' <' . $from . '>',
-        'To: <' . $to . '>',
-        'Subject: ' . $subject,
-        'Message-ID: <' . bin2hex(random_bytes(12)) . '@mynumerologycharts.com>',
-        'MIME-Version: 1.0',
-        'Content-Type: text/plain; charset=UTF-8',
-        'Content-Transfer-Encoding: 8bit',
+    $config = [
+        'host'      => $s['smtp_host'],
+        'port'      => $s['smtp_port'],
+        'secure'    => $s['smtp_secure'],
+        'user'      => $s['smtp_user'],
+        'pass'      => $s['smtp_pass'],
+        'from'      => $s['from_email'],
+        'from_name' => $s['from_name'],
+        'helo'      => 'mynumerologycharts.com',
     ];
-    $safeBody = preg_replace('/^\./m', '..', $body) ?? $body;
-    fwrite($socket, implode("\r\n", $headers) . "\r\n\r\n" . $safeBody . "\r\n.\r\n");
-    $reply = $read();
-    $ok = (int)substr($reply, 0, 3) === 250;
-    $cmd('QUIT', [221]);
-    fclose($socket);
-    return $ok;
+    $sent = mnc_smtp_transmit($config, $to, $subject, $body, $error);
+    if (!$sent) {
+        error_log('MyNumerologyCharts SMTP error: ' . (string)$error);
+    }
+    return $sent;
 }
