@@ -1,3 +1,14 @@
+/* v27: wrap every emitted table in a scroll viewport. Without this, a table
+   wider than the viewport is clipped on mobile and cannot be scrolled, because
+   a min-width on the scroll container itself prevents it from scrolling.
+   Apply with: html = wrapTables(html); before writing each page. */
+function wrapTables(html){
+  if(!html || html.indexOf('<table') === -1) return html;
+  return html.replace(/<table\b[\s\S]*?<\/table>/g, function(m){
+    return '<div class="table-scroll" tabindex="0" role="region" aria-label="Scrollable table">' + m + '</div>';
+  });
+}
+
 const fs=require('fs'),path=require('path'),crypto=require('crypto');
 const root=path.join(__dirname,'..');
 const pages=JSON.parse(fs.readFileSync(path.join(root,'data/pages.json'),'utf8'));
