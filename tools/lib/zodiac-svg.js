@@ -2,19 +2,17 @@
    circles so nothing is traced, licensed or fetched. Colours come from the
    theme variables, so they follow light and dark mode. viewBox 0 0 240 150. */
 
-const GLYPH = {
-  aries:      'M60 96 C60 62 68 46 82 46 C94 46 100 56 100 70 M100 96 C100 62 92 46 78 46',
-  taurus:     'M62 52 C72 66 90 74 108 66 M108 66 C126 74 144 66 154 52 M108 70 a22 22 0 1 0 0.1 0',
-  gemini:     'M66 50 L66 100 M104 50 L104 100 M56 50 L114 44 M56 100 L114 106',
-  cancer:     'M58 62 C78 46 116 46 132 60 M132 60 a12 12 0 1 0 0.1 0 M132 88 C112 104 74 104 58 90 M58 90 a12 12 0 1 1 -0.1 0',
-  leo:        'M74 100 a16 16 0 1 1 14 -24 C88 56 76 48 76 62 C76 84 100 92 112 78 C124 64 118 46 104 46',
-  virgo:      'M56 46 L56 96 M56 56 C56 46 74 46 74 58 L74 96 M74 58 C74 46 92 46 92 58 L92 88 C92 100 106 102 114 92 M102 74 C120 66 126 88 110 100',
-  libra:      'M56 100 L134 100 M56 86 L134 86 M72 86 C68 62 84 50 96 50 C110 50 124 64 120 86',
-  scorpio:    'M52 46 L52 96 M52 56 C52 46 70 46 70 58 L70 96 M70 58 C70 46 88 46 88 58 L88 90 C88 100 100 104 108 96 L120 84 M120 84 L120 98 M120 84 L108 84',
-  sagittarius:'M58 104 L124 44 M100 44 L126 44 L126 70 M78 68 L102 92',
-  capricorn:  'M56 46 L56 92 M56 56 C56 46 74 46 74 58 L74 92 C74 46 96 46 100 62 C104 80 92 92 82 88 C96 96 116 92 116 76',
-  aquarius:   'M56 62 L72 50 L88 62 L104 50 L120 62 L136 50 M56 92 L72 80 L88 92 L104 80 L120 92 L136 80',
-  pisces:     'M66 44 C48 60 48 88 66 104 M126 44 C144 60 144 88 126 104 M58 74 L134 74'
+/* The twelve astrological characters, identical to the ones app.js and
+   astrology.js already render in the dashboard. Drawing these by hand was the
+   earlier mistake: the shapes came from memory and were wrong. Taken from the
+   Unicode block they are correct by definition.
+   U+FE0E is the text-presentation selector, which stops iOS substituting a
+   colour emoji for the character. */
+const VS = '\uFE0E';
+const GLYPH_CHAR = {
+  aries:'\u2648'+VS, taurus:'\u2649'+VS, gemini:'\u264A'+VS, cancer:'\u264B'+VS,
+  leo:'\u264C'+VS, virgo:'\u264D'+VS, libra:'\u264E'+VS, scorpio:'\u264F'+VS,
+  sagittarius:'\u2650'+VS, capricorn:'\u2651'+VS, aquarius:'\u2652'+VS, pisces:'\u2653'+VS
 };
 
 /* Star patterns: [cx, cy, r] plus the lines joining them. Approximate,
@@ -44,14 +42,15 @@ const SIGNMETA = {
 };
 
 function zodiacSvg(key) {
-  const g = GLYPH[key], st = STARS[key], [name, creature] = SIGNMETA[key];
-  const stars = st.s.map(([x, y, r]) => `<circle class="z-star" cx="${x}" cy="${y}" r="${r}"/>`).join('');
-  return `<svg viewBox="0 0 240 150" xmlns="http://www.w3.org/2000/svg" class="zodiac-svg" role="img" aria-label="Symbol and star pattern for ${name}, ${creature}">
-  <rect class="z-bg" x="0" y="0" width="240" height="150" rx="14"/>
-  <path class="z-glyph" d="${g}"/>
-  <path class="z-lines" d="${st.l}"/>
-  ${stars}
-</svg>`;
+  const ch = GLYPH_CHAR[key], st = STARS[key], meta = SIGNMETA[key];
+  const name = meta[0], creature = meta[1];
+  const stars = st.s.map(function (a) { return '<circle class="z-star" cx="' + a[0] + '" cy="' + a[1] + '" r="' + a[2] + '"/>'; }).join('');
+  return '<svg viewBox="0 0 240 150" xmlns="http://www.w3.org/2000/svg" class="zodiac-svg" role="img" aria-label="Symbol and star pattern for ' + name + ', ' + creature + '">'
+    + '<rect class="z-bg" x="0" y="0" width="240" height="150" rx="14"/>'
+    + '<text class="z-glyph" x="86" y="76" text-anchor="middle" dominant-baseline="central">' + ch + '</text>'
+    + '<path class="z-lines" d="' + st.l + '"/>'
+    + stars
+    + '</svg>';
 }
 
-module.exports = { zodiacSvg, SIGNMETA, GLYPH };
+module.exports = { zodiacSvg, SIGNMETA, GLYPH_CHAR };

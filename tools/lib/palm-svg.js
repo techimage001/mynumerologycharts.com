@@ -14,6 +14,10 @@
 const PALM_SVG = `
 <svg viewBox="0 0 300 390" xmlns="http://www.w3.org/2000/svg" class="palm-svg" role="img">
   <title id="palmTitle">Diagram of a right palm showing the major lines and mounts</title>
+  <!-- Mirrored: a right palm facing the viewer has the thumb on the viewer's
+       right. Mirroring the whole group keeps outline, lines, mounts and the
+       marriage lines consistent with one another. -->
+  <g transform="translate(300,0) scale(-1,1)">
 
   <!-- hand outline -->
   <path class="p-outline" d="
@@ -66,6 +70,16 @@ const PALM_SVG = `
     <path class="p-line p-hair" d="M 238 168 L 238 156"/>
     <path class="p-line p-hair" d="M 243 167 L 243 157"/>
     <path class="p-line p-hair" d="M 247 167 L 247 159"/>
+  </g>
+
+  <!-- finger creases, for a more readable hand -->
+  <g class="p-crease">
+    <path d="M 92 118 q 8 3 16 0"/><path d="M 93 138 q 8 3 15 0"/>
+    <path d="M 132 100 q 8 3 16 0"/><path d="M 133 124 q 8 3 15 0"/>
+    <path d="M 172 108 q 8 3 16 0"/><path d="M 173 132 q 8 3 15 0"/>
+    <path d="M 212 132 q 7 3 14 0"/>
+    <path d="M 70 214 q 10 5 19 1"/>
+  </g>
   </g>
 </svg>`;
 
