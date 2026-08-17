@@ -11,75 +11,85 @@
    viewBox is fixed and no width is set, so it scales to its container. The
    wrapper reserves aspect-ratio so it cannot cause layout shift on load. */
 
+/* Palm diagram, rebuilt from measured proportions.
+
+   The first version was drawn freehand and looked like a mitten: four
+   near-identical stub fingers, a notch by the little finger, a thumb stuck on
+   with no web, and a bulbous palm base. This one is constructed:
+
+     palm length ~= finger length (a true 50/50 split)
+     index 0.92, ring 0.96, little 0.76 of the middle finger
+     finger widths: index 21, middle 22, ring 20, little 17
+     one continuous outline rather than a palm with fingers laid on top,
+     which is what produced the notch
+
+   Right hand, palm toward the viewer, so the thumb is on the viewer's RIGHT
+   and the little finger on the left. Every line and mount keeps its id, so a
+   page highlights its own subject via data-hl on the wrapper. */
 const PALM_SVG = `
-<svg viewBox="0 0 300 390" xmlns="http://www.w3.org/2000/svg" class="palm-svg" role="img">
-  <title id="palmTitle">Diagram of a right palm showing the major lines and mounts</title>
-  <!-- Mirrored: a right palm facing the viewer has the thumb on the viewer's
-       right. Mirroring the whole group keeps outline, lines, mounts and the
-       marriage lines consistent with one another. -->
-  <g transform="translate(300,0) scale(-1,1)">
+<svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg" class="palm-svg" role="img">
+  <title>Diagram of a right palm showing the major lines and mounts</title>
 
-  <!-- hand outline -->
+  <!-- one continuous outline: wrist, little, ring, middle, index, thumb, wrist -->
   <path class="p-outline" d="
-    M 78 330
-    C 70 300, 66 262, 70 232
-    C 60 226, 44 214, 38 198
-    C 32 182, 40 172, 52 176
-    C 62 180, 74 192, 82 202
-    C 84 190, 86 178, 88 168
-    L 90 96 C 90 84, 108 84, 108 96
-    L 110 150
-    L 128 150
-    L 130 74 C 130 62, 148 62, 148 74
-    L 150 150
-    L 168 152
-    L 172 84 C 172 72, 190 72, 190 84
-    L 188 154
-    L 204 158
-    L 212 112 C 214 100, 232 102, 230 114
-    L 224 176
-    C 230 200, 234 226, 232 254
-    C 230 290, 216 320, 200 338
-    C 180 352, 128 352, 104 346
-    C 92 342, 82 338, 78 330 Z" />
+    M 92 372
+    C 83 348, 78 314, 79 284
+    C 80 262, 84 244, 89 234
+    C 90 226, 86 156, 86 142
+    C 86 130, 104 130, 104 142
+    C 104 156, 106 218, 108 226
+    C 113 214, 115 106, 115 90
+    C 115 78, 133 78, 133 90
+    C 133 106, 137 206, 139 214
+    C 141 204, 145 68, 145 52
+    C 145 40, 163 40, 163 52
+    C 163 68, 167 204, 169 212
+    C 171 202, 175 90, 175 74
+    C 175 62, 193 62, 193 74
+    C 193 90, 197 220, 200 230
+    C 205 242, 210 252, 215 258
+    C 220 254, 238 226, 247 212
+    C 253 202, 269 210, 264 222
+    C 256 242, 238 274, 227 290
+    C 223 314, 219 344, 211 366
+    C 202 382, 176 388, 150 388
+    C 124 388, 100 382, 92 372 Z" />
 
-  <!-- mounts, drawn under the lines -->
-  <ellipse id="mount-of-venus"   class="p-mount" cx="108" cy="286" rx="34" ry="46"/>
-  <ellipse id="mount-of-moon"    class="p-mount" cx="206" cy="288" rx="26" ry="40"/>
-  <ellipse id="mount-of-jupiter" class="p-mount" cx="102" cy="172" rx="19" ry="16"/>
-  <ellipse id="mount-of-saturn"  class="p-mount" cx="140" cy="168" rx="19" ry="16"/>
-  <ellipse id="mount-of-apollo"  class="p-mount" cx="178" cy="172" rx="19" ry="16"/>
-  <ellipse id="mount-of-mercury" class="p-mount" cx="212" cy="184" rx="17" ry="15"/>
-  <ellipse id="mount-of-mars"    class="p-mount" cx="88"  cy="224" rx="16" ry="18"/>
-  <ellipse id="mount-of-mars-2"  class="p-mount" cx="224" cy="238" rx="15" ry="20"/>
+  <!-- mounts, drawn under the lines and kept faint -->
+  <ellipse id="mount-of-venus"   class="p-mount" cx="188" cy="320" rx="31" ry="46"/>
+  <ellipse id="mount-of-moon"    class="p-mount" cx="102" cy="322" rx="25" ry="42"/>
+  <ellipse id="mount-of-jupiter" class="p-mount" cx="186" cy="250" rx="17" ry="14"/>
+  <ellipse id="mount-of-saturn"  class="p-mount" cx="156" cy="242" rx="17" ry="14"/>
+  <ellipse id="mount-of-apollo"  class="p-mount" cx="126" cy="246" rx="16" ry="13"/>
+  <ellipse id="mount-of-mercury" class="p-mount" cx="100" cy="256" rx="14" ry="13"/>
+  <ellipse id="mount-of-mars"    class="p-mount" cx="208" cy="288" rx="13" ry="17"/>
+  <ellipse id="mount-of-mars-2"  class="p-mount" cx="87"  cy="292" rx="12" ry="18"/>
 
-  <!-- major lines -->
-  <path id="heart-line"     class="p-line" d="M 230 178 C 210 160, 176 150, 148 152 C 130 154, 116 160, 106 168"/>
-  <path id="head-line"      class="p-line" d="M 80 206 C 104 200, 140 204, 170 214 C 190 220, 206 228, 216 236"/>
-  <path id="life-line"      class="p-line" d="M 82 196 C 78 218, 80 246, 90 274 C 100 302, 112 322, 122 338"/>
-  <path id="fate-line"      class="p-line" d="M 150 338 C 150 310, 149 268, 148 232 C 147 210, 146 194, 145 182"/>
-  <path id="sun-line"       class="p-line" d="M 186 288 C 184 262, 182 232, 180 196"/>
-  <path id="intuition-line" class="p-line" d="M 228 300 C 240 278, 240 250, 230 224 C 226 212, 222 202, 218 196"/>
+  <!-- major lines. Little finger is on the LEFT, thumb on the RIGHT. -->
+  <path id="heart-line"     class="p-line" d="M 86 258 C 106 240, 138 232, 164 234 C 178 235, 189 240, 197 246"/>
+  <path id="head-line"      class="p-line" d="M 204 276 C 180 268, 146 268, 121 278 C 106 284, 96 291, 90 298"/>
+  <path id="life-line"      class="p-line" d="M 203 268 C 208 296, 203 330, 190 356 C 180 374, 168 382, 158 386"/>
+  <path id="fate-line"      class="p-line" d="M 150 382 C 150 350, 151 310, 152 278 C 152 260, 153 250, 153 246"/>
+  <path id="sun-line"       class="p-line" d="M 121 340 C 123 308, 126 276, 127 252"/>
+  <path id="intuition-line" class="p-line" d="M 83 344 C 72 316, 72 282, 83 256 C 87 246, 91 240, 95 236"/>
 
-  <!-- marriage and children lines, on the outer edge below the little finger -->
   <g id="marriage-line" class="p-group">
-    <path class="p-line p-fine" d="M 232 168 L 250 166"/>
-    <path class="p-line p-fine" d="M 233 180 L 249 179"/>
+    <path class="p-line p-fine" d="M 100 238 L 80 235"/>
+    <path class="p-line p-fine" d="M 100 252 L 81 250"/>
   </g>
   <g id="children-lines" class="p-group">
-    <path class="p-line p-hair" d="M 238 168 L 238 156"/>
-    <path class="p-line p-hair" d="M 243 167 L 243 157"/>
-    <path class="p-line p-hair" d="M 247 167 L 247 159"/>
+    <path class="p-line p-hair" d="M 92 237 L 92 221"/>
+    <path class="p-line p-hair" d="M 87 236 L 87 223"/>
+    <path class="p-line p-hair" d="M 82 236 L 82 225"/>
   </g>
 
-  <!-- finger creases, for a more readable hand -->
+  <!-- finger and thumb creases -->
   <g class="p-crease">
-    <path d="M 92 118 q 8 3 16 0"/><path d="M 93 138 q 8 3 15 0"/>
-    <path d="M 132 100 q 8 3 16 0"/><path d="M 133 124 q 8 3 15 0"/>
-    <path d="M 172 108 q 8 3 16 0"/><path d="M 173 132 q 8 3 15 0"/>
-    <path d="M 212 132 q 7 3 14 0"/>
-    <path d="M 70 214 q 10 5 19 1"/>
-  </g>
+    <path d="M 90 196 q 8 3 16 0"/><path d="M 91 218 q 8 3 15 0"/>
+    <path d="M 116 166 q 8 3 16 0"/><path d="M 118 202 q 8 3 15 0"/>
+    <path d="M 146 136 q 8 3 16 0"/><path d="M 148 186 q 8 3 15 0"/>
+    <path d="M 176 158 q 8 3 16 0"/><path d="M 178 208 q 8 3 15 0"/>
+    <path d="M 218 258 q 10 -6 17 -14"/>
   </g>
 </svg>`;
 
