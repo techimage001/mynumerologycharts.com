@@ -114,12 +114,16 @@ function mnc_smtp_transmit(array $config, string $to, string $subject, string $b
         'Date: ' . date(DATE_RFC2822),
         'From: ' . $encodedName . '<' . $from . '>',
         'To: <' . $to . '>',
+    ];
+    $replyTo = trim((string)preg_replace('/[\r\n]+/', '', (string)($config['reply_to'] ?? '')));
+    if ($replyTo !== '' && filter_var($replyTo, FILTER_VALIDATE_EMAIL)) { $headers[] = 'Reply-To: <' . $replyTo . '>'; }
+    $headers = array_merge($headers, [
         'Subject: ' . $encodedSubject,
         'Message-ID: <' . bin2hex(random_bytes(12)) . '@mynumerologycharts.com>',
         'MIME-Version: 1.0',
         'Content-Type: text/plain; charset=UTF-8',
         'Content-Transfer-Encoding: 8bit',
-    ];
+    ]);
 
     $normalised = preg_replace("/\r\n|\r|\n/", "\r\n", $body) ?? $body;
     $safeBody   = preg_replace('/^\./m', '..', $normalised) ?? $normalised;

@@ -21,7 +21,7 @@
     box.innerHTML = '<p class="name-mini-title">' + esc(title) + '</p>'
       + '<div class="name-mini-row"><label class="sr-only" for="' + id + '">Name</label><input id="' + id + '" type="text" maxlength="80" autocomplete="off" placeholder="Type a name"><output class="name-mini-out" aria-live="polite">&ndash;</output></div>'
       + '<p class="name-mini-note"><strong>For entertainment only.</strong> A symbolic number, not a prediction.</p>'
-      + '<p class="name-mini-foot"><a class="btn btn-primary" href="' + base + 'name-checker.html?mode=' + encodeURIComponent(mode) + '&amp;src=' + encodeURIComponent(src) + '">Compare names against a birth date</a><span>Free. Save and share your results.</span></p>';
+      + '<p class="name-mini-foot"><a class="btn btn-primary" href="' + base + 'name-checker.html?mode=' + encodeURIComponent(mode) + '&amp;src=' + encodeURIComponent(src) + '">Compare names against a birth date</a><span>Save and share your results.</span></p>';
     var input = box.querySelector('input'), out = box.querySelector('output'), link = box.querySelector('a');
     input.addEventListener('input', function () {
       var v = expr(input.value);

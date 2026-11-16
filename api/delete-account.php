@@ -50,13 +50,15 @@ if (isset($_GET['token'], $_GET['email'])) {
             . '<p>If your record still exists you can request a new link from the delete page.</p>');
         }
         $pdo->prepare('DELETE FROM subscribers WHERE id = ?')->execute([(int)$row['id']]);
+        $pdo->prepare('DELETE FROM access_sessions WHERE email = ?')->execute([strtolower($email)]);
+        mnc_clear_access_cookie();
         mnc_audit($pdo, 'account_deleted_by_user', 'self-service');
         $_SESSION = [];
         session_destroy();
         setcookie(session_name(), '', time() - 3600, '/');
         page_shell('Your record has been deleted',
           '<p>Your email address and every record attached to it have been permanently removed. Nothing was kept.</p>'
-        . '<p>You will receive no further email from us. The tools remain free to use, and you can sign up again at any time if you want to.</p>');
+        . '<p>You will receive no further email from us. You can sign up again at any time if you want to.</p>');
     } catch (Throwable $e) {
         error_log('MNC delete: ' . $e->getMessage());
         page_shell('Something went wrong', '<p>We could not complete the deletion just now. Please try the link again shortly.</p>');
@@ -92,7 +94,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $token = bin2hex(random_bytes(24));
             $pdo->prepare('UPDATE subscribers SET delete_token_hash = ?, delete_expires_at = ? WHERE id = ?')
                 ->execute([hash('sha256', $token), time() + 86400, (int)$row['id']]);
-            $url = 'https://mynumerologycharts.com/api/delete-account.php?token=' . urlencode($token)
+            $url = mnc_site_url() . '/api/delete-account.php?token=' . urlencode($token)
                  . '&email=' . urlencode(strtolower($email));
             $body = "You asked to delete your MyNumerologyCharts record.\n\n"
                   . "Open this link to confirm. Deletion is permanent and cannot be undone:\n\n$url\n\n"
@@ -117,4 +119,4 @@ page_shell('Delete your record',
 . '<form method="post"><label for="e">Your email address</label>'
 . '<input id="e" type="email" name="email" required autocomplete="email" placeholder="you@example.com">'
 . '<button type="submit">Email me a deletion link</button></form>'
-. '<p>The tools on this site stay free whether you have a record with us or not.</p>');
+. '');

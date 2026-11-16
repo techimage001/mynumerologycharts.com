@@ -24,27 +24,27 @@
 
   function wipeLocal() {
     var removed = [];
-    ['mnc-account', 'mnc-profiles', 'mnc-use', 'mnc-app'].forEach(function (k) {
+    ['mnc-account', 'mnc-acc-hint', 'mnc-profiles', 'mnc-use', 'mnc-app', 'mnc-nc-uses', 'mnc-nc-saved'].forEach(function (k) {
       try { if (localStorage.getItem(k) !== null) { localStorage.removeItem(k); removed.push(k); } } catch (e) {}
     });
     try { sessionStorage.clear(); } catch (e) {}
     return removed;
   }
 
-  var email = storedEmail();
+  var email = '';
   var status = document.getElementById('daStatus');
   var btn = document.getElementById('daGo');
   var who = document.getElementById('daWho');
   var manual = document.getElementById('daManual');
 
-  if (email) {
-    who.textContent = email;
-    who.parentElement.hidden = false;
-    manual.hidden = true;
-  } else {
-    who.parentElement.hidden = true;
-    manual.hidden = false;
+  /* The signed-in address now comes from the server (api/status.php). */
+  function show(addr) {
+    email = addr || '';
+    if (email) { who.textContent = email; who.parentElement.hidden = false; manual.hidden = true; }
+    else { who.parentElement.hidden = true; manual.hidden = false; }
   }
+  show(storedEmail());
+  if (window.MNCAccount && window.MNCAccount.ready) { window.MNCAccount.ready.then(function (st) { if (st && st.email) { show(st.email); } }); }
 
   btn.addEventListener('click', function () {
     var addr = email || (document.getElementById('daEmail') || {}).value || '';
@@ -63,7 +63,8 @@
     var body = new URLSearchParams();
     body.set('email', addr);
     body.set('ajax', '1');
-    fetch('api/delete-account.php', {
+    fetch('/api/delete-account.php', {
+      credentials: 'same-origin',
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: body.toString()

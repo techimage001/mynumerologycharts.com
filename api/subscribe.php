@@ -1,81 +1,92 @@
 <?php
 declare(strict_types=1);
 require __DIR__ . '/config.php';
-if ($_SERVER['REQUEST_METHOD'] !== 'POST') mnc_page('Method not allowed', 'Please use the signup form.');
 
-// Honeypot: silently accept bot submissions without adding them.
-if (!empty($_POST['website'] ?? '')) mnc_page('Thank you', 'Please check your email.');
+/*
+  Email capture. One insert, then one send. Every outcome returns a status,
+  a plain-English message and a reason code, so nothing fails silently.
+  Signing in on a new device works the same way: we email a fresh link to the
+  address, and opening it unlocks that browser.
+*/
+
+if ($_SERVER['REQUEST_METHOD'] !== 'POST') mnc_respond(405, 'Method not allowed', 'Please use the sign-up form.', 'method');
+if (!mnc_origin_ok()) mnc_respond(403, 'Request not accepted', 'This request was not accepted.', 'origin');
+
+$s = mnc_secrets();
+if ($s['site_salt'] === '' || !mnc_smtp_configured()) {
+    mnc_respond(503, 'Not ready yet', 'Email verification is not configured yet.', 'not_configured');
+}
 
 mnc_start_session();
-$started = filter_var($_POST['started'] ?? null, FILTER_VALIDATE_INT);
-$elapsed = $started ? ((int)(microtime(true) * 1000) - $started) : 0;
-if (!$started || $elapsed < MNC_MIN_SUBMIT_MS || $elapsed > 7200000) {
-    mnc_page('Please try again', 'The form was submitted too quickly or expired. Reopen the sign-up form and try again.');
+$in = mnc_input();
+
+/* Honeypot: bots get a neutral success and nothing is stored. */
+if (trim((string)($in['website'] ?? $in['company'] ?? '')) !== '') {
+    mnc_respond(200, 'Check your inbox', 'Check your inbox and open the verification link.', 'ok');
 }
 
-$token = (string)($_POST['js_token'] ?? '');
+/* Hidden token and the 3-second floor, both measured on the server. */
+$token = (string)($in['js_token'] ?? '');
 $expected = (string)($_SESSION['signup_js_token'] ?? '');
-$issued = (int)($_SESSION['signup_token_issued'] ?? 0);
-unset($_SESSION['signup_js_token'], $_SESSION['signup_token_issued']);
-if ($token === '' || $expected === '' || !hash_equals($expected, hash('sha256', $token)) || (time() - $issued) > 7200) {
-    mnc_page('Please refresh', 'The secure form token is missing or expired. Refresh the page and try again.');
+if ($token === '' || $expected === '' || !hash_equals($expected, hash('sha256', $token))) {
+    mnc_respond(400, 'Please try again', 'The secure form needs refreshing. Please try again.', 'token');
+}
+$elapsed = (int)round(microtime(true) * 1000) - (int)($_SESSION['signup_token_issued_ms'] ?? 0);
+if ($elapsed < MNC_MIN_SUBMIT_MS) {
+    mnc_respond(429, 'One moment', 'That was very quick. Please wait a moment and try again.', 'time_trap');
 }
 
-$email = filter_var(trim((string)($_POST['email'] ?? '')), FILTER_VALIDATE_EMAIL);
-if (!$email) mnc_page('Check your email', 'Enter a valid email address.');
-$email = strtolower($email);
-if (mnc_disposable_domain($email)) mnc_page('Use a permanent email', 'Disposable email addresses are not accepted. Please use an address you can keep and verify.');
+$email = filter_var(strtolower(trim((string)($in['email'] ?? ''))), FILTER_VALIDATE_EMAIL);
+if (!$email || strlen($email) > 160) mnc_respond(422, 'Check your email', 'Enter a valid email address.', 'invalid_email');
+if (mnc_disposable_domain($email)) mnc_respond(422, 'Use a permanent email', 'Please use a permanent email address you can keep.', 'disposable');
+if (!mnc_domain_receives_mail($email)) mnc_respond(422, 'Check the address', 'That email domain cannot receive mail. Check the spelling.', 'no_mx');
+
+$page = mnc_safe_return((string)($in['page'] ?? ''), '/app.html');
 
 try {
     $pdo = mnc_db();
-    $withinIpLimit    = mnc_rate_limit($pdo, 'signup-ip', mnc_client_ip(), MNC_SIGNUP_LIMIT_PER_IP, MNC_SIGNUP_WINDOW_IP);
-    $withinEmailLimit = mnc_rate_limit($pdo, 'signup-email', $email, MNC_SIGNUP_LIMIT_PER_EMAIL, MNC_SIGNUP_WINDOW_EMAIL);
-    if (!$withinIpLimit || !$withinEmailLimit) {
+    if (!mnc_rate_limit($pdo, 'signup-ip', mnc_client_ip(), MNC_SIGNUP_LIMIT_PER_IP, MNC_SIGNUP_WINDOW_IP)
+        || !mnc_rate_limit($pdo, 'signup-email', $email, MNC_SIGNUP_LIMIT_PER_EMAIL, MNC_SIGNUP_WINDOW_EMAIL)) {
         mnc_audit($pdo, 'signup_rate_limited', $email);
-        mnc_page('Please wait', 'Too many sign-up attempts were received from this connection. Please try again later.');
+        mnc_respond(429, 'Please wait', 'Too many attempts just now. Please wait a few minutes and try again.', 'rate_limited');
     }
 
-    // Already verified on another device: unlock this device immediately, no new email needed.
-    $check = $pdo->prepare('SELECT status FROM subscribers WHERE email=?');
-    $check->execute([$email]);
-    if ($check->fetchColumn() === 'VERIFIED') {
-        mnc_audit($pdo, 'device_unlock', $email);
-        header('Location: ../app.html?verified=' . urlencode($email), true, 302);
-        exit;
+    mnc_retention($pdo);
+    $raw = bin2hex(random_bytes(24));
+    $now = mnc_utc();
+    $st = $pdo->prepare('SELECT status FROM subscribers WHERE email=?');
+    $st->execute([$email]);
+    $existing = $st->fetchColumn();
+    $returning = $existing === 'VERIFIED';
+
+    if ($existing === false) {
+        $pdo->prepare('INSERT INTO subscribers(email,status,token_hash,token_expires_at,created_at,updated_at,page,ip_hash,verified_at) VALUES(?,"PENDING",?,?,?,?,?,?,NULL)')
+            ->execute([$email, hash('sha256', $raw), time() + MNC_LINK_TTL, $now, $now, $page, mnc_identity_hash(mnc_client_ip())]);
+    } else {
+        /* A verified address stays verified; it just gets a fresh link. */
+        $pdo->prepare('UPDATE subscribers SET token_hash=?,token_expires_at=?,updated_at=?,page=COALESCE(page,?) WHERE email=?')
+            ->execute([hash('sha256', $raw), time() + MNC_LINK_TTL, $now, $page, $email]);
     }
 
-    $verificationToken = bin2hex(random_bytes(24));
-    $hash = hash('sha256', $verificationToken);
-    $now = date(DATE_ATOM);
-    $stmt = $pdo->prepare('INSERT INTO subscribers(email,status,token_hash,created_at,verified_at) VALUES(?,"PENDING",?,?,NULL) ON CONFLICT(email) DO UPDATE SET token_hash=excluded.token_hash,status="PENDING",created_at=excluded.created_at,verified_at=NULL');
-    $stmt->execute([$email, $hash, $now]);
-    mnc_audit($pdo, 'signup_pending', $email);
+    $link = mnc_site_url() . '/api/verify.php?email=' . rawurlencode($email) . '&token=' . $raw . '&r=' . rawurlencode($page);
+    $subject = $returning ? 'Your MyNumerologyCharts sign-in link' : 'Confirm your email address';
+    $body = "Hello,\n\n"
+          . ($returning
+              ? "Open the private link below to sign in and unlock MyNumerologyCharts downloads and sharing on this browser:\n\n"
+              : "Open the private link below to confirm your email and unlock unlimited MyNumerologyCharts downloads and sharing on this browser:\n\n")
+          . $link . "\n\n"
+          . "The link works for 48 hours. Nothing is charged and no payment-card details are requested.\n\n"
+          . "If you did not request this email, ignore it and nothing will happen.\n\n"
+          . "Delete this address from our records:\n" . mnc_unsub_url($email) . "\n";
 
-    $link = 'https://mynumerologycharts.com/api/verify.php?token=' . urlencode($verificationToken) . '&email=' . urlencode($email);
-    $subject = 'Verify your MyNumerologyCharts email';
-    $body = "Confirm your MyNumerologyCharts sign-up by opening this link:\n\n$link\n\nYour address counts as verified only after you click the link. Nothing is charged and no card details are requested.\n\nIf you did not request this, ignore this email.";
-    $sendError = null;
-    if (!mnc_smtp_send($email, $subject, $body, $sendError)) {
-        mnc_audit($pdo, 'verification_email_failed', $email . ' | ' . (string)$sendError);
-        if (!mnc_smtp_configured()) {
-            mnc_page('Email setup required', 'Your request was saved, but the verification email could not be sent because the mailbox settings are not complete in mnc_private/secrets.php.');
-        }
-        mnc_page('Could not send the email', 'Your request was saved, but the verification email could not be delivered right now. Please try again shortly.');
+    $err = null;
+    if (!mnc_smtp_send($email, $subject, $body, $err)) {
+        mnc_audit($pdo, 'signup_send_failed', (string)$err);
+        mnc_respond(503, 'Email not sent', 'We could not send the email just now. Please try again in a few minutes.', 'send_failed');
     }
-    mnc_audit($pdo, 'verification_email_sent', $email);
-
-    // Notify the site owner of the new signup (does not affect the visitor's flow).
-    $secrets = mnc_secrets();
-    $adminNotify = filter_var((string)($secrets['notify_email'] ?? ''), FILTER_VALIDATE_EMAIL);
-    if ($adminNotify) {
-        $adminSubject = 'New MyNumerologyCharts sign-up: ' . $email;
-        $adminBody = "A new person signed up on MyNumerologyCharts.\n\nEmail: $email\nStatus: PENDING (awaiting their click on the verification link)\nTime: $now\n\nThey appear as VERIFIED in api/admin.php once they click their link.";
-        if (!mnc_smtp_send($adminNotify, $adminSubject, $adminBody)) {
-            mnc_audit($pdo, 'admin_notify_failed', $email);
-        }
-    }
-
-    mnc_page('Check your inbox', 'Open the verification email and click its link. Your address is not counted as verified until that step is complete.');
+    mnc_audit($pdo, $returning ? 'signin_link_sent' : 'signup_link_sent', $page);
+    mnc_respond(200, 'Check your inbox', 'Check your inbox and open the verification link.', 'ok', ['email' => $email, 'returning' => $returning]);
 } catch (Throwable $e) {
-    mnc_page('Sign-up unavailable', 'The secure private storage is not configured yet. Please try again after deployment setup is complete.');
+    error_log('MNC subscribe: ' . $e->getMessage());
+    mnc_respond(500, 'Sign-up unavailable', 'Something went wrong on our side. Please try again shortly.', 'server_error');
 }

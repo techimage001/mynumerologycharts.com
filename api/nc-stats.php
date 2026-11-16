@@ -13,7 +13,7 @@ header('X-Robots-Tag: noindex');
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') { http_response_code(405); echo '{"ok":false}'; exit; }
 
-$events = ['rank','middle_suggest','middle_rank','save_png','save_jpg','save_pdf','share_native','share_whatsapp','share_copy','share_open','signup_click','preview','save_device'];
+$events = ['rank','middle_suggest','middle_rank','save_png','save_jpg','save_pdf','share_native','share_whatsapp','share_copy','share_open','signup_click', 'gate_shown','preview','save_device'];
 $e   = (string)($_POST['e'] ?? '');
 $src = substr(preg_replace('/[^a-z0-9-]/', '', strtolower((string)($_POST['src'] ?? 'unknown'))) ?: 'unknown', 0, 60);
 $m   = in_array($_POST['m'] ?? '', ['baby','middle','business','married','own'], true) ? (string)$_POST['m'] : '';

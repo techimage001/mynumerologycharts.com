@@ -196,7 +196,8 @@
       + '<button type="button" class="btn btn-secondary" data-nc-copy>Copy Private-Safe Link</button>'
       + '</div>'
       + '<label class="nc-check"><input type="checkbox" data-nc-showdate> Include the date of birth on the image and in shared links</label>'
-      + '<p class="nc-small" data-nc-actmsg aria-live="polite">Images and PDFs are made on your device. Nothing is uploaded.</p></section>';
+      + '<p class="nc-small" data-nc-actmsg aria-live="polite">Images and PDFs are made on your device. Nothing is uploaded.</p>'
+      + '<p class="nc-invite" data-nc-invite hidden>Sign up with an email whenever you like and downloads and sharing stay unlocked on this device. Nothing is charged and no card details are ever requested. <button type="button" class="acc-link" data-nc-invite-go>Sign up</button><button type="button" class="nc-invite-x" data-nc-invite-x aria-label="Hide this note">×</button></p></section>';
   }
 
   /* ---------------- saved shortlists (this device only) ---------------- */
@@ -237,9 +238,9 @@
       dlg.addEventListener('click', function (e) {
         var t = e.target;
         if (t === dlg || t.closest('[data-nc-close]')) { dlg.close(); }
-        else if (t.closest('[data-nc-pshare]')) { doShare(); }
-        else if (t.closest('[data-nc-ppng]')) { savePic('png'); }
-        else if (t.closest('[data-nc-pjpg]')) { savePic('jpg'); }
+        else if (t.closest('[data-nc-pshare]')) { gated(doShare)(); }
+        else if (t.closest('[data-nc-ppng]')) { gated(function () { savePic('png'); })(); }
+        else if (t.closest('[data-nc-pjpg]')) { gated(function () { savePic('jpg'); })(); }
       });
     }
     dlg.querySelector('[data-nc-previmg]').src = cardCanvas().toDataURL('image/png');
@@ -405,6 +406,37 @@
     return new Blob(parts, { type: 'application/pdf' });
   }
 
+  /* ---------------- 3 downloads or shares per device, then the sign-up box ----------------
+     The ranking and the working are never gated. Only downloads and shares count.
+     The server decides who is unlocked (window.MNCAccount reads api/status.php). */
+  var USES = 'mnc-nc-uses', GATE_SEEN = 'mnc-nc-gate-seen', INVITE_OFF = 'mnc-nc-invite-off', OPEN_USES = 3;
+  function usesSoFar() { return parseInt(lsGet(USES) || '0', 10) || 0; }
+  function isUnlocked() { var a = window.MNCAccount; return !!(a && a.state && a.state.verified); }
+  function gated(fn) {
+    return function (e) {
+      var a = window.MNCAccount;
+      if (!a || isUnlocked()) { fn(e); return; }
+      if (usesSoFar() < OPEN_USES) { lsSet(USES, String(usesSoFar() + 1)); fn(e); invite(); return; }
+      if (e && e.preventDefault) { e.preventDefault(); }
+      var pv = d.getElementById('ncPreviewDialog'); if (pv && pv.open) { pv.close(); }
+      var first = !lsGet(GATE_SEEN); lsSet(GATE_SEEN, '1');
+      track('gate_shown');
+      a.open('gate', {
+        later: first ? function () { fn(e); } : null,
+        onUnlock: function () { say('Unlocked. Downloads and sharing now work without limits on this browser.'); invite(); }
+      });
+    };
+  }
+  function openWa(e) {
+    var a = out.querySelector('[data-nc-wa]');
+    track('share_whatsapp');
+    if (!e || e.defaultPrevented) { window.open(a.href, '_blank', 'noopener'); }
+  }
+  function invite() {
+    var box = out.querySelector('[data-nc-invite]'); if (!box) { return; }
+    var show = !isUnlocked() && usesSoFar() >= 1 && !lsGet(INVITE_OFF);
+    box.hidden = !show;
+  }
   function say(t) { var m = out.querySelector('[data-nc-actmsg]'); if (m) { m.textContent = t; } }
   function savePic(ext) {
     toBlob(cardCanvas(), ext === 'jpg' ? 'image/jpeg' : 'image/png', 0.92).then(function (b) { download(b, fileName(ext)); say('Image saved to your downloads.'); track('save_' + ext); });
@@ -428,19 +460,23 @@
     refreshLinks();
     out.querySelector('[data-nc-showdate]').addEventListener('change', refreshLinks);
     out.querySelector('[data-nc-preview]').addEventListener('click', showPreview);
-    out.querySelector('[data-nc-png]').addEventListener('click', function () { savePic('png'); });
-    out.querySelector('[data-nc-jpg]').addEventListener('click', function () { savePic('jpg'); });
-    out.querySelector('[data-nc-pdf]').addEventListener('click', function () { say('Making your PDF...'); setTimeout(function () { download(makePdf(reportPages()), fileName('pdf')); say('PDF saved to your downloads.'); track('save_pdf'); }, 30); });
-    out.querySelector('[data-nc-share]').addEventListener('click', doShare);
-    out.querySelector('[data-nc-wa]').addEventListener('click', function () { track('share_whatsapp'); });
+    out.querySelector('[data-nc-png]').addEventListener('click', gated(function () { savePic('png'); }));
+    out.querySelector('[data-nc-jpg]').addEventListener('click', gated(function () { savePic('jpg'); }));
+    out.querySelector('[data-nc-pdf]').addEventListener('click', gated(function () { say('Making your PDF...'); setTimeout(function () { download(makePdf(reportPages()), fileName('pdf')); say('PDF saved to your downloads.'); track('save_pdf'); }, 30); }));
+    out.querySelector('[data-nc-share]').addEventListener('click', gated(doShare));
+    out.querySelector('[data-nc-wa]').addEventListener('click', gated(openWa));
     out.querySelector('[data-nc-save]').addEventListener('click', function () { saveCurrent(); say('Saved privately on this device. Open it any time from Saved Shortlists.'); track('save_device'); });
     out.querySelector('[data-nc-saved]').addEventListener('click', showSaved);
-    out.querySelector('[data-nc-copy]').addEventListener('click', function () {
+    out.querySelector('[data-nc-copy]').addEventListener('click', gated(function () {
       var u = shareUrl();
       (navigator.clipboard ? navigator.clipboard.writeText(u) : Promise.reject()).then(function () { say(out.querySelector('[data-nc-showdate]').checked ? 'Link copied, including the date of birth.' : 'Private-safe link copied: it does not include the date of birth.'); }).catch(function () { window.prompt('Copy this link:', u); });
       track('share_copy');
-    });
+    }));
     var su = out.querySelector('[data-nc-signup]'); if (su) { su.addEventListener('click', function () { track('signup_click'); }); }
+    var ig = out.querySelector('[data-nc-invite-go]'); if (ig) { ig.addEventListener('click', function () { track('signup_click'); window.MNCAccount && window.MNCAccount.open('signup'); }); }
+    var ix = out.querySelector('[data-nc-invite-x]'); if (ix) { ix.addEventListener('click', function () { lsSet(INVITE_OFF, '1'); invite(); }); }
+    invite();
+    if (window.MNCAccount && !wire.hooked) { wire.hooked = true; window.MNCAccount.onChange(invite); }
   }
 
   /* ---------------- run ---------------- */
