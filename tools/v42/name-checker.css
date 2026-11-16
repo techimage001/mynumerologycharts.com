@@ -1,0 +1,95 @@
+
+/* ===== v42 Name Checker ===== */
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+.nav a.nav-new{color:var(--brand);position:relative}
+.nav a.nav-new::after{content:"New";margin-left:6px;font-size:.62rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;background:var(--accent);color:#fff;border-radius:999px;padding:2px 6px;vertical-align:2px}
+.nc-tool{padding:clamp(18px,3vw,32px)}
+.nc-modes{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 18px}
+.nc-modes button{border:1px solid var(--line);background:var(--surface2);color:var(--ink);border-radius:999px;padding:9px 16px;font:inherit;font-weight:700;cursor:pointer;min-height:44px}
+.nc-modes button.is-active{background:var(--brand);border-color:var(--brand);color:#fff}
+.nc-form{display:grid;gap:16px}
+.nc-form label,.nc-label{font-weight:700;display:block}
+.nc-form input,.nc-form select{width:100%;font:inherit;padding:11px 13px;border:1px solid var(--line);border-radius:12px;background:var(--bg);color:var(--ink);min-height:46px}
+.nc-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.nc-row{display:flex;gap:8px;margin-top:8px}
+.nc-row input{flex:1}
+.nc-x{min-width:46px;border:1px solid var(--line);background:var(--surface);color:var(--muted);border-radius:12px;font-size:1.3rem;cursor:pointer}
+.nc-addbtn{background:none;border:0;color:var(--brand);font:inherit;font-weight:700;cursor:pointer;padding:8px 0}
+.nc-hint,.nc-small{color:var(--muted);font-size:.92rem;margin:.3em 0 0}
+.nc-actions{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.nc-status{color:var(--danger);font-weight:700;margin:0}
+.nc-results{margin-top:26px}
+.nc-h{margin:0 0 12px}
+.nc-rank{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.nc-card{border:1px solid var(--line);border-radius:14px;padding:14px 16px;background:var(--bg)}
+.nc-card.is-top{border-color:var(--accent);box-shadow:0 0 0 2px color-mix(in srgb,var(--accent) 35%,transparent)}
+.nc-card p{margin:.4em 0 0;color:var(--muted)}
+.nc-card-head{display:flex;align-items:center;gap:12px}
+.nc-pos{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:var(--surface2);font-weight:800}
+.nc-card.is-top .nc-pos{background:var(--accent);color:#fff}
+.nc-name{font-size:1.12rem;flex:1}
+.nc-score b{font-size:1.4rem;color:var(--brand)}
+.nc-bar{display:block;height:8px;border-radius:99px;background:var(--surface2);margin-top:8px;overflow:hidden}
+.nc-bar span{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,var(--brand2),var(--brand))}
+.nc-sugg .nc-bar{display:inline-block;width:120px;vertical-align:middle;margin:0 8px}
+.nc-method{margin-top:14px}
+.nc-offer{margin-top:22px;border:2px solid var(--brand);border-radius:var(--radius);padding:22px;background:color-mix(in srgb,var(--brand) 6%,var(--surface))}
+.nc-offer h3{margin-top:0}
+.nc-included{padding-left:1.2em}
+.nc-buy{display:flex;flex-wrap:wrap;gap:12px;margin:14px 0 6px}
+.nc-buy .btn{min-height:48px}
+.btn.is-disabled{opacity:.55;pointer-events:none}
+.nc-key{margin-top:12px}
+.nc-key summary{cursor:pointer;font-weight:700;color:var(--brand)}
+.nc-keyrow{display:flex;gap:8px;margin-top:10px}
+.nc-keyrow input{flex:1;font:inherit;padding:11px 13px;border:1px solid var(--line);border-radius:12px;background:var(--bg);color:var(--ink);min-height:46px}
+.nc-paid{margin-top:22px}
+.nc-paid-head{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.nc-chart{display:flex;align-items:flex-end;gap:12px;height:200px;padding:12px;border:1px solid var(--line);border-radius:14px;margin:12px 0 18px;overflow-x:auto}
+.nc-col{flex:1;min-width:70px;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:6px}
+.nc-colbar{width:100%;max-width:64px;background:linear-gradient(180deg,var(--accent),var(--brand));border-radius:10px 10px 4px 4px;display:flex;justify-content:center;color:#fff;font-size:.9rem;padding-top:4px}
+.nc-col em{font-style:normal;font-size:.8rem;text-align:center;color:var(--muted);line-height:1.2}
+.nc-detail{border:1px solid var(--line);border-radius:14px;padding:12px 16px;margin:10px 0;background:var(--bg)}
+.nc-detail summary{cursor:pointer;display:flex;justify-content:space-between}
+.nc-nums{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:12px 0}
+.nc-nums div{border:1px solid var(--line);border-radius:12px;padding:10px;text-align:center}
+.nc-nums span{display:block;font-size:.82rem;color:var(--muted)}
+.nc-nums b{font-size:1.6rem;color:var(--brand)}
+.nc-nums small{display:block;color:var(--muted)}
+.nc-table{width:100%;border-collapse:collapse}
+.nc-table th,.nc-table td{text-align:left;padding:8px;border-bottom:1px solid var(--line)}
+.nc-working{font-family:ui-monospace,monospace;font-size:.82rem;color:var(--muted);word-break:break-word}
+.nc-working span{font-family:inherit;font-weight:700}
+.nc-sugg ul{list-style:none;padding:0}
+.nc-sugg li{padding:6px 0;border-bottom:1px dashed var(--line)}
+.nc-note{background:var(--surface2);border-radius:12px;padding:10px 14px}
+.name-mini{border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:var(--radius);padding:18px 20px;background:var(--surface);margin:24px 0}
+.name-mini-title{font-weight:800;font-size:1.08rem;margin:0 0 10px}
+.name-mini-row{display:flex;gap:10px;align-items:stretch}
+.name-mini-row input{flex:1;font:inherit;padding:11px 13px;border:1px solid var(--line);border-radius:12px;background:var(--bg);color:var(--ink);min-height:46px}
+.name-mini-out{min-width:92px;border-radius:12px;background:var(--surface2);display:flex;flex-direction:column;align-items:center;justify-content:center;font-weight:800;color:var(--brand)}
+.name-mini-out small{font-size:.66rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.name-mini-out b{font-size:1.5rem;line-height:1}
+.name-mini-foot{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:12px 0 0}
+.name-mini-foot span{color:var(--muted);font-size:.9rem}
+.nc-home-card{display:grid;grid-template-columns:1.4fr 1fr;gap:22px;align-items:center;border:2px solid var(--accent)}
+.nc-home-card h2{margin-top:0}
+.nc-app-hook{margin-top:14px;border:1px dashed var(--accent);border-radius:14px;padding:12px 16px;background:var(--surface)}
+.nc-app-hook p{margin:0 0 8px}
+@media (max-width:720px){.nc-grid,.nc-home-card{grid-template-columns:1fr}.nc-nums{grid-template-columns:1fr 1fr 1fr}.name-mini-row{flex-direction:row}.nc-keyrow{flex-direction:column}}
+@media print{
+  body.nc-printing *{visibility:hidden}
+  body.nc-printing .nc-paid,body.nc-printing .nc-paid *,body.nc-printing .nc-results .nc-rank,body.nc-printing .nc-results .nc-rank *{visibility:visible}
+  body.nc-printing .nc-results{position:absolute;left:0;top:0;width:100%}
+  body.nc-printing [data-nc-print],body.nc-printing .site-header,body.nc-printing .cookie-banner{display:none}
+  body.nc-printing .nc-detail{break-inside:avoid}
+}
+/* v42: one more nav item, so keep every link on one line and drop the
+   least-used header links (all still in the footer) on mid-size screens. */
+.brand,.nav a,.nav .btn{white-space:nowrap}
+.brand{flex-shrink:0}
+@media (min-width:821px){.nav{gap:14px}}
+@media (min-width:821px) and (max-width:1500px){.nav a,.nav .btn{font-size:.94rem}.header-inner{gap:12px}.nav a.nav-new::after{display:none}}
+@media (min-width:821px) and (max-width:1380px){.nav a[href="methodology.html"]{display:none}}
+@media (min-width:821px) and (max-width:1130px){.nav a[href="daily-horoscope.html"]{display:none}}
+@media (min-width:821px) and (max-width:1080px){.nav a[href="palm-reading.html"],.nav a[href="learn.html"]{display:none}}

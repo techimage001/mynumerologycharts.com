@@ -2,110 +2,133 @@ User-agent: Googlebot
 Allow: /
 Disallow: /api/
 Disallow: /admin/
+Disallow: /cron/
 
 User-agent: Bingbot
 Allow: /
 Disallow: /api/
 Disallow: /admin/
+Disallow: /cron/
 
 User-agent: Slurp
 Allow: /
 Disallow: /api/
 Disallow: /admin/
+Disallow: /cron/
 
 User-agent: DuckDuckBot
 Allow: /
 Disallow: /api/
 Disallow: /admin/
+Disallow: /cron/
 
 User-agent: YandexBot
 Allow: /
 Disallow: /api/
 Disallow: /admin/
+Disallow: /cron/
 
 User-agent: Baiduspider
 Allow: /
 Disallow: /api/
 Disallow: /admin/
+Disallow: /cron/
 
 User-agent: Yeti
 Allow: /
 Disallow: /api/
 Disallow: /admin/
+Disallow: /cron/
 
 User-agent: SeznamBot
 Allow: /
 Disallow: /api/
 Disallow: /admin/
+Disallow: /cron/
 
 User-agent: Applebot
 Allow: /
 Disallow: /api/
 Disallow: /admin/
+Disallow: /cron/
 
 User-agent: facebookexternalhit
 Allow: /
 Disallow: /api/
 Disallow: /admin/
+Disallow: /cron/
 
 User-agent: Twitterbot
 Allow: /
 Disallow: /api/
 Disallow: /admin/
+Disallow: /cron/
 
 User-agent: OAI-SearchBot
 Allow: /
 Disallow: /api/
 Disallow: /admin/
+Disallow: /cron/
 
 User-agent: ChatGPT-User
 Allow: /
 Disallow: /api/
 Disallow: /admin/
+Disallow: /cron/
 
 User-agent: PerplexityBot
 Allow: /
 Disallow: /api/
 Disallow: /admin/
+Disallow: /cron/
 
 User-agent: Claude-SearchBot
 Allow: /
 Disallow: /api/
 Disallow: /admin/
+Disallow: /cron/
 
 User-agent: GPTBot
 Allow: /
 Disallow: /api/
 Disallow: /admin/
+Disallow: /cron/
 
 User-agent: ClaudeBot
 Allow: /
 Disallow: /api/
 Disallow: /admin/
+Disallow: /cron/
 
 User-agent: Google-Extended
 Allow: /
 Disallow: /api/
 Disallow: /admin/
+Disallow: /cron/
 
 User-agent: CCBot
 Allow: /
 Disallow: /api/
 Disallow: /admin/
+Disallow: /cron/
 
 User-agent: Applebot-Extended
 Allow: /
 Disallow: /api/
 Disallow: /admin/
+Disallow: /cron/
 
 User-agent: Bytespider
 Allow: /
 Disallow: /api/
 Disallow: /admin/
+Disallow: /cron/
 
 User-agent: *
 Allow: /
 Disallow: /api/
 Disallow: /admin/
+Disallow: /cron/
 
 Sitemap: https://mynumerologycharts.com/sitemap.xml
+Sitemap: https://mynumerologycharts.com/sitemap-blog.xml

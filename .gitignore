@@ -1,0 +1,17 @@
+# Never commit private deployment data
+/mnc_private/
+**/secrets.php
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+*.db
+*.log
+/backups/
+/exports/
+
+# Written on the server by the blog portal (Bulk Content Optimiser).
+# Never commit or deploy over these, or published articles and images vanish.
+/blog/
+/p/
+/uploads/blog/
+/sitemap-blog.xml
