@@ -1,0 +1,62 @@
+/* Blog pages written by the Bulk Content Optimiser, in the MyNumerologyCharts
+   design. Uses the same variables as site.css, so dark mode works too. */
+.bco-blog main{display:block}
+.bco-blog main section{margin:0;padding:0;background:none;border:0;border-radius:0;box-shadow:none}
+.bco-blog .wrap{width:min(var(--max),calc(100% - 32px));margin:auto}
+.bco-blog .post-wrap{max-width:780px}
+.bco-blog .crumbs{font-size:.9rem;color:var(--muted);padding-top:22px}
+.bco-blog .crumbs a{color:var(--muted)}
+.bco-blog .crumbs span{margin:0 4px}
+.bco-blog .post-cat{margin:26px 0 0;font-size:.78rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+.bco-blog .post-cat a{text-decoration:none;color:var(--brand)}
+.bco-blog .post h1{font-size:clamp(2rem,5vw,3.4rem);line-height:1.06;letter-spacing:-.045em;margin:.25em 0 .3em}
+.bco-blog .post-meta{color:var(--muted);font-size:.95rem;display:flex;gap:8px;align-items:center}
+.bco-blog .post-hero{margin:22px 0 8px}
+.bco-blog .post-hero img{width:100%;height:auto;border-radius:var(--radius);display:block;aspect-ratio:1200/630;object-fit:cover;background:var(--surface2)}
+.bco-blog .post-body{font-size:1.08rem;line-height:1.75}
+.bco-blog .post-body h2{font-size:clamp(1.45rem,3vw,1.95rem);line-height:1.2;letter-spacing:-.03em;margin:1.8em 0 .5em}
+.bco-blog .post-body h3{font-size:1.2rem;margin:1.5em 0 .4em}
+.bco-blog .post-body p,.bco-blog .post-body li{max-width:72ch}
+.bco-blog .post-body img{max-width:100%;height:auto;border-radius:14px}
+.bco-blog .post-body blockquote{margin:1.4em 0;padding:14px 20px;border-left:4px solid var(--accent);background:var(--surface);border-radius:0 14px 14px 0}
+.bco-blog .post-body table{display:block;overflow-x:auto;max-width:100%;width:100%;border-collapse:collapse;margin:1.2em 0;font-size:.98rem}
+.bco-blog .post-body th,.bco-blog .post-body td{padding:9px 10px;border-bottom:1px solid var(--line);text-align:left}
+.bco-blog .post-body th{background:var(--surface2)}
+.bco-blog .post-body .toc{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:16px 20px;margin:20px 0}
+.bco-blog .post-body .toc ol,.bco-blog .post-body .toc ul{margin:.4em 0 0;padding-left:1.2em}
+.bco-blog .post-body .key-takeaways,.bco-blog .post-body .takeaways{background:color-mix(in srgb,var(--accent) 10%,var(--surface));border:1px solid var(--line);border-radius:var(--radius);padding:16px 20px}
+.bco-blog .post-body .faq-q{margin-top:1.2em}
+.bco-blog .post-cta{margin:40px 0 10px;padding:24px;border:2px solid var(--accent);border-radius:var(--radius);background:var(--surface)}
+.bco-blog .post-cta h2{margin-top:0}
+.bco-blog .post-cta .name-mini{margin:14px 0;background:var(--bg)}
+.bco-blog .post-cta-alt{color:var(--muted);margin:0}
+.bco-blog .related{margin:48px auto}
+.bco-blog .related h2{font-size:1.6rem;letter-spacing:-.03em}
+.bco-blog .post-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:18px}
+.bco-blog .post-card{display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;text-decoration:none;color:var(--ink);box-shadow:var(--shadow);transition:transform .15s}
+.bco-blog a.post-card:hover{transform:translateY(-2px)}
+.bco-blog .post-card-img{display:block;aspect-ratio:1200/630;background:linear-gradient(135deg,var(--brand),var(--brand2));overflow:hidden}
+.bco-blog .post-card-img img{width:100%;height:100%;object-fit:cover;display:block}
+.bco-blog .post-card-ph{display:grid;place-items:center;height:100%;color:#fff;font-size:3rem}
+.bco-blog .post-card-body{display:flex;flex-direction:column;gap:6px;padding:16px 18px 18px;flex:1}
+.bco-blog .post-card-cat{margin:0;font-size:.74rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--brand)}
+.bco-blog .post-card-title{margin:0;font-size:1.12rem;line-height:1.3;font-weight:800}
+.bco-blog .post-card-title a{color:var(--ink);text-decoration:none}
+.bco-blog .post-card-ex{margin:0;color:var(--muted);font-size:.95rem}
+.bco-blog .post-card-meta{margin:auto 0 0;color:var(--muted);font-size:.86rem;display:flex;gap:6px}
+.bco-blog .post-card-go{font-weight:800;color:var(--brand);font-size:.92rem}
+.bco-blog .blog-head{padding:30px 0 10px}
+.bco-blog .blog-head h1{font-size:clamp(2.2rem,6vw,4rem);line-height:1.04;letter-spacing:-.05em;margin:.2em 0}
+.bco-blog .blog-head p{color:var(--muted);font-size:1.12rem;max-width:760px}
+.bco-blog .cat-nav{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 26px}
+.bco-blog .cat-pill{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:8px 14px;text-decoration:none;font-weight:700;font-size:.92rem}
+.bco-blog .cat-pill.is-on{background:var(--brand);border-color:var(--brand);color:#fff}
+.bco-blog .blog-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px;margin-bottom:56px;align-items:stretch}
+.bco-blog .blog-list .empty{grid-column:1/-1}
+.bco-blog .empty{color:var(--muted)}
+.bco-blog .preview-bar{background:var(--accent);color:#fff;text-align:center;padding:8px;font-weight:700}
+.bco-blog .nav a.btn{color:#fff}
+@media (max-width:640px){.bco-blog .post-body{font-size:1.02rem}.bco-blog .post-cta{padding:18px}}
+.bco-blog .post h1,.bco-blog .blog-head h1,.bco-blog .post-card-title{font-family:Georgia,"Times New Roman",serif}
+.bco-blog .post-body .toc:empty,.bco-blog .post-body .toc:not(:has(li)){display:none}
+.bco-blog .post-body table{min-width:0!important}
