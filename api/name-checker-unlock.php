@@ -26,6 +26,7 @@ $action = (string)($_POST['action'] ?? $_GET['action'] ?? '');
 if ($action === 'config') {
     nc_out([
         'ok'       => true,
+        'paid'     => !empty($cfg['paid']),
         'ready'    => (int)$cfg['store_id'] > 0,
         'checkout' => array_map('strval', $cfg['checkout']),
         'price'    => $cfg['price'],

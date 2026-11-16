@@ -515,3 +515,41 @@ body{padding-bottom:env(safe-area-inset-bottom,0px)}
 @media (min-width:821px) and (max-width:1380px){.nav a[href="methodology.html"]{display:none}}
 @media (min-width:821px) and (max-width:1130px){.nav a[href="daily-horoscope.html"]{display:none}}
 @media (min-width:821px) and (max-width:1080px){.nav a[href="palm-reading.html"],.nav a[href="learn.html"]{display:none}}
+
+/* ===== v43 Name Checker ===== */
+.nc-sexrow{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.nc-sexrow .nc-label{margin:0}
+.nc-sex-btns{margin:0}
+.nc-opt{font-weight:400;color:var(--muted)}
+.nc-badges{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-top:6px}
+.nc-badges:empty{display:none}
+.nc-sex{display:inline-block;font-size:.76rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;border-radius:999px;padding:3px 10px;background:var(--surface2);color:var(--muted)}
+.nc-sex-g,.nc-sex-b,.nc-sex-u{background:color-mix(in srgb,var(--brand) 12%,var(--surface));color:var(--brand)}
+.nc-sex-note{font-size:.88rem;color:var(--muted)}
+.nc-actions-box{margin-top:22px;border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px;background:var(--surface)}
+.nc-actions-box h3{margin:0 0 10px}
+.nc-btnrow{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 10px}
+.nc-btnrow .btn{width:auto;min-width:0;margin:0}
+.nc-check{display:flex;gap:8px;align-items:center;font-size:.94rem;color:var(--muted)}
+.nc-check input{width:18px;height:18px}
+.nc-signup{margin-top:22px;border:1px dashed var(--accent);border-radius:var(--radius);padding:16px 20px;display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.nc-signup p{margin:0;flex:1 1 320px}
+.nc-signup .btn{width:auto}
+@media (max-width:720px){.nc-btnrow .btn{flex:1 1 45%}.nc-signup .btn{width:100%}}
+.nc-actions-box.report-actions-panel{grid-column:auto}
+.nc-actions-box .nc-result-actions{grid-template-columns:repeat(3,minmax(0,1fr));max-width:none;margin:0 0 12px}
+@media (max-width:700px){.nc-actions-box .nc-result-actions{grid-template-columns:1fr 1fr}}
+@media (max-width:390px){.nc-actions-box .nc-result-actions{grid-template-columns:1fr}}
+.nc-actions-box .nc-result-actions .btn{margin:0}
+.nc-tool [hidden]{display:none!important}
+.nc-actions-box .nc-result-actions{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important}
+.nc-actions-box .nc-result-actions .btn{width:100%!important;max-width:none!important}
+@media (max-width:700px){.nc-actions-box .nc-result-actions{grid-template-columns:1fr 1fr!important}}
+.nc-check{font-weight:400}
+
+/* v43b entertainment notices */
+.nc-notice{margin:14px 0;padding:12px 16px;border:2px solid var(--accent);border-radius:12px;background:var(--surface);color:var(--ink);font-size:1rem;line-height:1.5}
+.nc-notice strong{font-weight:800}
+.nc-results .nc-notice{margin-top:0}
+.name-mini-note{margin:10px 0 0;font-size:.92rem;color:var(--ink)}
+.name-mini-note strong{font-weight:800}

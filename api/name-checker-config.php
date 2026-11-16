@@ -21,6 +21,10 @@
    not set up yet. Nothing breaks.
    ================================================================== */
 return [
+    /* false = everything is free and the payment buttons never show.
+       Switch to true (and fill in the values below) to start charging. */
+    'paid' => false,
+
     'store_id' => 0,                              /* FILL IN */
     'variants' => [
         'pass'     => 0,                          /* FILL IN: 30-day pass variant ID */
